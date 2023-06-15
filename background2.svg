@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f1f1;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #e6e6e6;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <path class="cls-1" d="M1416,478L541,430,387,399,599,253l646-80,184,32Z"/>
+    <path class="cls-2" d="M-6,92L21,70,398,80l162-9,659-1,169,23-10,153-290,19L621,305,138,602l-155-6L-178,314-1,244l596-74,221,7L601,123-29,155"/>
+    <path class="cls-2" d="M1382,439L747,375,201,432l722,68L633,550,535,652l898-133Z"/>
+    <path class="cls-3" d="M-85,525.174L252.9,478,663,543.779l-368.224-23.92L-21.463,577Z"/>
+  </g>
+</svg>
