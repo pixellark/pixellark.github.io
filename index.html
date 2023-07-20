@@ -256,6 +256,37 @@
           </section>
           
         
+<!-- index.html on https://pixellark.com -->
+<form id="myForm">
+  <input type="text" name="name" placeholder="Your Name">
+  <input type="email" name="email" placeholder="Your Email">
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById('myForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent page refresh on form submission
+
+    const formData = new FormData(event.target); // Gather form data
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    fetch('https://pixellark.rf.gd/submitForm', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data) // Convert form data to JSON
+    }).then(response => {
+      // Handle the response from the server if needed
+      console.log('Form submitted successfully!');
+    }).catch(error => {
+      console.error('Error submitting form:', error);
+    });
+  });
+</script>
 
 
 
