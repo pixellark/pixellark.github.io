@@ -235,7 +235,8 @@ nav .fa{
 /*webdesign*/
 
 .web-design-section {
-    background-image: url(background2.svg);
+    background-image: url(new/red2.svg.png);
+    background-size: cover;
 
   }
   
@@ -248,9 +249,10 @@ nav .fa{
     font-size: 18px;
     margin-bottom: 0%;
     text-align: left;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
-    margin-top: 10%;
+    margin-top: 15%;
+
 
   }
   
@@ -269,6 +271,7 @@ nav .fa{
     margin-bottom: 40px;
     text-align: left;
     font-weight: 500;
+    color: #fff;
     
   }
   
@@ -278,6 +281,7 @@ nav .fa{
     margin-bottom: 30px;
     background-size: 20px 20px;
     list-style: none;
+    color: #fff;
   }
   .benefits-list li::before {
     content: "";
@@ -303,6 +307,7 @@ nav .fa{
     font-weight: bold;
     text-align: left;
     margin-bottom: 5%;
+
   }
 
   .webcontent{
@@ -315,7 +320,7 @@ nav .fa{
     margin-left: 5%;
     margin-right: 2%;
     align-items: left;
-
+    color: #ffffff;
   }
   .wc2{
     max-width: 60%;
