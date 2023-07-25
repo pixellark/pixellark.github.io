@@ -9,6 +9,7 @@
   min-height: 100vh;
   font-family: 'Fira Sans', sans-serif;
   display: flex;
+    flex-direction: column;
 }
 .scrolltitle{
   font-size: 40px;
