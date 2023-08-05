@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+}
+
+@keyframes scaleloop {
+    0% {
+        scale: 1;
+        opacity: 0.3;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+
+        opacity: 1;
+    }
+
+    100% {
+        scale: 1.1;
+        opacity: 0.3;
+
+    }
+
+}
+
+.sliderimg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation-name: scaleloop;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+.s1 {
+    background-image: url("1.jpg");
+
+}
+
+.s2 {
+    background-image: url("w2.jpg");
+
+}
+
+.s3 {
+    background-image: url("./depositphotos_254263010-stock-photo-positive-female-cleaner-looks-down.jpg");
+
+}
+
+.slider.active .sliderimg {
+    display: block;
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.608);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.slider.active .black{
+    display: block;
+}
+.hero-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+
+.hero-title {
+    position: absolute;
+    left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vw;
+    /* Adjust font size as per your requirement */
+    font-weight: 700;
+    /* Use 400 for regular font weight */
+    color: #ffffff;
+    /* Choose the color you prefer */
+    text-transform: uppercase;
+    animation-name: titleanimation;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    display: none;
+    z-index: 99;
+}
+@media (max-width: 767px) {
+    .hero-title {
+animation: titleanimationn 7s;
+font-size: 12vw;
+    }
+}
+
+.slider.active .hero-title {
+    display: block;
+}
+
+.hero-brandname {
+    position: absolute;
+    left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    /* Adjust font size as per your requirement */
+    font-weight: 700;
+    /* Use 400 for regular font weight */
+    color: #ffffff;
+    /* Choose the color you prefer */
+    text-transform: uppercase;
+    animation-name: brandanimation;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    display: none;
+    z-index: 99;
+}
+
+@media (max-width: 767px) {
+    .hero-brandname {
+        animation: brandanimationn 7s;
+        font-size: 5vw;
+    }
+}
+
+.slider.active .hero-brandname {
+    display: block;
+}
+
+@keyframes titleanimation {
+    0% {
+        bottom: -10%;
+        opacity: 0;
+    }
+
+    10% {
+        bottom: -10%;
+        opacity: 0;
+    }
+
+    30% {
+        bottom: 10%;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+        bottom: 10%;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 10%;
+    }
+}
+@keyframes titleanimationn {
+    0% {
+        top: 110%;
+        opacity: 0;
+    }
+
+    10% {
+        top: 110%;
+        opacity: 0;
+    }
+
+    30% {
+        top: 63%;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+        top: 63%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 63%;
+    }
+}
+
+@keyframes brandanimation {
+    0% {
+        bottom: -10%;
+        opacity: 0;
+    }
+
+    20% {
+        bottom: 25%;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+        bottom: 25%;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 25%;
+    }
+}
+@keyframes brandanimationn {
+    0% {
+        top: 110%;
+        opacity: 0;
+    }
+
+    20% {
+        top: 55%;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+        top: 55%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 55%;
+    }
+}
+
+.hero-logo {
+    width: 12vw;
+    left: 5%;
+    position: absolute;
+    top: 35%;
+    animation-name: brandlogoanimation;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    display: none;
+    z-index: 99;
+
+}
+
+@media (max-width: 767px) {
+    .hero-logo {
+        width: 25vw;
+    }
+}
+
+.slider.active .hero-logo {
+    display: block;
+}
+
+
+@keyframes brandlogoanimation {
+    0% {
+        top: 15%;
+        opacity: 0;
+    }
+
+    20% {
+        top: 35%;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+        bottom: 25%;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 25%;
+    }
+}
+@keyframes brandlogoanimationn {
+    0% {
+        top: 15%;
+        opacity: 0;
+    }
+
+    20% {
+        top: 35%;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+        bottom: 25%;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 25%;
+    }
+}
+
+.shape1 {
+    position: absolute;
+    right: -10vw;
+    bottom: 0;
+    width: 100vh;
+    z-index: 2;
+    animation: shape1a 7s;
+    display: none;
+}
+
+.slider.active .shape1 {
+    display: block;
+}
+
+.shape2 {
+    position: absolute;
+    right: -1vw;
+    bottom: 0;
+    width: 100vh;
+    z-index: 1;
+    display: none;
+    animation: shape2a 7s;
+}
+
+.slider.active .shape2 {
+    display: block;
+}
+
+@keyframes shape1a {
+    0% {
+        right: -50vw;
+        opacity: 0;
+    }
+
+    10% {
+        right: -50vw;
+        opacity: 1;
+    }
+
+    30% {
+        right: -10vw;
+        opacity: 1;
+    }
+
+    95% {
+        right: -10vw;
+        opacity: 1;
+    }
+
+    100% {
+        right: -10vw;
+        opacity: 0;
+    }
+
+}
+
+@keyframes shape2a {
+    0% {
+        right: -50vw;
+        opacity: 0;
+    }
+
+    15% {
+        right: -50vw;
+        opacity: 1;
+    }
+
+    30% {
+        right: -1vw;
+        opacity: 1;
+    }
+
+    95% {
+        right: -1vw;
+        opacity: 1;
+    }
+
+    100% {
+        right: -1vw;
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes shape1an {
+    0% {
+        right: -140vw;
+        opacity: 0;
+    }
+
+    10% {
+        right: -140vw;
+        opacity: 1;
+    }
+
+    30% {
+        right: -55vw;
+        opacity: 1;
+    }
+
+    95% {
+        right: -55vw;
+        opacity: 1;
+    }
+
+    100% {
+        right: -55vw;
+        opacity: 0;
+    }
+
+}
+
+@keyframes shape2an {
+    0% {
+        right: -100vw;
+        opacity: 0;
+    }
+
+    15% {
+        right: -100vw;
+        opacity: 1;
+    }
+
+    30% {
+        right: -25vw;
+        opacity: 1;
+    }
+
+    95% {
+        right: -25vw;
+        opacity: 1;
+    }
+
+    100% {
+        right: -25vw;
+        opacity: 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .shape1{
+        animation: shape1an 7s;
+    }
+.shape2{
+  animation: shape2an 7s;
+}
+
+}
