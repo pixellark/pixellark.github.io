@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="language" content="English">
     <meta property="og:url" content="https:pixellark.com">
-    <meta name="description" content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
-    <meta name="keywords" content="Creating indicators, TradingView, custom indicators, step-by-step guide, trading profits, Pine Script, coding skills, trading strategy, pixellark">
+    <meta name="description"
+        content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
+    <meta name="keywords"
+        content="Creating indicators, TradingView, custom indicators, step-by-step guide, trading profits, Pine Script, coding skills, trading strategy, pixellark">
     <meta name="author" content="pethum kavinda">
     <meta name="robots" content="index, follow">
     <meta name="og:title" content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide">
-    <meta name="og:description" content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
+    <meta name="og:description"
+        content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
     <meta name="og:image" content="trading indicator thum 1.jpg">
-    <meta property="og:image:alt" content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide- PixelLark Solutions">
+    <meta property="og:image:alt"
+        content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide- PixelLark Solutions">
     <meta name="twitter:card" content="trading indicator thum 1.jpg">
     <meta name="twitter:title" content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide">
-    <meta name="twitter:description" content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
+    <meta name="twitter:description"
+        content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="https:pixellark.com/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https:pixellark.com/favicon-32x32.png">
@@ -185,18 +190,19 @@
             </ol>
 
             <h2>Example Code: Simple Moving Average Crossover Indicator</h2>
-            <div class="code"><p>//@version=4 <br>
-    study(title="Simple Moving Average Crossover", shorttitle="SMAC", overlay=true) <br><br>
-    
-    fast_length = input(10, title="Fast MA Length") <br>
-    slow_length = input(20, title="Slow MA Length") <br><br>
-    
-    fast_ma = sma(close, fast_length) <br>
-    slow_ma = sma(close, slow_length) <br><br>
-    
-    plot(fast_ma, color=color.blue, title="Fast MA") <br>
-    plot(slow_ma, color=color.red, title="Slow MA")
-</p>
+            <div class="code">
+                <p>//@version=4 <br>
+                    study(title="Simple Moving Average Crossover", shorttitle="SMAC", overlay=true) <br><br>
+
+                    fast_length = input(10, title="Fast MA Length") <br>
+                    slow_length = input(20, title="Slow MA Length") <br><br>
+
+                    fast_ma = sma(close, fast_length) <br>
+                    slow_ma = sma(close, slow_length) <br><br>
+
+                    plot(fast_ma, color=color.blue, title="Fast MA") <br>
+                    plot(slow_ma, color=color.red, title="Slow MA")
+                </p>
             </div>
 
             <h2>In Conclusion</h2>
@@ -225,7 +231,7 @@
         <div class="dock2 ">
             <div class="dock-sec1">
                 <div>Theme </div>
-                <div class="more"> | More <i class="fas fa-bars"></i></div>
+                <div class="more"> | More <i id="dclose" class="fas fa-bars"></i></div>
             </div>
         </div>
     </div>
@@ -282,45 +288,45 @@
 
     <script src="script.js"></script>
     <script src="header.js"></script>
-<script>const toggleButton = document.getElementById("toggleButton");
-    const stylesheetLink = document.getElementById("stylesheet");
-    
-    // Check if the mode preference is stored in a cookie
-    const storedMode = getCookie("mode");
-    let isDarkMode = storedMode === "dark";
-    
-    // Function to set initial stylesheet based on the stored mode
-    function setInitialStylesheet() {
-      if (isDarkMode) {
-        stylesheetLink.href = "darkstyles.css";
-        toggleButton.textContent = "Light Mode";
-      } else {
-        stylesheetLink.href = "styles.css";
-        toggleButton.textContent = "Dark Mode";
-      }
-    }
-    
-    // Set initial stylesheet
-    setInitialStylesheet();
-    
-    toggleButton.addEventListener("click", () => {
-      isDarkMode = !isDarkMode;
-      setInitialStylesheet();
-      setCookie("mode", isDarkMode ? "dark" : "light");
-    });
-    
-    // Function to set a cookie
-    function setCookie(name, value, days = 365) {
-      const expires = new Date();
-      expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-      document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-    }
-    
-    // Function to get a cookie value
-    function getCookie(name) {
-      const cookieValue = document.cookie.match(`(^|;)\\s*${name}\\s*=\\s*([^;]+)`);
-      return cookieValue ? cookieValue[2] : null;
-    }
+    <script>const toggleButton = document.getElementById("toggleButton");
+        const stylesheetLink = document.getElementById("stylesheet");
+
+        // Check if the mode preference is stored in a cookie
+        const storedMode = getCookie("mode");
+        let isDarkMode = storedMode === "dark";
+
+        // Function to set initial stylesheet based on the stored mode
+        function setInitialStylesheet() {
+            if (isDarkMode) {
+                stylesheetLink.href = "darkstyles.css";
+                toggleButton.textContent = "Light Mode";
+            } else {
+                stylesheetLink.href = "styles.css";
+                toggleButton.textContent = "Dark Mode";
+            }
+        }
+
+        // Set initial stylesheet
+        setInitialStylesheet();
+
+        toggleButton.addEventListener("click", () => {
+            isDarkMode = !isDarkMode;
+            setInitialStylesheet();
+            setCookie("mode", isDarkMode ? "dark" : "light");
+        });
+
+        // Function to set a cookie
+        function setCookie(name, value, days = 365) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+        }
+
+        // Function to get a cookie value
+        function getCookie(name) {
+            const cookieValue = document.cookie.match(`(^|;)\\s*${name}\\s*=\\s*([^;]+)`);
+            return cookieValue ? cookieValue[2] : null;
+        }
     </script>
 
 
@@ -362,47 +368,65 @@
 
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const eTitle = document.querySelector('.e-title');
-            const fTitleForm = document.querySelector('.f-title');
-            const cTitle = document.querySelector('.c-title');
 
-            eTitle.addEventListener('click', function () {
-                fTitleForm.classList.remove('hidden');
-                cTitle.classList.remove('hidden');
-                eTitle.classList.add('hidden');
-            });
-            cTitle.addEventListener('click', function () {
-                fTitleForm.classList.add('hidden');
-                cTitle.classList.add('hidden');
-                eTitle.classList.remove('hidden');
-            });
-
-
-
-
-
-        });
-    </script>
 
     <!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock -->
     <script>
-        // Get the element with class "menu1"
+
         const dockElement = document.querySelector('.dock');
         const exdockElement = document.querySelector('.ex-dock');
+        const dclose = document.getElementById('dclose');
+
+        // Check if the screen width is smaller than a certain threshold (e.g., 768px for common mobile screen width)
+        if (window.innerWidth < 768) {
 
 
-        // Add event listener for hover
-        dockElement.addEventListener('mouseenter', () => {
-            // Add the "expanded" class to the element
-            exdockElement.classList.add('expandeddock');
-        });
 
-        exdockElement.addEventListener('mouseleave', () => {
-            // Remove the "expanded" class from the element when the mouse leaves
-            exdockElement.classList.remove('expandeddock');
-        });
+            let isExpanded = false;
+
+            // Add click event listener to toggle the "expandeddock" class
+            dockElement.addEventListener('click', () => {
+                if (isExpanded) {
+                    exdockElement.classList.remove('expandeddock');
+                    dclose.classList.remove('fa-times');
+                    dclose.classList.add('fa-bars');
+                } else {
+                    exdockElement.classList.add('expandeddock');
+                    dclose.classList.remove('fa-bars');
+                    dclose.classList.add('fa-times');
+
+                }
+                isExpanded = !isExpanded;
+            });
+
+            window.addEventListener('scroll', function () {
+                // Assuming exdockElement, dclose, and other relevant elements are defined
+                if (exdockElement.classList.contains('expandeddock')) {
+                    exdockElement.classList.remove('expandeddock');
+                    dclose.classList.remove('fa-times');
+                    dclose.classList.add('fa-bars');
+
+                    // You can add additional actions here if needed
+                }
+
+            });
+
+        } else {
+
+
+
+            // Add event listener for hover
+            dockElement.addEventListener('mouseenter', () => {
+                // Add the "expanded" class to the element
+                exdockElement.classList.add('expandeddock');
+            });
+
+            exdockElement.addEventListener('mouseleave', () => {
+                // Remove the "expanded" class from the element when the mouse leaves
+                exdockElement.classList.remove('expandeddock');
+            });
+        }
+
     </script>
 </body>
 

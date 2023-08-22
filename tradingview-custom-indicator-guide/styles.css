@@ -419,6 +419,12 @@ opacity: 0.8;
     opacity: 0.1;
 }
 
+@media (max-width: 767px) {
+    .expandeddock {
+        width: 90%;
+        height: 200px;
+    }
+}
 
 
 

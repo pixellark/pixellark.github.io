@@ -420,6 +420,15 @@ opacity: 0.8;
  height: 90px;
     opacity: 0.1;
 }
+@media (max-width: 767px) {
+    .expandeddock {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+
+
 /* new */
 h2{
     margin-top: 20px;
