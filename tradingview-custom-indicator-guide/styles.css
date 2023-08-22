@@ -451,7 +451,6 @@ padding: 3%;
 .footer{
     background-color: var(--white3);
     padding: 50px 10% 150px 10%;
-    border-radius: 20px 20px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;

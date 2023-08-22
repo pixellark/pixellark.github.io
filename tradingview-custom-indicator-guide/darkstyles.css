@@ -453,3 +453,24 @@ padding: 3%;
 
 /* footer footerfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooter */
 
+.footer{
+    background-color: var(--white3);
+    padding: 50px 10% 150px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--black3);
+    text-transform: capitalize;
+    
+}
+.footer li{
+    margin-bottom: 20px;
+}
