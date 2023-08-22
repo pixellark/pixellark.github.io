@@ -1,0 +1,388 @@
+<html>
+
+<head>
+    <title>Creating Your Own Indicator on TradingView: A Step-by-Step Guide - pixellark</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="English">
+    <meta property="og:url" content="https:pixellark.com">
+    <meta name="description" content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
+    <meta name="keywords" content="Creating indicators, TradingView, custom indicators, step-by-step guide, trading profits, Pine Script, coding skills, trading strategy, pixellark">
+    <meta name="author" content="pethum kavinda">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide">
+    <meta name="og:description" content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
+    <meta name="og:image" content="trading indicator thum 1.jpg">
+    <meta property="og:image:alt" content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide- PixelLark Solutions">
+    <meta name="twitter:card" content="trading indicator thum 1.jpg">
+    <meta name="twitter:title" content="Creating Your Own Indicator on TradingView: A Step-by-Step Guide">
+    <meta name="twitter:description" content="Learn how to create your custom indicator on TradingView for better trading profits. Follow our step-by-step guide, even with minimal coding skills.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https:pixellark.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https:pixellark.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https:pixellark.com/favicon-16x16.png">
+    <link rel="manifest" href="https:pixellark.com/site.webmanifest">
+    <link rel="mask-icon" href="https:pixellark.com/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https:pixellark.com/favicon.ico">
+    <meta property="og:site_name" content="PixelLark blog">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="icon" href="../iconpixellark.png" type="image/x-icon">
+    <link rel="icon" href="../pixellark.png" type="image/icon type">
+    <meta name="msapplication-config" content="https:pixellark.com/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="header.css">
+    <link id="stylesheet" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Font Imports */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        /* Font Usage */
+
+
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 30px;
+            width: 200px;
+            margin-left: 20px;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">PixelLark blog</div>
+        <div class="menu"><!-- In your HTML where you want to display the menu icon -->
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="h-sec0">
+            <!-- <img src="logo.png" alt=""> -->
+
+            <div class="h-sec1">
+                <form action="">
+                    <input type="text" class="searchbar" name="searchbar" id="" placeholder="search">
+                </form>
+
+            </div>
+            <div class="h-sec1">
+                <div class="menu1">
+                    <ul>
+                        <li>blog <i class="fas fa-chevron-down"></i></li>
+                        <li>blog </li>
+                        <li>blog </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="h-sec0">
+
+            <a href="" class="h-btn1">login</a>
+            <a href="" class="h-btn2">create your website</a>
+        </div>
+    </div>
+
+    <div class="menusec hiddenf">
+        <div class="menusec1">
+            <div class="menuclose">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="menucontent">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+                <div class="hbar"></div>
+                <p>Discover a world of exceptional household services at AL Masa AL Kuwaitiya. From skilled housemaids
+                    to reliable drivers, talented cooks, caring caregivers, and attentive babysitters, we have the
+                    perfect professionals to cater to your unique needs. Let us elevate your home experience and bring
+                    harmony to your daily life.</p>
+
+                <p class="email">something@gmail.com <br> +837458353</p>
+            </div>
+        </div>
+        <div class="menusec2">
+
+        </div>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-sec">
+            <div class="date">Aug 8, 2023</div>
+            <h1 class="title">Creating Your Own Indicator on TradingView: A Step-by-Step Guide</h1>
+
+
+            <div class="authorcard">
+                <img src="icon.png" alt="">
+                <div class="detail">
+                    <div class="author">Pethum Kavinda</div>
+                    <div class="labal">Written By</div>
+
+                </div>
+            </div>
+
+            <p>In the world of online trading, the ability to craft and customize your own indicators can significantly
+                enhance your trading prowess, leading to improved profits and better-informed decisions. Creating your
+                indicator gives you a unique edge by tailoring your analysis to match your trading strategy. Let's delve
+                into the essential skills, tools, and steps required to develop your indicator using the popular trading
+                platform, TradingView.</p>
+            <img class="img1" src="./trading indicator.png" alt="">
+
+            <h2>Skills You Need: Mathematics, Coding, Strategies, Logics</h2>
+
+            <ol>
+                <li><b>Mathematics: </b>A fundamental understanding of mathematics is crucial. You don't need to be a
+                    math whiz, but concepts like moving averages, oscillators, and trend lines will help you design
+                    effective indicators.</li>
+                <li><b>Coding: </b>While a full-fledged coding background isn't mandatory, a basic familiarity with
+                    programming concepts will be beneficial. It enables you to write the code required for your
+                    indicator.</li>
+                <li><b>Strategies: </b>A solid grasp of trading strategies is essential. Without a clear understanding
+                    of how different indicators work together, your custom indicator might not provide the desired
+                    insights.</li>
+                <li><b>Logics: </b>Logical thinking helps you devise indicator logic that aligns with your trading
+                    goals. This involves understanding how your chosen parameters will influence your indicator's
+                    output.</li>
+
+            </ol>
+            <img class="img1" src="./pine script.png" alt="pine script">
+
+            <h2>Pine Script: The Common Indicator Scripting Language</h2>
+
+            <p>Pine Script is the go-to language for creating custom indicators on TradingView. It's designed
+                specifically for non-programmers and traders, making it an accessible choice for those with limited
+                coding experience. Pine Script simplifies the process of translating your trading ideas into functional
+                indicators.</p>
+            <h2>Steps to Create Your Indicator:</h2>
+            <ol>
+                <li><strong>Conceptualize Your Indicator:</strong> Clearly define the purpose of your indicator. Are you
+                    looking to spot trends, measure volatility, or identify potential entry and exit points?</li>
+                <li><strong>Plan Your Strategy:</strong> Determine the parameters and calculations your indicator will
+                    involve. This could include formulae, moving averages, or complex mathematical models.</li>
+                <li><strong>Write the Pine Script Code:</strong> Use the Pine Script editor on TradingView to write your
+                    code. Break down your indicator into its constituent elements, such as plot lines, colors, and
+                    alerts.</li>
+                <li><strong>Test Thoroughly:</strong> Before deploying your indicator, extensively test it on historical
+                    data. This helps verify its accuracy and reliability in various market conditions.</li>
+                <li><strong>Refine and Optimize:</strong> Based on testing results, refine your indicator. Adjust
+                    parameters and logic to enhance its performance and alignment with your trading strategy.</li>
+                <li><strong>Implement Risk Management:</strong> Incorporate risk management principles into your trading
+                    strategy. Even the best indicators should be used alongside proper risk management practices.</li>
+            </ol>
+
+            <h2>Example Code: Simple Moving Average Crossover Indicator</h2>
+            <div class="code"><p>//@version=4 <br>
+    study(title="Simple Moving Average Crossover", shorttitle="SMAC", overlay=true) <br><br>
+    
+    fast_length = input(10, title="Fast MA Length") <br>
+    slow_length = input(20, title="Slow MA Length") <br><br>
+    
+    fast_ma = sma(close, fast_length) <br>
+    slow_ma = sma(close, slow_length) <br><br>
+    
+    plot(fast_ma, color=color.blue, title="Fast MA") <br>
+    plot(slow_ma, color=color.red, title="Slow MA")
+</p>
+            </div>
+
+            <h2>In Conclusion</h2>
+
+            <p>Creating your custom indicator on TradingView empowers you to align your trading strategy with a
+                personalized analysis tool. By leveraging your skills in mathematics, coding, strategies, and logical
+                thinking, you can craft indicators that enhance your decision-making process. Utilizing Pine Script's
+                simplicity, you can transform your ideas into functional indicators. Following the step-by-step process,
+                testing rigorously, and refining your indicators will pave the way for better trading outcomes.
+                Remember, combining indicators with effective risk management is key to success in the ever-evolving
+                world of trading.</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock -->
+    <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock --> <!-- dock -->
+    <div class="dock ">
+        <div class="dock2 ">
+            <div class="dock-sec1">
+                <a href="" class="publish">Theme</a>
+                <div class="more">| More <i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="ex-dock">
+        <div class="ex-dock-sec1">
+            <div class="ex-dock-sec11">
+                <span>theme</span>
+                <div id="toggleButton" class="btnd">Dark Mode</div>
+
+            </div>
+            <div class="vr"></div>
+            <div class="ex-dock-sec11">
+                <span>menu</span>
+
+                <a href="../" class="btnd">PixelLark</a>
+                <a href="../" class="btnd">About</a>
+
+            </div>
+            <div class="vr"></div>
+            <div class="ex-dock-sec11">
+                <span>Contact</span>
+                <a href="../" class="btnd">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer footerfooterfooterfooterfooterfooterfooterfooter -->
+
+    <div class="footer">
+        <ul>
+            <li><a href="../">home</a></li>
+            <li><a href="../">about</a></li>
+            <li><a href="../">contact</a></li>
+            <li><a href="../">pixellark</a></li>
+        </ul>
+        <ul>
+            <li><a href="../">home</a></li>
+            <li><a href="../">about</a></li>
+            <li><a href="../">contact</a></li>
+            <li><a href="../">pixellark</a></li>
+        </ul>
+        <ul>
+            <li><a href="../">home</a></li>
+            <li><a href="../">about</a></li>
+            <li><a href="../">contact</a></li>
+            <li><a href="../">pixellark</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="header.js"></script>
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const stylesheetLink = document.getElementById("stylesheet");
+
+        let isDarkMode = false;
+
+        toggleButton.addEventListener("click", () => {
+            isDarkMode = !isDarkMode;
+
+            if (isDarkMode) {
+                stylesheetLink.href = "darkstyles.css";
+                toggleButton.textContent = "Light Mode";
+            } else {
+                stylesheetLink.href = "styles.css";
+                toggleButton.textContent = "Dark Mode";
+            }
+        });
+
+    </script>
+
+
+    <!-- hover menu -->
+    <script>
+        // Get the element with class "menu1"
+        const menuElement = document.querySelector('.menu1');
+
+        // Add event listener for hover
+        menuElement.addEventListener('mouseenter', () => {
+            // Add the "expanded" class to the element
+            menuElement.classList.add('expanded');
+        });
+
+        menuElement.addEventListener('mouseleave', () => {
+            // Remove the "expanded" class from the element when the mouse leaves
+            menuElement.classList.remove('expanded');
+        });
+    </script>
+
+    <!-- menusec -->
+    <script>
+        const menuDiv = document.querySelector('.menu');
+        const menuSecDiv = document.querySelector('.menusec');
+
+
+        menuDiv.addEventListener('click', () => {
+            menuSecDiv.classList.remove('hiddenf');
+            var header = document.querySelector('.headerdes');
+            var scrollY = window.scrollY || window.pageYOffset;
+
+        });
+
+
+        menuSecDiv.addEventListener('click', () => {
+            menuSecDiv.classList.add('hiddenf');
+            var header = document.querySelector('.headerdes');
+
+
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const eTitle = document.querySelector('.e-title');
+            const fTitleForm = document.querySelector('.f-title');
+            const cTitle = document.querySelector('.c-title');
+
+            eTitle.addEventListener('click', function () {
+                fTitleForm.classList.remove('hidden');
+                cTitle.classList.remove('hidden');
+                eTitle.classList.add('hidden');
+            });
+            cTitle.addEventListener('click', function () {
+                fTitleForm.classList.add('hidden');
+                cTitle.classList.add('hidden');
+                eTitle.classList.remove('hidden');
+            });
+
+
+
+
+
+        });
+    </script>
+
+    <!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock --><!-- dock -->
+    <script>
+        // Get the element with class "menu1"
+        const dockElement = document.querySelector('.dock');
+        const exdockElement = document.querySelector('.ex-dock');
+
+
+        // Add event listener for hover
+        dockElement.addEventListener('mouseenter', () => {
+            // Add the "expanded" class to the element
+            exdockElement.classList.add('expandeddock');
+        });
+
+        exdockElement.addEventListener('mouseleave', () => {
+            // Remove the "expanded" class from the element when the mouse leaves
+            exdockElement.classList.remove('expandeddock');
+        });
+    </script>
+</body>
+
+</html>
