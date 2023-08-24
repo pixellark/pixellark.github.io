@@ -1,23 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" viewBox="0 0 1366 768">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #100d26;
-      }
-
-      .cls-1, .cls-2 {
-        fill-rule: evenodd;
-      }
-
-      .cls-2 {
-        fill: #251e3e;
-      }
-    </style>
-  </defs>
-  <g id="Artboard_1" data-name="Artboard 1">
-    <path class="cls-1" d="M-9,95l386,6L531.021,76c14.983-2.432,54.746-3.9,107.817,2.38L1430,172l106,568-139,36H-26Z"/>
-    <path id="Shape_12_copy" data-name="Shape 12 copy" class="cls-1" d="M-9,15l386,6L531.021-4C546-6.43,585.767-7.9,638.838-1.618L1430,92l106,568-139,36H-26Z"/>
-    <path class="cls-2" d="M-15,83l326-3L448,38,315,57-31,43Z"/>
-    <path class="cls-2" d="M-26,246l229,6,445,46,97-3L624,345-4,324Z"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#100D26;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#251E3E;}
+</style>
+<g id="Artboard_1">
+	<path class="st0" d="M-9,95l386,6l154-25c15-2.4,54.7-3.9,107.8,2.4L1430,172l106,568l-139,36H-26L-9,95z"/>
+	<path id="Shape_12_copy" class="st0" d="M-9,15l386,6L531-4c15-2.4,54.7-3.9,107.8,2.4L1430,92l106,568l-139,36H-26L-9,15z"/>
+	<path class="st1" d="M-15,83l326-3l137-42L315,57L-31,43L-15,83z"/>
+	<path class="st1" d="M-26,246l229,6l445,46l97-3l-121,50L-4,324L-26,246z"/>
+</g>
 </svg>
