@@ -1,0 +1,66 @@
+document.getElementById("stoneForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var formData = new FormData(this);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "upload.php", true);
+
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            document.getElementById("message").innerHTML = xhr.responseText;
+            document.getElementById("stoneForm").reset();
+            fetchStones();
+        } else {
+            document.getElementById("message").innerHTML = "Error: " + xhr.status;
+        }
+    };
+
+    xhr.send(formData);
+});
+
+function fetchStones() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "fetch_stones.php", true);
+
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var stones = JSON.parse(xhr.responseText);
+            var stoneList = document.getElementById("stoneRecords");
+            stoneList.innerHTML = ""; // Clear the existing list
+
+            stones.forEach(function (stone) {
+                var cardDiv = document.createElement("div");
+                cardDiv.className = "card";
+
+                cardDiv.innerHTML = `
+                 
+                    <div class="cards1">
+                    <h2>${stone.name}</h2>
+
+                    <p>${stone.description}  <a href="${stone.link}"
+                        target="_blank" rel="noopener noreferrer">see more...</a></p>
+
+                       
+
+                    <h3>uses:</h3>
+                    <strong>${stone.uses}</strong>
+<br>
+                  
+
+                </div>
+                <div class="cards2">
+                    <img src="${stone.img}" alt="">
+
+                </div>
+                `;
+                stoneList.appendChild(cardDiv);
+            });
+        }
+    };
+
+    xhr.send();
+}
+
+// Fetch stones when the page loads
+fetchStones();
