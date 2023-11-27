@@ -139,8 +139,10 @@
             // Callback function when the Image object finishes loading
             img.onload = function() {
                 // Set the dimensions of the result canvas to width:auto and height:500px
-                resultCanvas.width = (img.width * 500) / img.height;
-                resultCanvas.height = 500;
+         
+
+                resultCanvas.height = (img.height * 500) / img.width;
+                resultCanvas.width = 500;
 
                 // Draw the image onto the result canvas, resizing if necessary
                 ctx.drawImage(img, 0, 0, resultCanvas.width, resultCanvas.height);
