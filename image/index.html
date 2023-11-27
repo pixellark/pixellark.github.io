@@ -186,10 +186,18 @@
                 // Calculate starting y-coordinate for aligning the additional text below the main text
                 const additionalTextYCoordinate = mainTextYCoordinate + 20; // Leave some padding
 
-                // Draw each line of the additional text onto the result canvas
-                additionalTextLines.forEach((line, index) => {
-                    ctx.fillText(line, 20, additionalTextYCoordinate + index * 25); // Adjust the spacing as needed
-                });
+        
+
+
+                // Calculate starting x-coordinate for aligning the additional text to the right
+const additionalTextXCoordinate = resultCanvas.width - 10; // Leave some padding
+
+// Draw each line of the additional text onto the result canvas, aligning to the right
+additionalTextLines.forEach((line, index) => {
+    const textWidth = ctx.measureText(line).width;
+    ctx.fillText(line, additionalTextXCoordinate - textWidth, additionalTextYCoordinate + index * 25); // Adjusted for 10 pixels up
+});
+
 
                 // Set the download link attributes for the result image
                 downloadLink.href = resultCanvas.toDataURL("image/png");
@@ -208,27 +216,28 @@
         reader.readAsDataURL(imageFile);
     }
 
-    // Function to split text into lines based on maxWidth
-    function getLines(ctx, text, maxWidth) {
-        const words = text.split(' ');
-        let lines = [];
-        let currentLine = words[0];
+  // Function to split text into lines based on maxWidth and reverse the order
+function getLines(ctx, text, maxWidth) {
+    const words = text.split(' ');
+    let lines = [];
+    let currentLine = words[0];
 
-        for (let i = 1; i < words.length; i++) {
-            const word = words[i];
-            const width = ctx.measureText(currentLine + ' ' + word).width;
+    for (let i = 1; i < words.length; i++) {
+        const word = words[i];
+        const width = ctx.measureText(currentLine + ' ' + word).width;
 
-            if (width < maxWidth) {
-                currentLine += ' ' + word;
-            } else {
-                lines.push(currentLine);
-                currentLine = word;
-            }
+        if (width < maxWidth) {
+            currentLine += ' ' + word;
+        } else {
+            lines.unshift(currentLine); // Add the current line to the beginning of the array
+            currentLine = word;
         }
-
-        lines.push(currentLine);
-        return lines;
     }
+
+    lines.unshift(currentLine); // Add the last line to the beginning of the array
+    return lines;
+}
+
 </script>
 
 <!-- Rest of the HTML content remains unchanged -->
