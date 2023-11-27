@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+
+
+
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #resultCanvas {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 20px;
+            height: 500px;
+        }
+
+        #downloadLink {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        #downloadLink:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text to Image Converter</h1>
+    <form>
+        <label for="textInput">Enter Text:</label>
+        <input type="text" id="textInput" name="textInput" required>
+
+        <label for="imageInput">Choose Image:</label>
+        <input type="file" id="imageInput" name="imageInput" accept="image/*" required>
+
+        <button type="button" onclick="processImage()">Submit</button>
+    </form>
+
+    <canvas id="resultCanvas" style="display: none;"></canvas>
+    <a id="downloadLink" style="display: none;">Download Result Image</a>
+
+<!-- Existing HTML content remains unchanged -->
+
+
+<script>
+    // Function to process the image and add text
+    function processImage() {
+        // Get the text input and image input elements
+        const textInput = document.getElementById("textInput").value; // Capitalize the text
+        const imageInput = document.getElementById("imageInput");
+        const imageFile = imageInput.files[0];
+
+        // Check if an image is selected
+        if (!imageFile) {
+            alert("Please choose an image");
+            return;
+        }
+
+        // Get the result canvas and download link elements
+        const resultCanvas = document.getElementById("resultCanvas");
+        const downloadLink = document.getElementById("downloadLink");
+
+        // Get the 2D context of the result canvas
+        const ctx = resultCanvas.getContext("2d");
+
+        // Create a new Image object and FileReader
+        const img = new Image();
+        const reader = new FileReader();
+
+        // Callback function when FileReader finishes reading the image
+        reader.onload = function(e) {
+            // Callback function when the Image object finishes loading
+            img.onload = function() {
+                // Set the dimensions of the result canvas to width:auto and height:500px
+                resultCanvas.width = (img.width * 500) / img.height;
+                resultCanvas.height = 500;
+
+                // Draw the image onto the result canvas, resizing if necessary
+                ctx.drawImage(img, 0, 0, resultCanvas.width, resultCanvas.height);
+
+                // Set fo nt style for the text with increased size, drop shadow, and custom font
+                ctx.font = "600 40px 'Oswald', sans-serif";// Use Oswald font with weight 600
+                ctx.fillStyle = "white";
+                ctx.textBaseline = "bottom"; // Align text to the bottom
+                ctx.shadowColor = "rgba(0, 0, 0, 0.7)";
+                ctx.shadowOffsetX = 5;
+                ctx.shadowOffsetY = 5;
+                ctx.shadowBlur = 5;
+
+                // Calculate maximum width for the text
+                const maxWidth = resultCanvas.width - 20; // Leave some padding
+
+                // Split the text into lines based on maxWidth
+                const lines = getLines(ctx, textInput, maxWidth);
+
+                // Calculate starting y-coordinate for aligning to the bottom
+                const yCoordinate = resultCanvas.height - 20; // Leave some padding
+
+                // Draw each line of text onto the result canvas
+                lines.forEach((line, index) => {
+                    ctx.fillText(line, 20, yCoordinate - index * 40); // Draw in reverse order for bottom alignment
+                });
+
+                // Set the download link attributes for the result image
+                downloadLink.href = resultCanvas.toDataURL("image/png");
+                downloadLink.download = "result_image.png";
+
+                // Display the result canvas and download link
+                resultCanvas.style.display = "block";
+                downloadLink.style.display = "block";
+            };
+
+            // Set the source of the Image object to the data URL of the selected image
+            img.src = e.target.result;
+        };
+
+        // Read the selected image as a data URL
+        reader.readAsDataURL(imageFile);
+    }
+
+   // Function to split text into lines based on maxWidth and reverse the order
+function getLines(ctx, text, maxWidth) {
+    const words = text.split(' ');
+    let lines = [];
+    let currentLine = words[0];
+
+    for (let i = 1; i < words.length; i++) {
+        const word = words[i];
+        const width = ctx.measureText(currentLine + ' ' + word).width;
+
+        if (width < maxWidth) {
+            currentLine += ' ' + word;
+        } else {
+            lines.unshift(currentLine); // Add the current line to the beginning of the array
+            currentLine = word;
+        }
+    }
+
+    lines.unshift(currentLine); // Add the last line to the beginning of the array
+    return lines;
+}
+
+</script>
+
+<!-- Rest of the HTML content remains unchanged -->
+
+
+<!-- Rest of the HTML content remains unchanged -->
+
+    <!-- Rest of the HTML content remains unchanged -->
+
+</body>
+
+</html>
