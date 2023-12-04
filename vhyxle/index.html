@@ -109,6 +109,32 @@
         }
     </style>
 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#contact").on("click", function (event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor link
+
+      // Scroll to the contactus section
+      $("html, body").animate({
+        scrollTop: $(".contactus").offset().top
+      }, 1000); // Adjust the duration as needed
+    });
+  });
+</script>
+<script>
+    $(document).ready(function () {
+      $("#contact1").on("click", function (event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor link
+  
+        // Scroll to the contactus section
+        $("html, body").animate({
+          scrollTop: $(".contactus").offset().top
+        }, 1000); // Adjust the duration as needed
+      });
+    });
+  </script>
+
 
 
 </head>
@@ -130,8 +156,8 @@
 
             <p>At Vhyxle Media, we don't just create campaigns; we orchestrate digital symphonies. Dive into a world
                 where innovation meets strategy, and every post is a potential masterpiece.</p>
-            <a href="#" class="btn1">start now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            <a href="#" class="btn2">contact us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a id="contact" href="#" class="btn1">start now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a id="contact1" href="#" class="btn2">contact us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 
 
 
