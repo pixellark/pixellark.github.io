@@ -122,3 +122,77 @@ textarea, input[type="number"], input[type="text"], input[type="tel"], input[typ
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  @media (max-width: 767px) {
+    .p-card h1{
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        opacity: 0.8;
+        text-align: center;
+    
+    }
+    .p-card h3{
+        font-size: 26px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+    }
+    .p-card h4{
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    .p-card h2{
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        border-radius: 50px;
+        padding: 10px 20px;
+        background-color: var(--white2);
+    }
+    .error1{
+        color: red;
+        font-size: 12px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-top: 10px;
+    
+    }
+    
+    #emailForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    
+    textarea, input[type="number"], input[type="text"], input[type="tel"], input[type="email"]{
+        font-size: 18px;
+        background-color: var(--white1);
+        border: none;
+        border-radius: 50px;
+       margin-bottom:10px;
+       width: 100%;
+       padding: 10px 20px;
+    }
+    .p-con button {
+        font-size: 18px;
+        background-color: black;
+        border: none;
+        border-radius: 50px;
+       margin-bottom: 5px;
+       width: 100%;
+       padding: 10px 20px;
+       color: white;
+       cursor: pointer;
+       margin-bottom: 20px;
+    
+    }
+  }
