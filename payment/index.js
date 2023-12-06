@@ -16,13 +16,13 @@ paypal.Buttons({
         return actions.order.capture().then(function (details) {
             console.log(details)
             // JavaScript code
-window.location.href = 'success.php';
+window.location.href = 'success.html';
 
         })
     },
     onCancel: function (data) {
       // JavaScript code
-window.location.href = 'Oncancel.php';
+window.location.href = 'Oncancel.html';
 
     }
 }).render('#paypal-payment-button');
