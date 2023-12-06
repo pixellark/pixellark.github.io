@@ -1,0 +1,124 @@
+:root{
+    --white1: #ffffff;
+    --white2: #f8f8f8;
+    --white3: #e9e9e9b1;
+    --black1: #222222;
+    --black2: #2c2c2c;
+
+}
+
+.phero{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    margin-top: 100px;
+    z-index: 99999;
+
+}
+.p-con{
+padding: 20px;
+background-color: var(--white3);
+border-radius: 20px;
+}
+.p-card{
+    padding: 20px;
+background-color:var(--white1);
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+max-width:400px;
+}
+.p-card h1{
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    opacity: 0.8;
+    text-align: center;
+
+}
+.p-card h3{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.p-card h4{
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.p-card h2{
+    font-size: 49px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--white2);
+}
+.error1{
+    color: red;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+#emailForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+textarea, input[type="number"], input[type="text"], input[type="tel"], input[type="email"]{
+    font-size: 18px;
+    background-color: var(--white1);
+    border: none;
+    border-radius: 50px;
+   margin-bottom:10px;
+   width: 100%;
+   padding: 10px 20px;
+}
+.p-con button {
+    font-size: 18px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+   margin-bottom: 5px;
+   width: 100%;
+   padding: 10px 20px;
+   color: white;
+   cursor: pointer;
+   margin-bottom: 20px;
+
+}
+
+#loading-spinner {
+    display: none;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    z-index: 9999999;
+ 
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
