@@ -1477,7 +1477,7 @@ margin-left: 28%;
   /* contact us */  /* contact us */  /* contact us */  /* contact us */  /* contact us */  /* contact us */
   .contact{
  display: flex;
-    background-image: url('img/white\ blue\ simple\ graphic\ design\ zoom\ virtual\ background.png');
+    background-image: url('white1');
     padding: 50px;
     background-size: cover;
 
@@ -1485,7 +1485,7 @@ margin-left: 28%;
   @media (max-width: 767px) {
     .contact{
 
-           background-image: url('img/r1.png');
+           background-image: url('white1');
            padding-top: 80px;
 
 
