@@ -716,7 +716,7 @@ body {
 
 /* whatsapp whatsapp whatsappwhatsappwhatsappwhatsappwhatsappwhatsappwhatsapp*/
 .btn-whatsapp-pulse {
-    background: #25d366;
+    background: rgb(30, 199, 25);
     color: white;
     position: fixed;
     bottom: 40px;
@@ -739,19 +739,19 @@ body {
 
 @media (max-width: 767px) {
     .btn-whatsapp-pulse {
-        padding: 30px;
+        padding: 25px;
         bottom: 30px;
+        font-size: 30px;
     }
-
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(211, 37, 37, 0.5);
+        box-shadow: 0 0 0 0 rgb(255, 255, 255);
     }
 
     80% {
-        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 8px rgba(37, 211, 102, 0);
     }
 }
 
@@ -762,52 +762,45 @@ body {
 }
 
 @media (max-width: 767px) {
+    
     .btn-whatsapp-pulse-border {
-        bottom: 110px;
-
+        padding: 25px;
+        bottom: 100px;
     }
-
 }
+
+
 
 .btn-whatsapp-pulse-border::before {
     content: "";
     position: absolute;
     border-radius: 50%;
     padding: 25px;
-    border: 5px solid #25d366;
+    border: 11px solid rgb(30, 199, 25);
     opacity: 0.75;
-    animation-name: pulse-border;
+    animation-name: pulse;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
-@keyframes pulse-border {
-    0% {
-        padding: 25px;
-        opacity: 0.75;
-    }
-
-    75% {
-        padding: 50px;
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
+@media (max-width: 767px) {
+    .btn-whatsapp-pulse-border::before {
+        border:  0px solid rgb(30, 199, 25);
     }
 }
 
 .callphone {
     font-size: 25px;
-    background-color: red;
+    background-color: rgb(30, 199, 25);
 }
 
-.phone {
-    display: none;
-}
 
 @media (max-width: 858px) {
+    
+    .callphone{
+        font-size: 20px;
+    }
 
     .desktop {
         display: none;
