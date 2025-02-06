@@ -165,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fullImage.style.maxWidth = "100%";  // Ensure it scales responsively
     fullImage.style.maxHeight = "100%"; // Ensure it scales responsively
     fullImage.style.objectFit = "contain"; // Maintain aspect ratio and fit within the viewport
+    fullImage.style.borderRadius = "12px";
     fullscreenDiv.appendChild(fullImage);
 
     // Append the full-screen div to the body
