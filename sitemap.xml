@@ -9,7 +9,7 @@
 
     <!-- Services -->
     <url>
-        <loc>https://www.pixellark.com/services</loc>
+        <loc>https://www.pixellark.com/pos</loc>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
@@ -23,7 +23,7 @@
 
     <!-- Blog -->
     <url>
-        <loc>https://www.pixellark.com/blog</loc>
+        <loc>https://www.pixellark.com/services</loc>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
