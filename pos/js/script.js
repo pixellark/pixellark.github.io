@@ -52,6 +52,12 @@ function openDialer() {
 if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     console.log("Mobile version");
 
+    let cursurh = document.querySelectorAll(".cursor");
+
+    cursurh.forEach(c => {
+        c.classList.add("hidden");
+    });
+
     var contact = document.getElementById("contactbtnn");
     contact.querySelector("i").remove(); // Remove existing icon if present
     contact.insertAdjacentHTML("beforeend", `<i class="fa-solid fa-phone"></i>`);
