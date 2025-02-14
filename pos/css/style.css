@@ -211,7 +211,9 @@ h2 {
 .cursor {
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(179, 173, 168, 0.849);
+  /* border: 2px solid rgba(179, 173, 168, 0.849); */
+  border: none;
+  background: radial-gradient(circle, #ff416daa, #ff416d80, #ff416d08, #ff416d04, #ff416d00);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
