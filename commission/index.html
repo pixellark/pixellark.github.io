@@ -403,49 +403,62 @@
                 gap: 2rem;
             }
         }
+
         body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 800px;
-      width: 100%;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .rate-box {
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      background-color: #f0f4f8;
-    }
-    .rate-box h2 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-    .rate {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #2c7be5;
-    }
-    .hidden {
-        display: none;
-    }
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .rate-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background-color: #f0f4f8;
+        }
+
+        .rate-box h2 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .rate {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2c7be5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .updt {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -458,7 +471,7 @@
     <div class="container">
         <header>
             <div class="badge">
-                <i class="fas fa-crown" style="margin-right: 8px;"></i> EXCLUSIVE 
+                <i class="fas fa-crown" style="margin-right: 8px;"></i> EXCLUSIVE
             </div>
             <h1>Sales Commission Rates</h1>
             <p class="subtitle">Highest Paying Commission Rates For Our Valued Partners</p>
@@ -552,23 +565,25 @@
         <div class="container">
             <h1>Sales Commission Rates</h1>
             <div class="rate-box">
-              <h2>Basic Package</h2>
-              <div class="rate">30%</div>
+                <h2>Basic Package</h2>
+                <div class="rate">30%</div>
             </div>
             <div class="rate-box">
-              <h2>Standard Package</h2>
-              <div class="rate">30%</div>
+                <h2>Standard Package</h2>
+                <div class="rate">30%</div>
             </div>
             <div class="rate-box">
-              <h2>Premium Package</h2>
-              <div class="rate">30%</div>
+                <h2>Premium Package</h2>
+                <div class="rate">30%</div>
             </div>
             <div class="rate-box">
-              <h2>Custom Solutions</h2>
-              <div class="rate">8%</div>
+                <h2>Custom Solutions</h2>
+                <div class="rate">8%</div>
             </div>
-          </div>
+        </div>
     </div>
+
+    <p class="updt">Last Update: 08/12/2024</p>
 
     <script>
         // Animate elements on scroll
