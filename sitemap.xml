@@ -1,37 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <!-- Homepage -->
     <url>
         <loc>https://www.pixellark.com/</loc>
+        <lastmod>2025-09-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Services -->
+    <!-- System Gallery URLs -->
     <url>
-        <loc>https://www.pixellark.com/pos</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- about -->
-    <url>
-        <loc>https://www.pixellark.com/about</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Blog -->
-    <url>
-        <loc>https://www.pixellark.com/services</loc>
-        <changefreq>daily</changefreq>
+        <loc>https://pixellark.com/system_gallery/computer-shops</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Contact -->
     <url>
-        <loc>https://www.pixellark.com/contact-us</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://pixellark.com/system_gallery/custom</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/distribution</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/medical-centers</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/mobile-phones</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/pharmacy</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/restaurants</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/retail-shops</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/studios</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/supermarkets</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/textile</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery/wholesale</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pixellark.com/system_gallery</loc>
+        <lastmod>2025-09-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
 </urlset>
