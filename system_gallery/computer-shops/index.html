@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Computer Repair Shop Management System | Boost Profits 55% | Pixellark</title>
+    <meta name="description"
+        content="Increase your computer shop profits by 55% with our complete management system. Track devices, manage inventory & delight customers. Free 10-day trial!">
+    <meta name="keywords"
+        content="computer repair shop management system, repair shop software, computer shop POS, device tracking system, repair management software, inventory management for repair shops, customer management system">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/computer-shops">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Best Computer Repair Shop Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Revolutionary repair shop management system that increases profits by 55%. Transform your computer repair business with our cutting-edge solution.">
+    <meta property="og:image" content="https://pixellark.com/img/computer.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/computer-shops">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Best Computer Repair Shop Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary repair shop management system that increases profits by 55%. Transform your computer repair business today.">
+    <meta name="twitter:image" content="https://pixellark.com/img/computer.webp">
+
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Computer Repair Shop Management System",
+            "description": "Advanced management system specifically designed for computer repair shops and electronics service centers",
+            "brand": {
+                "@type": "Brand",
+                "name": "Pixellark Solutions"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "179",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "Pixellark Solutions"
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "289",
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            "category": "Repair Shop Management Software"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "How quickly can we get the system up and running?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most repair shops are fully operational within 48 hours. Our expert installation team handles hardware setup, data migration, and comprehensive staff training."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Can the system work offline during power outages?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Our system includes offline mode functionality with UPS backup integration. You can continue processing repairs during power outages."
+            }
+            }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pixellark Solutions",
+    "description": "Computer repair shop management software provider",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nilanthattuwa, Ridigama",
+        "addressLocality": "Kurunegala",
+        "postalCode": "60040",
+        "addressCountry": "LK"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "7.8731",
+        "longitude": "80.7718"
+    },
+    "telephone": "+94789797988",
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "areaServed": "Sri Lanka",
+    "sameAs": [
+        "https://www.facebook.com/pixellark",
+        "https://www.linkedin.com/company/pixellark-solutions/",
+        "https://www.instagram.com/pixellark_solutions/",
+        "https://github.com/pixellark"
+    ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions computer repair shop management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-tools" style="margin-right: 0.5rem;"></i>
+                    #1 Computer Repair Shop System of 2025
+                </div>
+                <h1 class="hero-title">Complete Management System for Computer Repair Shops</h1>
+                <p class="hero-subtitle">Transform your repair business with our all-in-one management system. Track
+                    devices, manage inventory, handle billing, and boost profits by 55% while delivering exceptional
+                    customer service.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">55%</span>
+                        <span class="stat-label">Profit Increase</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5x</span>
+                        <span class="stat-label">Faster Processing</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://www.system-navigator.com" target="_blank" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </a>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system revolutionized our repair shop. We've increased efficiency
+                        by 70%, eliminated lost devices, and our customers love the professional SMS updates. Best
+                        investment ever!"</p>
+                    <p class="testimonial-author">- Dulanjana Ranasinghe, Dr PC, Ridigama</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why 25+ Repair Shops Choose Our System</h2>
+                    <p class="section-subtitle">Every feature designed to streamline your operations and maximize
+                        profits</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="feature-title">Device Tracking & Management</h3>
+                        <p class="feature-description">Never lose track of customer devices again. Complete repair
+                            lifecycle management from intake to delivery.</p>
+                        <ul class="feature-benefits">
+                            <li>Barcode/QR code device labeling</li>
+                            <li>Real-time repair status updates</li>
+                            <li>Automated customer notifications</li>
+                            <li>Photo documentation system</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 class="feature-title">Repair Job Management</h3>
+                        <p class="feature-description">Streamline your repair workflow with intelligent job tracking and
+                            technician assignment.</p>
+                        <ul class="feature-benefits">
+                            <li>Job priority management</li>
+                            <li>Technician workload balancing</li>
+                            <li>Repair time estimation</li>
+                            <li>Service history tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 class="feature-title">Parts & Inventory Control</h3>
+                        <p class="feature-description">Smart inventory management that prevents stockouts and optimizes
+                            parts procurement.</p>
+                        <ul class="feature-benefits">
+                            <li>Auto-reorder alerts</li>
+                            <li>Supplier price comparison</li>
+                            <li>Parts usage analytics</li>
+                            <li>Dead stock identification</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 class="feature-title">Customer Management</h3>
+                        <p class="feature-description">Build lasting relationships with comprehensive customer profiles
+                            and communication tools.</p>
+                        <ul class="feature-benefits">
+                            <li>Complete repair history</li>
+                            <li>Automated SMS notifications</li>
+                            <li>Warranty tracking</li>
+                            <li>Customer feedback system</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">Business Analytics</h3>
+                        <p class="feature-description">Data-driven insights to identify profit opportunities and
+                            optimize your repair business.</p>
+                        <ul class="feature-benefits">
+                            <li>Revenue & profit analysis</li>
+                            <li>Technician performance metrics</li>
+                            <li>Popular repair trends</li>
+                            <li>Customer retention insights</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h3 class="feature-title">Billing & Invoicing</h3>
+                        <p class="feature-description">Professional invoicing with multiple payment options and
+                            automated follow-ups.</p>
+                        <ul class="feature-benefits">
+                            <li>Customizable invoice templates</li>
+                            <li>Multiple payment methods</li>
+                            <li>Automatic payment reminders</li>
+                            <li>Tax compliance reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Setup in Under 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Our expert team handles
+                        everything - from installation to staff training. Your repair shop will be running with the new
+                        system within two days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">See Your ROI in 45 Days</h2>
+                    <p class="roi-subtitle">Repair shop owners typically recover their investment within 6 weeks through
+                        improved efficiency and reduced operational costs.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">50%</span>
+                        <span class="roi-label">Average Cost Savings</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">3x</span>
+                        <span class="roi-label">Faster Repairs</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">Zero</span>
+                        <span class="roi-label">Lost Devices</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">System Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Simple, Transparent Pricing</h2>
+                    <p class="section-subtitle">Choose the perfect plan for your repair shop. No hidden fees, no
+                        long-term contracts.</p>
+                </div>
+
+                <!-- Toggle Buttons -->
+                <div class="pricing-toggle">
+                    <button class="pricing-toggle-btn active" id="btnGridOne">Basic Systems</button>
+                    <button class="pricing-toggle-btn" id="btnGridTwo">Advanced Systems</button>
+                </div>
+
+                <!-- Wrapper -->
+                <div class="pricing-wrapper">
+                    <!-- Grid One -->
+                    <div class="pricing-grid" id="gridOne">
+                        <div class="pricing-grid">
+                            <!-- Starter -->
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Starter</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR67,500</span>
+                                        <span class="price-period">/ Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>1 Terminal included</li>
+                                        <li>Basic device tracking</li>
+                                        <li>Customer management</li>
+                                        <li>Simple billing system</li>
+                                        <li>Basic reporting</li>
+                                        <li>Email support</li>
+                                        <li>Perfect for small shops</li>
+                                        <li>Data backup & recovery</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                            </div>
+
+                            <!-- Professional -->
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Most Popular</div>
+                                <div>
+                                    <h3 class="pricing-title">Professional</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR85,500</span>
+                                        <span class="price-period">/ Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Starter</li>
+                                        <li>Multiple Counters included</li>
+                                        <li>Advanced inventory management</li>
+                                        <li>SMS notifications</li>
+                                        <li>Barcode / QR labeling</li>
+                                        <li>Repair workflow management</li>
+                                        <li>Advanced analytics</li>
+                                        <li>Priority phone support</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Free Trial</button>
+                            </div>
+
+                            <!-- Enterprise -->
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Enterprise</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR120,000</span>
+                                        <span class="price-period">/ Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Professional</li>
+                                        <li>Unlimited terminals</li>
+                                        <li>Multi-location management</li>
+                                        <li>Advanced warranty tracking</li>
+                                        <li>Custom integrations</li>
+                                        <li>White-label options</li>
+                                        <li>Dedicated account manager</li>
+                                        <li>Staff training sessions</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Two -->
+                    <div class="pricing-grid" id="gridTwo" style="display:none;">
+                        <div class="pricing-grid">
+                            <!-- Professional Plus -->
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Professional Plus</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR95,000</span>
+                                        <span class="price-period">/ Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>All Professional features</li>
+                                        <li>Advanced technician management</li>
+                                        <li>Automated job scheduling</li>
+                                        <li>Advanced reporting dashboard</li>
+                                        <li>API access for integrations</li>
+                                        <li>Mobile technician app</li>
+                                        <li>Custom fields & workflows</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                            </div>
+
+                            <!-- Complete Solution -->
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Best Value</div>
+                                <div>
+                                    <h3 class="pricing-title">Complete Solution</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR150,000</span>
+                                        <span class="price-period">/ Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Enterprise + Professional Plus</li>
+                                        <li>AI-powered repair suggestions</li>
+                                        <li>Advanced customer analytics</li>
+                                        <li>Financial performance insights</li>
+                                        <li>Vendor management system</li>
+                                        <li>Quality control workflows</li>
+                                        <li>Full custom branding</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Free Trial</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Repair Shop Owners Across Sri Lanka</h2>
+                    <p class="section-subtitle">Real stories from real business owners who transformed their operations
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Our repair turnaround time decreased by 60% after implementing
+                                this system. The device tracking feature eliminated all confusion, and customers love
+                                the SMS updates about their repair status."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/dulanjana.png"
+                                    alt="pixellark customer review about computers and repair shops system"></div>
+                            <div class="testimonial-info">
+                                <h4>Dulanjana Ranasinghe</h4>
+                                <p>Owner, Dr PC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Transform Your Repair Shop?</h2>
+                <p class="cta-subtitle">Join 25+ successful repair businesses across Sri Lanka who've streamlined their
+                    operations and increased profits with our management system. Get started with a free trial today.
+                </p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 12% Off!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">09</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">18</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">32</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">45</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Request a Free Trial Now
+                    </button>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Sales: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our repair shop management system</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How quickly can we get the system up and running?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most repair shops are fully operational within 48 hours. Our expert installation team handles
+                        hardware setup, data migration, and comprehensive staff training. We also provide dedicated
+                        support during your first two weeks to ensure smooth operations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system work offline during power outages?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system includes offline mode functionality with UPS backup integration. You can
+                        continue processing repairs, updating device statuses, and managing inventory during power
+                        outages. All data automatically syncs when power returns.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Does it integrate with parts suppliers and vendors?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system integrates with major parts suppliers in Sri Lanka and internationally.
+                        It can automatically compare prices, place orders, and track deliveries. We also offer custom
+                        integrations for your preferred suppliers.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is there a contract or can we cancel anytime?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        No long-term contracts required. Our lifetime packages mean you own the system outright after
+                        purchase. For subscription options, you can cancel anytime with 30 days' notice. However, 98% of
+                        our customers continue using the system because of the incredible results.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of support and training do you provide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Every package includes comprehensive onboarding with personalized training sessions for your
+                        team. We provide 24/7 support for the first week, followed by business hours support (8am-6pm,
+                        except Sundays) for 6 months. Video tutorials and documentation are always available.
+                        <br><br>
+                        <strong>Note: Support terms may vary for custom packages or specific business
+                            requirements.</strong>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we customize the system for our specific repair processes?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system is highly customizable to match your specific repair workflows. From custom
+                        repair categories to specialized billing structures, we can tailor everything to your business
+                        needs. We also support custom integrations with your existing tools and processes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Another Day Go By With Inefficient Operations</h2>
+                <p>Every day without our management system means lost devices, confused customers, and missed profits.
+                    Transform your repair shop today.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        7-Day Free Trial
+                    </h3>
+                    <p>Experience our repair shop management system completely risk-free for 7 days. Not fully
+                        satisfied? Just walk away—no questions asked. Start your trial today and see the transformation!
+                    </p>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Free Trial
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-calendar-alt"></i>
+        Get a Trial
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Trial</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Repair Shop Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Shop Size</option>
+                    <option value="small">Small (1-2 technicians)</option>
+                    <option value="medium">Medium (3-5 technicians)</option>
+                    <option value="large">Large (6+ technicians)</option>
+                </select>
+                <select name="system_type" required>
+                    <option value="" disabled selected>System Type</option>
+                    <option value="starter">Starter</option>
+                    <option value="professional">Professional</option>
+                    <option value="enterprise">Enterprise</option>
+                    <option value="professional-plus">Professional Plus</option>
+                    <option value="complete-solution">Complete Solution</option>
+                    <option value="custom">Custom Solution</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request My Trial
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+    <script src="/root.js"></script>
+
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_frmv157', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! We'll contact you soon.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'demo_scheduled', {
+                'event_category': 'conversion',
+                'event_label': 'computer_repair_shop_management_demo_requested_for_' + formData.get('system_type')
+            });
+        });
+    </script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>

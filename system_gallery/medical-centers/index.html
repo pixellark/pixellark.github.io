@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Best Medical Center Management System | Pixellark Solutions - Healthcare Management Software</title>
+    <meta name="description"
+        content="Transform your medical center with our comprehensive management system. Streamline patient care, reduce waiting times by 50%, and increase efficiency by 70%. Designed for Sri Lankan healthcare providers.">
+    <meta name="keywords"
+        content="medical center management system, healthcare software Sri Lanka, clinic management system, patient management software, medical practice software, healthcare technology, EMR system">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/medical-centers">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Best Medical Center Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Revolutionary medical center management system that increases efficiency by 70%. Transform your healthcare operations with our cutting-edge healthcare management solution.">
+    <meta property="og:image" content="https://pixellark.com/img/medical.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/medical-centers">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Best Medical Center Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary medical center management system that increases efficiency by 70%. Transform your healthcare operations today.">
+    <meta name="twitter:image" content="https://pixellark.com/img/medical.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Medical Center Management System",
+        "description": "Comprehensive healthcare management software designed for medical centers, clinics, and healthcare providers",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "299",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "89",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "category": "Healthcare Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+
+    <!-- Medical-specific CSS -->
+    <style>
+        :root {
+            --medical-primary: #0D7377;
+            --medical-secondary: #14A085;
+            --medical-accent: #329D9C;
+            --medical-light: #7DE2D1;
+            --medical-bg: #F0FDFC;
+        }
+
+        .hero-badge {
+            background: linear-gradient(135deg, var(--medical-primary), var(--medical-secondary));
+            box-shadow: 0 8px 25px var(--medical-primary);
+        }
+
+        .btn-primary-hero {
+            background: linear-gradient(135deg, var(--medical-primary), var(--medical-secondary));
+            box-shadow: 0 8px 25px var(--medical-primary);
+        }
+
+        .btn-primary-hero:hover {
+            background: linear-gradient(135deg, var(--medical-secondary), var(--medical-accent));
+            box-shadow: 0 8px 25px var(--medical-primary);
+        }
+
+        .pricing-grid {
+            margin-top: 1rem !important;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--medical-secondary);
+            box-shadow: 0 8px 25px var(--medical-primary);
+        }
+
+        .pricing-badge {
+            background: var(--medical-secondary);
+        }
+
+        .medical-compliance {
+            background: var(--medical-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--medical-light);
+            margin: 2rem 0;
+        }
+
+        .compliance-badges {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .compliance-badge {
+            background: var(--medical-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions medical center management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-heartbeat" style="margin-right: 0.5rem;"></i>
+                    #1 Medical Management System of 2025
+                </div>
+                <h1 class="hero-title">Smart Medical Center Management System</h1>
+                <p class="hero-subtitle">Revolutionize your healthcare practice with our comprehensive medical center
+                    management system. Reduce patient waiting times by 50%, increase operational efficiency by 70%, and
+                    deliver exceptional patient care.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">70%</span>
+                        <span class="stat-label">Efficiency Increase</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50%</span>
+                        <span class="stat-label">Reduced Wait Times</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Doctor Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://system-navigator.com" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </a>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system completely transformed our clinic operations. Patient
+                        satisfaction increased by 85% and our administrative workload decreased by 60%. Our staff can
+                        now focus on what matters most - patient care."</p>
+                    <p class="testimonial-author">- Dr. Prasanna, Malsiripura Channelling Center</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="medical-compliance">
+                    <h3 style="color: var(--medical-primary); margin-bottom: 1rem;">
+                        <i class="fas fa-shield-alt" style="margin-right: 0.5rem;"></i>
+                        Fully Compliant with Sri Lankan Healthcare Standards
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Our system meets all local healthcare regulations and international
+                        best practices for medical data security and patient privacy.</p>
+                    <div class="compliance-badges">
+                        <span class="compliance-badge">HIPAA Compliant</span>
+                        <span class="compliance-badge">SSL Encrypted</span>
+                        <span class="compliance-badge">MOH Compatible</span>
+                        <span class="compliance-badge">Data Backup</span>
+                        <span class="compliance-badge">24/7 Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Medical Centers across Sri Lanka Choose Our System</h2>
+                    <p class="section-subtitle">Every feature designed to enhance patient care and streamline medical
+                        operations</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="feature-title">Complete Patient Management</h3>
+                        <p class="feature-description">Comprehensive patient records system with medical history,
+                            appointments, prescriptions, and treatment tracking all in one place.</p>
+                        <ul class="feature-benefits">
+                            <li>Digital patient records</li>
+                            <li>Medical history tracking</li>
+                            <li>Prescription management</li>
+                            <li>Lab results integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Appointment System</h3>
+                        <p class="feature-description">Intelligent scheduling system that optimizes doctor availability,
+                            reduces no-shows, and sends automated reminders to patients.</p>
+                        <ul class="feature-benefits">
+                            <li>Online appointment booking</li>
+                            <li>SMS & email reminders</li>
+                            <li>Doctor availability management</li>
+                            <li>Wait time optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h3 class="feature-title">Integrated Billing System</h3>
+                        <p class="feature-description">Streamlined billing with insurance claim processing, payment
+                            tracking, and automated invoicing for seamless financial management.</p>
+                        <ul class="feature-benefits">
+                            <li>Insurance claim processing</li>
+                            <li>Digital payment integration</li>
+                            <li>Automated invoicing</li>
+                            <li>Financial reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3 class="feature-title">Pharmacy Integration</h3>
+                        <p class="feature-description">Direct integration with pharmacy systems for prescription
+                            management, drug interaction alerts, and inventory tracking.</p>
+                        <ul class="feature-benefits">
+                            <li>Digital prescriptions</li>
+                            <li>Drug interaction alerts</li>
+                            <li>Pharmacy inventory sync</li>
+                            <li>Medication history</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">Advanced Analytics</h3>
+                        <p class="feature-description">Comprehensive reporting and analytics to track patient outcomes,
+                            optimize operations, and improve overall healthcare delivery.</p>
+                        <ul class="feature-benefits">
+                            <li>Patient outcome tracking</li>
+                            <li>Revenue analytics</li>
+                            <li>Performance dashboards</li>
+                            <li>Custom reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Mobile Access</h3>
+                        <p class="feature-description">Access patient information, schedules, and practice management
+                            tools from anywhere with our secure mobile application.</p>
+                        <ul class="feature-benefits">
+                            <li>Mobile patient access</li>
+                            <li>Doctor mobile app</li>
+                            <li>Secure data access</li>
+                            <li>Real-time synchronization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Implementation in 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Our healthcare technology
+                        experts handle complete setup including data migration, staff training, and system integration.
+                        Your medical center will be operational with the new system within 48 hours.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">See Results in Your First Month</h2>
+                    <p class="roi-subtitle">Medical centers typically see immediate improvements in efficiency, patient
+                        satisfaction, and operational costs within the first 30 days.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">45%</span>
+                        <span class="roi-label">Administrative Cost Reduction</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">60%</span>
+                        <span class="roi-label">Faster Patient Processing</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">95%</span>
+                        <span class="roi-label">Data Accuracy</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">System Availability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Transparent Healthcare Pricing</h2>
+                    <p class="section-subtitle">Flexible plans designed for medical practices of all sizes. No hidden
+                        fees, no long-term contracts.</p>
+                </div>
+
+                <!-- Wrapper -->
+                <div class="pricing-wrapper">
+                    <div class="pricing-grid" id="gridOne">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Clinic Essential</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR95,000</span>
+                                        <span class="price-period">/Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Patient management system</li>
+                                        <li>Basic appointment scheduling</li>
+                                        <li>Digital prescriptions</li>
+                                        <li>Basic billing & invoicing</li>
+                                        <li>Data backup & security</li>
+                                        <li>Email support</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Start Free Trial</button>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Most Popular</div>
+                                <div>
+                                    <h3 class="pricing-title">Medical Center Pro</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR125,000</span>
+                                        <span class="price-period">/Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Clinic Essential</li>
+                                        <li>Advanced appointment management</li>
+                                        <li>Lab results integration</li>
+                                        <li>Insurance claim processing</li>
+                                        <li>Pharmacy integration</li>
+                                        <li>Mobile access for doctors</li>
+                                        <li>Advanced reporting & analytics</li>
+                                        <li>Priority phone support</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Start Free Trial</button>
+                            </div>
+
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Healthcare Enterprise</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR175,000</span>
+                                        <span class="price-period">/Lifetime</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Medical Center Pro</li>
+                                        <li>Multi-location management</li>
+                                        <li>Advanced EMR features</li>
+                                        <li>Custom integrations</li>
+                                        <li>Telemedicine platform</li>
+                                        <li>Advanced security features</li>
+                                        <li>Unlimited staff accounts</li>
+                                        <li>24/7 dedicated support</li>
+                                        <li>Custom training sessions</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Contact Sales</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Healthcare Professionals</h2>
+                    <p class="section-subtitle">Real testimonials from medical professionals who've transformed their
+                        practice</p>
+                </div>
+ 
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The system has revolutionized our clinic operations. Patient
+                                records are instantly accessible, appointments are seamlessly managed, and our billing
+                                process is now completely automated. Our patient satisfaction scores have increased by
+                                40%."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg" alt="Dr. Gamlath review">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Dr. Gamlath</h4>
+                                <p>Owner, Sathkaara, Kegalle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The pharmacy integration feature is a game-changer. We can now
+                                track medication history, check for drug interactions, and manage prescriptions
+                                digitally. It has significantly improved patient safety and reduced medication errors."
+                            </p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg" alt="Dr. Prasanna review">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Dr. Prasanna</h4>
+                                <p>Owner, Malsirupura Channelling Center</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Transform Your Medical Practice?</h2>
+                <p class="cta-subtitle">Join dozens of healthcare providers who've revolutionized their operations with
+                    our comprehensive medical management system. Start your free trial today.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off Healthcare Plans!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">07</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">23</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">12</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Request Free Trial
+                    </a>
+                    <a href="tel:+94789797988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our medical center management system
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is the system compliant with Sri Lankan healthcare regulations?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, our system is fully compliant with Sri Lankan Ministry of Health guidelines and
+                        international healthcare standards including HIPAA. We ensure all patient data is encrypted and
+                        stored securely according to local regulations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to implement the system?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most medical centers are fully operational within 48 hours. Our healthcare IT specialists handle
+                        data migration, system setup, and comprehensive staff training. We also provide dedicated
+                        support during the first week to ensure smooth operations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system integrate with existing laboratory equipment?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, our system integrates with most modern laboratory equipment and diagnostic devices. We
+                        support HL7 standards and can create custom integrations for specialized equipment commonly used
+                        in Sri Lankan medical facilities.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What happens to our data if we decide to switch systems?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Your data belongs to you completely. We provide full data export capabilities in standard
+                        formats (CSV, XML, HL7) at any time. There are no data hostage situations - you can migrate to
+                        another system whenever you choose.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is training provided for medical staff?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We provide comprehensive training for all medical and administrative staff. This
+                        includes on-site training sessions, video tutorials, user manuals, and
+                        ongoing support to ensure everyone is comfortable with the system.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can patients access their records online?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, our patient portal allows patients to view their medical records, book appointments, access
+                        lab results, and communicate securely with their healthcare providers. The portal is available
+                        in Sinhala, Tamil, and English for better accessibility.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Outdated Systems Compromise Patient Care</h2>
+                <p>Every day without proper medical management software means reduced efficiency and potential patient
+                    safety risks. Transform your practice today.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        7-Day Free Trial
+                    </h3>
+                    <p>Experience our repair shop management system completely risk-free for 7 days. Not fully
+                        satisfied? Just walk away—no questions asked. Start your trial today and see the transformation!
+                    </p>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Free Trial
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-stethoscope"></i>
+        Get Free Trial
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Medical System Trial</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Medical Center Name" required>
+                <input type="text" name="user_name" placeholder="Doctor/Administrator Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="system_type" required>
+                    <option value="" disabled selected>Type of Medical Facility</option>
+                    <option value="clinic-essential">Small Clinic (Clinic Essential)</option>
+                    <option value="medical-center-pro">Medical Center (Pro Plan)</option>
+                    <option value="healthcare-enterprise">Large Practice (Enterprise)</option>
+                    <option value="custom">Custom Requirements</option>
+                </select>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Number of Staff</option>
+                    <option value="1-5">1-5 Staff Members</option>
+                    <option value="6-15">6-15 Staff Members</option>
+                    <option value="16-50">16-50 Staff Members</option>
+                    <option value="50+">50+ Staff Members</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request My Free Trial
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+    <script src="/root.js"></script>
+
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_medical_demo', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! Our healthcare specialist will contact you within 24 hours.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong. Please try again.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'medical_demo_scheduled', {
+                'event_category': 'conversion',
+                'event_label': 'medical_center_demo_requested_for_' + formData.get('center_type')
+            });
+        });
+    </script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>

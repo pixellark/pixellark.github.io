@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Smart Mobile Management System | Pixellark Solutions - Complete Mobile Store Solution</title>
+    <meta name="description"
+        content="Revolutionary mobile shop management system for Sri Lanka. Streamline inventory, boost sales by 45%, manage repairs & warranties. Perfect for mobile stores, service centers & retailers.">
+    <meta name="keywords"
+        content="mobile shop management system, mobile store software, mobile repair management, phone shop POS, mobile inventory system, Sri Lanka mobile software, smartphone retail system">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/mobile-phones">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Mobile Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Complete mobile shop management solution that increases sales by 45%. Perfect for mobile stores, repair centers, and electronics retailers in Sri Lanka.">
+    <meta property="og:image" content="https://pixellark.com/img/mobile.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/mobile-phones">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Smart Mobile Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary mobile shop management system that increases sales by 45%. Transform your mobile business today.">
+    <meta name="twitter:image" content="https://pixellark.com/img/mobile.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Smart Mobile Management System",
+        "description": "Complete management solution for mobile stores, repair centers, and electronics retailers",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "89500",
+            "priceCurrency": "LKR",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "89",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "category": "Mobile Store Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+
+    <!-- Custom Mobile Store Styles -->
+    <style>
+        .mobile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem;
+        }
+
+        @media (min-width: 900px) {
+            .mobile-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .mobile-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mobile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            backdrop-filter: blur(10px);
+        }
+
+        .mobile-card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .mobile-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .warranty-tracker {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            color: white;
+        }
+
+        .repair-status {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4CAF50;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .imei-scanner {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .feature-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+
+            50% {
+                transform: translateX(50%) translateY(50%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(200%) translateY(200%) rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions mobile management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-mobile-alt" style="margin-right: 0.5rem;"></i>
+                    #1 Mobile Management System in Sri Lanka
+                </div>
+                <h1 class="hero-title">Smart Mobile Store Management System</h1>
+                <p class="hero-subtitle">Transform your mobile business with our comprehensive management solution.
+                    Track inventory, manage repairs, handle warranties, and boost sales by 45% with features designed
+                    specifically for Sri Lankan mobile retailers.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45%</span>
+                        <span class="stat-label">Sales Increase</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5x</span>
+                        <span class="stat-label">Faster Service</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">User Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://system-navigator.com" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </a>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system revolutionized our mobile store operations. We can track
+                        every device, manage repairs effortlessly, and our sales increased by 50% in just 3 months. The
+                        IMEI tracking feature alone saved us thousands!"</p>
+                    <p class="testimonial-author">- Chamara, Malsiripura Mobile Phone Shop</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Complete Mobile Business Solution</h2>
+                    <p class="section-subtitle">Every feature designed specifically for mobile stores, repair centers,
+                        and electronics retailers</p>
+                </div>
+
+                <div class="mobile-grid">
+                    <div class="mobile-card">
+                        <div class="mobile-card-content">
+                            <i class="fas fa-barcode mobile-icon"></i>
+                            <h3>IMEI & Serial Tracking</h3>
+                            <p>Track every device with IMEI/serial number scanning. Prevent theft, manage warranties,
+                                and maintain complete device history.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="mobile-card-content">
+                            <i class="fas fa-tools mobile-icon"></i>
+                            <h3>Repair Management</h3>
+                            <p>Complete repair workflow from job creation to delivery. Track technician performance,
+                                parts usage, and repair status in real-time.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="mobile-card-content">
+                            <i class="fas fa-shield-alt mobile-icon"></i>
+                            <h3>Warranty Tracking</h3>
+                            <p>Automated warranty management with SMS alerts. Never miss warranty expiration dates and
+                                provide excellent after-sales service.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="mobile-card-content">
+                            <i class="fas fa-boxes mobile-icon"></i>
+                            <h3>Smart Inventory</h3>
+                            <p>Real-time stock tracking for devices, accessories, and spare parts. Automated reorder
+                                alerts and supplier management.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="mobile-card-content">
+                            <i class="fas fa-users mobile-icon"></i>
+                            <h3>Customer Database</h3>
+                            <p>Comprehensive customer profiles with purchase history, repair records, and contact
+                                preferences. Build lasting relationships.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="mobile-card-content">
+                            <i class="fas fa-chart-line mobile-icon"></i>
+                            <h3>Business Analytics</h3>
+                            <p>Detailed reports on sales, profits, popular models, repair trends, and technician
+                                performance. Make data-driven decisions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Device Management</h3>
+                        <p class="feature-description">Complete lifecycle management for all mobile devices and
+                            electronics with advanced tracking capabilities.</p>
+                        <ul class="feature-benefits">
+                            <li>IMEI/Serial number tracking</li>
+                            <li>Model & specification database</li>
+                            <li>Condition assessment tools</li>
+                            <li>Price history tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 class="feature-title">Repair Center</h3>
+                        <p class="feature-description">Streamline your repair operations with job tracking, parts
+                            management, and technician performance monitoring.</p>
+                        <ul class="feature-benefits">
+                            <li>Repair job workflow</li>
+                            <li>Parts inventory tracking</li>
+                            <li>Technician assignment</li>
+                            <li>Customer notifications</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="feature-title">Warranty Management</h3>
+                        <p class="feature-description">Automated warranty tracking with smart alerts and comprehensive
+                            warranty claim management system.</p>
+                        <ul class="feature-benefits">
+                            <li>Warranty period tracking</li>
+                            <li>Automatic expiry alerts</li>
+                            <li>Claim documentation</li>
+                            <li>Supplier warranty coordination</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 class="feature-title">Flexible Payments</h3>
+                        <p class="feature-description">Support for all payment methods popular in Sri Lanka including
+                            mobile payments and installment plans.</p>
+                        <ul class="feature-benefits">
+                            <li>Cash, card & mobile payments</li>
+                            <li>Installment plan management</li>
+                            <li>Payment reminders</li>
+                            <li>Financial reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3 class="feature-title">SMS Integration</h3>
+                        <p class="feature-description">Keep customers informed with automated SMS notifications for
+                            repairs, warranties, and promotions.</p>
+                        <ul class="feature-benefits">
+                            <li>Repair status updates</li>
+                            <li>Warranty expiry alerts</li>
+                            <li>Promotional campaigns</li>
+                            <li>Payment reminders</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3 class="feature-title">Professional Documentation</h3>
+                        <p class="feature-description">Generate professional invoices, repair receipts, warranty cards,
+                            and business reports.</p>
+                        <ul class="feature-benefits">
+                            <li>Custom invoice templates</li>
+                            <li>Warranty certificates</li>
+                            <li>Repair documentation</li>
+                            <li>Business reports</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="imei-scanner">
+                    <h3>
+                        <i class="fas fa-qrcode" style="margin-right: 0.5rem;"></i>
+                        Advanced IMEI & Barcode Scanner
+                    </h3>
+                    <p>Instantly scan IMEI numbers and barcodes to add devices, check warranties, and verify
+                        authenticity. Works with any smartphone camera or dedicated scanner.</p>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Ready in 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Complete setup including data
+                        migration, staff training, and hardware configuration. Start managing your mobile business
+                        professionally from day one.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">Transform Your Mobile Business</h2>
+                    <p class="roi-subtitle">Mobile store owners see immediate improvements in efficiency, customer
+                        satisfaction, and profitability.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">70%</span>
+                        <span class="roi-label">Faster Service</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">0%</span>
+                        <span class="roi-label">Lost Devices</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">90%</span>
+                        <span class="roi-label">Customer Satisfaction</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">System Availability</span>
+                    </div>
+                </div>
+
+                <div class="warranty-tracker">
+                    <h3>
+                        <i class="fas fa-shield-alt" style="margin-right: 0.5rem;"></i>
+                        Never Miss Another Warranty
+                    </h3>
+                    <p>Automatic warranty tracking with SMS alerts ensures you never disappoint customers with expired
+                        warranties. Build trust and increase repeat business.</p>
+                    <div class="repair-status">
+                        <div class="status-indicator"></div>
+                        <span>Real-time repair status tracking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Affordable Plans for Every Mobile Business</h2>
+                    <p class="section-subtitle">Choose the perfect plan for your mobile store, repair center, or
+                        electronics business.</p>
+                </div>
+
+                <!-- Pricing Grid -->
+                <div class="pricing-wrapper">
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div>
+                                <h3 class="pricing-title">Mobile Store Basic</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">LKR 67,500</span>
+                                    <span class="price-period">/One-time</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Basic IMEI tracking</li>
+                                    <li>Simple inventory management</li>
+                                    <li>Customer database</li>
+                                    <li>Basic reporting</li>
+                                    <li>Email support</li>
+                                </ul>
+                            </div>
+                            <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                        </div>
+
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">Most Popular</div>
+                            <div>
+                                <h3 class="pricing-title">Mobile Store Pro</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">LKR 85,000</span>
+                                    <span class="price-period">/One-time</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Advanced IMEI tracking</li>
+                                    <li>Smart inventory management</li>
+                                    <li>Warranty tracking system</li>
+                                    <li>Basic repair management</li>
+                                    <li>SMS integration</li>
+                                    <li>Advanced reporting</li>
+                                    <li>Phone & email support</li>
+                                </ul>
+                            </div>
+                            <button class="btn-pricing btn-pricing-primary">Request Free Trial</button>
+                        </div>
+
+                        <div class="pricing-card">
+                            <div>
+                                <h3 class="pricing-title">Complete Business Suite</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">LKR 125,000</span>
+                                    <span class="price-period">/One-time</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Everything in Pro</li>
+                                    <li>Complete repair center management</li>
+                                    <li>Advanced warranty system</li>
+                                    <li>Technician performance tracking</li>
+                                    <li>Multi-location support</li>
+                                    <li>API integrations</li>
+                                    <li>Custom reports</li>
+                                    <li>Unlimited users</li>
+                                    <li>Priority 24/7 support</li>
+                                </ul>
+                            </div>
+                            <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Mobile Businesses Across Sri Lanka</h2>
+                    <p class="section-subtitle">Real stories from mobile store owners who transformed their business</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The IMEI tracking feature alone saved us from multiple theft
+                                attempts. Now we can trace every device, manage warranties perfectly, and our customers
+                                trust us completely. Sales increased by 45% in 4 months!"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="mobile store owner review"></div>
+                            <div class="testimonial-info">
+                                <h4>Chamara</h4>
+                                <p>Owner, Malsiripura Mobile Phone Shop</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Revolutionize Your Mobile Business?</h2>
+                <p class="cta-subtitle">Join 25+ successful mobile businesses across Sri Lanka. Start your free trial
+                    today and see the transformation within 48 hours.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">07</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">23</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">12</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Request a Free Trial Now
+                    </button>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Sales: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our mobile management system</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How does IMEI tracking work and is it legal in Sri Lanka?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, IMEI tracking for business inventory management is completely legal in Sri Lanka. Our
+                        system simply stores IMEI numbers for your own devices to prevent theft, manage warranties, and
+                        track device history. This is standard practice for mobile retailers and helps protect both your
+                        business and customers.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system work without internet connection?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system has robust offline capabilities. You can continue sales, repairs, and basic
+                        operations even during internet outages. All data automatically syncs when connectivity returns,
+                        ensuring no loss of information or sales.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Does it integrate with existing accounting software?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system integrates with popular accounting software used in Sri Lanka including
+                        QuickBooks, Tally, and other standard accounting platforms. We also provide CSV/Excel exports
+                        for easy data transfer to any accounting system.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How does SMS integration work and what are the costs?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our SMS integration works with major Sri Lankan providers (Dialog, Mobitel, Hutch, Airtel). Additional
+                        messages are charged at standard rates, typically LKR 0.30 per message or according to the package you select.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of support do you provide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide comprehensive support in Sinhala and English. This includes free
+                        installation, data migration, staff training, and 7 days of intensive support. Our team
+                        understands the Sri Lankan mobile market and provides ongoing assistance via phone, WhatsApp,
+                        and email.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we customize the system for our specific needs?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system is highly customizable. We can adapt the interface, reports, and workflows to
+                        match your business processes. Whether you're a small mobile shop or a large electronics
+                        retailer, we'll configure the system to work exactly how you need it.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How secure is customer data and business information?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Security is our top priority. All data is encrypted, regularly backed up, and stored securely.
+                        We comply with international data protection standards and ensure your customer information and
+                        business data are completely protected from unauthorized access.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Transform Your Mobile Business Today</h2>
+                <p>Don't let another day pass managing your mobile store the old way. Join the digital revolution and
+                    see immediate results.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        7-Day Risk-Free Trial
+                    </h3>
+                    <p>Experience our complete mobile management system absolutely free for 7 days. Full setup,
+                        training, and support included. Not satisfied? Simply walk away—no questions asked.</p>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Free Trial
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-mobile-alt"></i>
+        Get Free Trial
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Trial</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Business Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Business Type</option>
+                    <option value="mobile-store">Mobile Store</option>
+                    <option value="repair-center">Repair Center</option>
+                    <option value="electronics-retailer">Electronics Retailer</option>
+                    <option value="multi-location">Multi-location Business</option>
+                    <option value="other">Other</option>
+                </select>
+                <select name="system_type" required>
+                    <option value="" disabled selected>Package Interest</option>
+                    <option value="mobile-store-basic">Mobile Store Basic</option>
+                    <option value="mobile-store-pro">Mobile Store Pro</option>
+                    <option value="complete-business-suite">Complete Business Suite</option>
+                    <option value="custom">Custom Solution</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request My Trial
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+
+    <script src="/root.js"></script>
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_mobile_mgmt', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! We'll contact you soon.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'demo_scheduled', {
+                'event_category': 'conversion',
+                'event_label': 'mobile_management_demo_requested_for_' + formData.get('package_interest')
+            });
+        });
+    </script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>

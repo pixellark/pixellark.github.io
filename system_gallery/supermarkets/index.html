@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Best Supermarket Management System | Pixellark Solutions - Smart Retail POS</title>
+    <meta name="description"
+        content="Transform your supermarket with our intelligent management system. Boost sales by 45%, reduce inventory costs by 35%, and streamline operations with our award-winning retail POS solution. Free demo available.">
+    <meta name="keywords"
+        content="supermarket management system, retail POS system, inventory management, barcode scanning, supermarket software, grocery store POS, retail management Sri Lanka">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/supermarkets">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Best Supermarket Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Revolutionary supermarket management system that increases revenue by 45%. Transform your retail operations with our cutting-edge point of sale solution.">
+    <meta property="og:image" content="https://pixellark.com/img/supermarket.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/supermarkets">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Best Supermarket Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary supermarket management system that increases revenue by 45%. Transform your retail operations today.">
+    <meta name="twitter:image" content="https://pixellark.com/img/supermarket.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Supermarket Management System",
+        "description": "Advanced point of sale and inventory management system specifically designed for supermarkets and retail businesses",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "225",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "289",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "category": "Retail Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions supermarket management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-award" style="margin-right: 0.5rem;"></i>
+                    #1 Supermarket Management System of 2025
+                </div>
+                <h1 class="hero-title">Smart Supermarket Management System</h1>
+                <p class="hero-subtitle">Transform your supermarket operations with our intelligent management system. Increase sales by 45%, reduce inventory costs by 35%, and provide exceptional customer service.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45%</span>
+                        <span class="stat-label">Sales Increase</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5x</span>
+                        <span class="stat-label">Faster Checkout</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button href="#" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </button>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system revolutionized our supermarket operations. We've seen a 52% increase in daily transactions and our inventory management is now completely automated. Best decision we've made!"</p>
+                    <p class="testimonial-author">-Rushini, UBN Supermarket</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Supermarkets Across Sri Lanka Choose Our System</h2>
+                    <p class="section-subtitle">Every feature designed to maximize profits and streamline retail operations</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-barcode"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Barcode System</h3>
+                        <p class="feature-description">Lightning-fast scanning with automatic price lookup, batch processing, and multi-format barcode support.</p>
+                        <ul class="feature-benefits">
+                            <li>Instant barcode recognition</li>
+                            <li>Bulk item scanning</li>
+                            <li>Price verification alerts</li>
+                            <li>Custom barcode generation</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 class="feature-title">Advanced Inventory Control</h3>
+                        <p class="feature-description">AI-powered inventory management with automated reordering, expiry tracking, and waste reduction analytics.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time stock monitoring</li>
+                            <li>Automatic reorder points</li>
+                            <li>Expiry date management</li>
+                            <li>Loss prevention tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <h3 class="feature-title">Multi-Counter POS</h3>
+                        <p class="feature-description">Manage multiple checkout counters seamlessly with synchronized inventory and centralized reporting.</p>
+                        <ul class="feature-benefits">
+                            <li>Unlimited checkout counters</li>
+                            <li>Real-time synchronization</li>
+                            <li>Queue management system</li>
+                            <li>Staff performance tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 class="feature-title">Customer Management</h3>
+                        <p class="feature-description">Build customer loyalty with integrated CRM, membership programs, and personalized promotions.</p>
+                        <ul class="feature-benefits">
+                            <li>Customer loyalty programs</li>
+                            <li>Purchase history tracking</li>
+                            <li>Automated promotions</li>
+                            <li>SMS marketing integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">Business Intelligence</h3>
+                        <p class="feature-description">Make data-driven decisions with comprehensive analytics, sales forecasting, and profit optimization.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time sales analytics</li>
+                            <li>Profit margin analysis</li>
+                            <li>Seasonal trend forecasting</li>
+                            <li>Custom business reports</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Security & Compliance</h3>
+                        <p class="feature-description">Secure transactions with fraud detection, tax compliance, and comprehensive audit trails.</p>
+                        <ul class="feature-benefits">
+                            <li>Fraud detection system</li>
+                            <li>Tax compliance automation</li>
+                            <li>Audit trail logging</li>
+                            <li>Role-based access control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Complete Setup in 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Our expert team handles hardware installation, data migration, barcode setup, and staff training. Your supermarket will be running efficiently within two days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">See Your ROI in 45 Days</h2>
+                    <p class="roi-subtitle">Supermarket owners typically recover their investment within 45 days through increased efficiency and reduced operational costs.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">35%</span>
+                        <span class="roi-label">Inventory Cost Reduction</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">2 hrs</span>
+                        <span class="roi-label">Daily Time Saved</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">99%</span>
+                        <span class="roi-label">Pricing Accuracy</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">System Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Transparent Pricing for Every Size</h2>
+                    <p class="section-subtitle">From small grocery stores to large supermarket chains. No hidden fees, no long-term contracts.</p>
+                </div>
+
+                <!-- Toggle Buttons -->
+                <div class="pricing-toggle">
+                    <button class="pricing-toggle-btn active" id="btnGridOne">Touch System</button>
+                    <button class="pricing-toggle-btn" id="btnGridTwo">Desktop System</button>
+                </div>
+
+                <!-- Wrapper -->
+                <div class="pricing-wrapper">
+                    <div class="pricing-grid" id="gridOne">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Essential Touch</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR85,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>1 Touch terminal included</li>
+                                        <li>Barcode scanning system</li>
+                                        <li>Basic inventory management</li>
+                                        <li>Sales reporting</li>
+                                        <li>Expiry date tracking</li>
+                                        <li>Customer receipts</li>
+                                        <li>Fully customizable interface</li>
+                                        <li>Free 2500 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Best for Most</div>
+                                <div>
+                                    <h3 class="pricing-title">Professional Touch + Inventory</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR95,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Essential</li>
+                                        <li>Multiple Touch terminals included</li>
+                                        <li>Advanced inventory control</li>
+                                        <li>Customer loyalty program</li>
+                                        <li>Supplier management</li>
+                                        <li>Multi-counter synchronization</li>
+                                        <li>Business analytics dashboard</li>
+                                        <li>SMS notifications</li>
+                                        <li>Free 4000 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Free Trial</button>
+                            </div>
+
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Enterprise Touch + AI</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR120,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Professional</li>
+                                        <li>Unlimited terminals</li>
+                                        <li>AI-powered analytics</li>
+                                        <li>Multi-location management</li>
+                                        <li>Advanced security features</li>
+                                        <li>Custom integrations</li>
+                                        <li>Automated reordering</li>
+                                        <li>White-label options</li>
+                                        <li>Priority support</li>
+                                        <li>Free 7500 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-grid" id="gridTwo" style="display:none;">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Essential Desktop</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR75,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>1 Desktop terminal</li>
+                                        <li>Barcode scanning system</li>
+                                        <li>Basic inventory management</li>
+                                        <li>Sales reporting</li>
+                                        <li>Expiry date tracking</li>
+                                        <li>Customer receipts</li>
+                                        <li>Fully customizable</li>
+                                        <li>Free 2500 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Most Popular</div>
+                                <div>
+                                    <h3 class="pricing-title">Professional Desktop + Inventory</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR85,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Essential</li>
+                                        <li>Multiple Desktop terminals</li>
+                                        <li>Advanced inventory control</li>
+                                        <li>Customer loyalty program</li>
+                                        <li>Supplier management</li>
+                                        <li>Multi-counter synchronization</li>
+                                        <li>Business analytics</li>
+                                        <li>Free 4000 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Free Trial</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Supermarket Owners Across Sri Lanka</h2>
+                    <p class="section-subtitle">Real stories from supermarket owners who transformed their business operations</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Our checkout time reduced by 60% and inventory management became completely automated. Customer satisfaction has never been higher, and our monthly sales increased by 42%."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg" alt="supermarket owner testimonial"></div>
+                            <div class="testimonial-info">
+                                <h4>Rushini</h4>
+                                <p>Manager, UBN Supermart</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The inventory system prevented thousands of rupees in losses from expired products. The automatic reordering feature ensures we never run out of popular items during peak times."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/hidaayath.png" alt="supermarket manager testimonial"></div>
+                            <div class="testimonial-info">
+                                <h4>Hidayath</h4>
+                                <p>Owner, Grocery Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Revolutionize Your Supermarket?</h2>
+                <p class="cta-subtitle">Join hundreds of supermarket owners who've increased their profits with our smart management system. Get started with a free trial today.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">07</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">23</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">12</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Request a Free Trial Now
+                    </button>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Sales: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our supermarket management system</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to set up the system in our supermarket?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most supermarkets are fully operational within 48 hours. Our team handles hardware installation, barcode setup, inventory data migration, and comprehensive staff training. We ensure zero disruption to your daily operations during the transition.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system handle high-volume transactions during peak hours?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system is designed to handle thousands of transactions per hour across multiple counters. It includes queue management, rapid barcode scanning, and real-time inventory updates without any slowdown.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How does the inventory management prevent stock-outs and overstocking?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our AI-powered system analyzes sales patterns, seasonal trends, and supplier lead times to automatically generate reorder alerts. It prevents stock-outs by forecasting demand and reduces overstocking through intelligent inventory optimization.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is the system compatible with existing barcode scanners and hardware?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system integrates with most standard barcode scanners, receipt printers, cash drawers, and POS hardware. We provide compatibility assessment and can recommend cost-effective upgrades if needed.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of support and training do you provide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Every customizable package includes comprehensive on-site training for all staff, 24/7 support for the first 7 days, and ongoing chat support (8am-6pm, except Sundays) for 3 months. We ensure your team is confident and efficient with the new system. <br><br>
+                        <strong>Note: These benefits apply to customizable packages only, not template or subscription plans.</strong>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we track expiry dates and prevent selling expired products?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system automatically tracks expiry dates for all products and sends alerts before items expire. It can block sales of expired products at checkout and generate reports to help you implement effective product rotation strategies.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How secure is customer payment and business data?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Security is our top priority. We use bank-level encryption, secure data backup, and role-based access controls. All payment processing follows international security standards, and your business data is protected with multiple backup systems.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Manual Processes Hold Back Your Growth</h2>
+                <p>Every day without automation means lost profits and frustrated customers. Transform your supermarket today.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        7-Day Free Trial
+                    </h3>
+                    <p>Experience our supermarket management system completely risk-free for 7 days. Not fully satisfied? Just walk away—no questions asked. Start your trial today and see the transformation!</p>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Free Trial
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-calendar-alt"></i>
+        Get a Trial
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Trial</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Supermarket Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="system_type" required>
+                    <option value="" disabled selected>System Type</option>
+                    <option value="essential-touch">Essential Touch</option>
+                    <option value="professional-touch-inventory">Professional Touch + Inventory</option>
+                    <option value="enterprise-touch-ai">Enterprise Touch + AI</option>
+                    <option value="essential-desktop">Essential Desktop</option>
+                    <option value="professional-desktop-inventory">Professional Desktop + Inventory</option>
+                    <option value="custom">Custom Solution</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request My Trial
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+    <script src="/root.js"></script>
+
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_frmv157', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! We'll contact you soon.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'demo_scheduled', {
+                'event_category': 'conversion',
+                'event_label': 'supermarket_management_demo_requested_for_' + formData.get('system_type')
+            });
+        });</script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>
+                

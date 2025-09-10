@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Smart Pharmacy Management System | Pixellark Solutions - Complete Pharmacy Software</title>
+    <meta name="description"
+        content="Revolutionary pharmacy management system that streamlines operations, reduces errors by 95%, and increases efficiency by 70%. Complete pharmacy software solution with inventory management, prescription tracking, and compliance features.">
+    <meta name="keywords"
+        content="pharmacy management system, pharmacy software, prescription management, pharmacy POS, drug inventory management, pharmacy compliance software, medical store management">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/pharmacy">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Pharmacy Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Complete pharmacy management solution that reduces errors by 95% and increases efficiency by 70%. Transform your pharmacy operations today.">
+    <meta property="og:image" content="https://pixellark.com/img/pharmacy.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/pharmacy">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Smart Pharmacy Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Complete pharmacy management solution that reduces errors by 95% and increases efficiency by 70%.">
+    <meta name="twitter:image" content="https://pixellark.com/img/pharmacy.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Smart Pharmacy Management System",
+        "description": "Complete pharmacy management software for prescription tracking, inventory management, and regulatory compliance",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "299",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "156",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "category": "Pharmacy Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+
+    <style>
+        /* Pharmacy-specific color overrides */
+        :root {
+            --pharmacy-primary: #00a651;
+            --pharmacy-secondary: #004d2a;
+            --pharmacy-accent: #66d9a5;
+            --pharmacy-light: #e6f7f0;
+        }
+
+        .hero-badge {
+            background: linear-gradient(135deg, var(--pharmacy-primary), var(--pharmacy-secondary));
+            box-shadow: 0 8px 25px rgb(0 166 81 / 50%);
+        }
+
+        .btn-primary-hero {
+            background: linear-gradient(135deg, var(--pharmacy-primary), var(--pharmacy-secondary));
+            box-shadow: 0 8px 25px rgb(0 166 81 / 50%);
+            transition: all 0.3s ease, background 0.3s ease;
+        }
+
+        .btn-primary-hero:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgb(0 166 81 / 65%);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--pharmacy-primary);
+            box-shadow: 0 20px 40px var(--pharmacy-secondary);
+        }
+
+        .pricing-badge {
+            background: var(--pharmacy-primary);
+        }
+
+        .btn-pricing-primary {
+            background: var(--pharmacy-primary);
+        }
+
+        .btn-pricing-primary:hover {
+            background: var(--pharmacy-secondary);
+        }
+
+        .compliance-badge-container {
+            text-align: center;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .compliance-badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--pharmacy-light);
+            color: var(--pharmacy-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 0 0.5rem 0.5rem 0;
+            border: 1px solid var(--pharmacy-accent);
+        }
+
+        .compliance-badge i,
+        .compliance-card i {
+            margin-right: 0.5rem;
+        }
+
+        .compliance-section {
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .compliance-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--pharmacy-primary);
+        }
+
+        .compliance-card h4 {
+            color: var(--pharmacy-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .security-highlight {
+            background: linear-gradient(135deg, var(--pharmacy-secondary), var(--pharmacy-primary));
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .prescription-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .flow-step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+        }
+
+        .flow-step::after {
+            content: '→';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--pharmacy-primary);
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        .flow-step:last-child::after {
+            display: none;
+        }
+
+        .flow-icon {
+            background: var(--pharmacy-primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .flow-step::after {
+                content: '↓';
+                right: 50%;
+                bottom: -15px;
+                top: auto;
+                transform: translateX(50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions pharmacy management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-pills" style="margin-right: 0.5rem;"></i>
+                    #1 Pharmacy Management System of 2025
+                </div>
+                <h1 class="hero-title">Smart Pharmacy Management System</h1>
+                <p class="hero-subtitle">Transform your pharmacy operations with our comprehensive management system.
+                    Reduce medication errors by 95%, increase efficiency by 70%, and ensure 100% regulatory compliance.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Error Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">150%</span>
+                        <span class="stat-label">Faster Processing</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Active Pharmacies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://system-navigator.com" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </a>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system revolutionized our pharmacy operations. We've eliminated
+                        prescription errors completely and our inventory management is now automated. Patient
+                        satisfaction has never been higher!"</p>
+                    <p class="testimonial-author">- Dr. Prasanna, Malsiripura Medical Center & Pharmacy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="compliance-section">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">100% Regulatory Compliance Guaranteed</h2>
+                    <p class="section-subtitle">Built to meet all local and international pharmacy regulations</p>
+                </div>
+
+                <div class="compliance-badge-container">
+                    <div class="compliance-badge">
+                        <i class="fas fa-gavel"></i>
+                        NMRA Aligned
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-user-shield"></i>
+                        PDPA Ready
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-credit-card"></i>
+                        PCI DSS Compliant
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-file-invoice"></i>
+                        IRD e-Invoice Ready
+                    </div>
+                    <div class="compliance-badge">
+                        <i class="fas fa-lock"></i>
+                        ISO 27001 Practices
+                    </div>
+                </div>
+
+                <div class="compliance-grid">
+                    <div class="compliance-card">
+                        <h4><i class="fas fa-prescription-bottle-alt"></i> Controlled Medicines</h4>
+                        <p>Daybook-ready stock tracking and secure dispensing logs aligned with NMRA requirements for
+                            regulated medicines.</p>
+                    </div>
+
+                    <div class="compliance-card">
+                        <h4><i class="fas fa-user-shield"></i> Data Privacy</h4>
+                        <p>PDPA-ready patient data management with encrypted storage, role-based access, and consent
+                            tracking.</p>
+                    </div>
+
+                    <div class="compliance-card">
+                        <h4><i class="fas fa-file-medical"></i> Prescription Records</h4>
+                        <p>Immutable digital audit trail for all prescriptions with pharmacist verification and
+                            timestamped dispensing records.</p>
+                    </div>
+
+                    <div class="compliance-card">
+                        <h4><i class="fas fa-chart-line"></i> Automated Compliance</h4>
+                        <p>Generate NMRA-aligned reports, IRD tax invoices, and real-time analytics for audits and
+                            business insights.</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Prescription Flow Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Streamlined Prescription Processing</h2>
+                    <p class="section-subtitle">From prescription receipt to patient counseling - all in one seamless
+                        flow</p>
+                </div>
+
+                <div class="prescription-flow">
+                    <div class="flow-step">
+                        <div class="flow-icon">
+                            <i class="fas fa-file-prescription"></i>
+                        </div>
+                        <h4>Receive</h4>
+                        <p>Digital or paper prescription intake with automatic verification</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Verify</h4>
+                        <p>Drug interaction checks and insurance verification</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4>Dispense</h4>
+                        <p>Automated inventory deduction and label printing</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Counsel</h4>
+                        <p>Patient counseling with medication guides</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why 15+ Pharmacies Choose Our System</h2>
+                    <p class="section-subtitle">Every feature designed to improve patient care and streamline operations
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-prescription-bottle"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Inventory Management</h3>
+                        <p class="feature-description">AI-powered inventory tracking that prevents stockouts and
+                            minimizes waste with automatic reordering.</p>
+                        <ul class="feature-benefits">
+                            <li>Automatic stock level monitoring</li>
+                            <li>Expiry date tracking & alerts</li>
+                            <li>Smart reorder point calculations</li>
+                            <li>Supplier integration & pricing</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h3 class="feature-title">Drug Safety & Interactions</h3>
+                        <p class="feature-description">Comprehensive drug interaction checker and allergy alerts to
+                            ensure patient safety with every prescription.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time interaction screening</li>
+                            <li>Allergy & contraindication alerts</li>
+                            <li>Dosage verification system</li>
+                            <li>Clinical decision support</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-injured"></i>
+                        </div>
+                        <h3 class="feature-title">Patient Profile Management</h3>
+                        <p class="feature-description">Complete patient health records with medication history,
+                            allergies, and insurance information.</p>
+                        <ul class="feature-benefits">
+                            <li>Comprehensive medication history</li>
+                            <li>Insurance verification & billing</li>
+                            <li>Allergy & condition tracking</li>
+                            <li>Prescription refill management</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Mobile & Cloud Access</h3>
+                        <p class="feature-description">Access your pharmacy data anywhere with secure cloud storage and
+                            mobile applications.</p>
+                        <ul class="feature-benefits">
+                            <li>Cloud-based data storage</li>
+                            <li>Mobile app for pharmacists</li>
+                            <li>Remote prescription management</li>
+                            <li>Real-time synchronization</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">Business Intelligence</h3>
+                        <p class="feature-description">Advanced analytics and reporting to optimize your pharmacy's
+                            performance and profitability.</p>
+                        <ul class="feature-benefits">
+                            <li>Sales & profit analysis</li>
+                            <li>Prescription volume tracking</li>
+                            <li>Insurance reimbursement reports</li>
+                            <li>Inventory turnover analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="feature-title">Insurance & Billing</h3>
+                        <p class="feature-description">Seamless insurance claim processing with real-time verification
+                            and automated billing.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time insurance verification</li>
+                            <li>Automated claim submission</li>
+                            <li>Co-pay calculation</li>
+                            <li>Rejection management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="security-highlight">
+                    <h3 style="margin-bottom: 1rem;">
+                        <i class="fas fa-lock" style="margin-right: 0.5rem;"></i>
+                        Bank-Level Security & Compliance
+                    </h3>
+                    <p>Your patient data is protected with 256-bit encryption, two-factor authentication, and automatic
+                        security updates. We handle all compliance requirements so you can focus on patient care.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">Measurable Results Within 30 Days</h2>
+                    <p class="roi-subtitle">Pharmacy owners report significant improvements in efficiency, accuracy, and
+                        profitability within the first month of implementation.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">95%</span>
+                        <span class="roi-label">Error Reduction</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">45 min</span>
+                        <span class="roi-label">Time Saved Daily</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">100%</span>
+                        <span class="roi-label">Compliance Rate</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">Support Available</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Pharmacy Solution</h2>
+                    <p class="section-subtitle">Flexible pricing options designed for pharmacies of all sizes</p>
+                </div>
+
+                <!-- Pricing Grid -->
+                <div class="pricing-wrapper">
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div>
+                                <h3 class="pricing-title">Essential Pharmacy</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">LKR85,000</span>
+                                    <span class="price-period">/Life-time</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Basic prescription management</li>
+                                    <li>Patient profile system</li>
+                                    <li>Simple inventory tracking</li>
+                                    <li>Basic reporting</li>
+                                    <li>Single workstation</li>
+                                    <li>Email support</li>
+                                    <li>Free 2000 requests/month</li>
+                                </ul>
+                            </div>
+                            <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                        </div>
+
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">Most Popular</div>
+                            <div>
+                                <h3 class="pricing-title">Professional Pharmacy</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">LKR125,000</span>
+                                    <span class="price-period">/Life-time</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Everything in Essential</li>
+                                    <li>Advanced drug interaction checking</li>
+                                    <li>Insurance billing integration</li>
+                                    <li>Automated inventory management</li>
+                                    <li>Multi-workstation support</li>
+                                    <li>Mobile app access</li>
+                                    <li>Advanced reporting & analytics</li>
+                                    <li>Phone & email support</li>
+                                    <li>Free 4500 requests/month</li>
+                                </ul>
+                            </div>
+                            <button class="btn-pricing btn-pricing-primary">Request Free Trial</button>
+                        </div>
+
+                        <div class="pricing-card">
+                            <div>
+                                <h3 class="pricing-title">Enterprise Pharmacy</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">LKR180,000</span>
+                                    <span class="price-period">/Life-time</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Everything in Professional</li>
+                                    <li>Multi-location management</li>
+                                    <li>Custom integrations</li>
+                                    <li>Advanced compliance reporting</li>
+                                    <li>Unlimited workstations</li>
+                                    <li>24/7 priority support</li>
+                                    <li>Custom workflows</li>
+                                    <li>Dedicated account manager</li>
+                                    <li>Free 9000 requests/month</li>
+                                </ul>
+                            </div>
+                            <button class="btn-pricing btn-pricing-secondary">Request Free Trial</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Pharmacies Nationwide</h2>
+                    <p class="section-subtitle">Real stories from pharmacists who transformed their operations</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Since implementing this system, we've had zero medication
+                                errors and our efficiency has increased dramatically. The automated inventory management
+                                alone saves us 3 hours daily."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pharmacist testimonial"></div>
+                            <div class="testimonial-info">
+                                <h4>Dr. Prasanna</h4>
+                                <p>Owner, MCC Pharmacy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Patient safety has improved tremendously with the drug
+                                interaction checking. The system catches things we might miss during busy periods. It's
+                                like having a clinical pharmacist built-in."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pharmacist testimonial"></div>
+                            <div class="testimonial-info">
+                                <h4>Chamuditha</h4>
+                                <p>Owner, Gokaralla pharmacy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Modernize Your Pharmacy?</h2>
+                <p class="cta-subtitle">Join dozens of pharmacies that have eliminated errors and streamlined operations
+                    with our smart management system. Start your free trial today.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">07</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">23</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">12</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Request a Free Trial Now
+                    </button>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Sales: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our pharmacy management system</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How quickly can we implement the system in our pharmacy?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most pharmacies are fully operational within 48 hours. Our implementation team handles data
+                        migration, staff training, and hardware setup. We also provide dedicated support during your
+                        first week to ensure seamless transition from your existing system.
+                    </div>
+                </div>
+
+                <!-- <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is the system compliant with pharmacy regulations?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, our system is fully compliant with FDA, DEA, and HIPAA regulations. We automatically
+                        generate all required reports including DEA 222 forms, controlled substance inventories, and
+                        insurance audit reports. Regular compliance updates are included at no extra cost.
+                    </div>
+                </div> -->
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we migrate data from our current pharmacy system?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We support data migration from over 50+ pharmacy systems including Pioneer, QS/1,
+                        PioneerRx, and others. Our migration specialists ensure 100% data integrity during the transfer,
+                        including patient profiles, prescription histories, and inventory data.
+                    </div>
+                </div>
+
+                <!-- <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What insurance networks do you support?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We support all major insurance networks and PBMs including CVS Caremark, Express Scripts,
+                        OptumRx, Humana, Aetna, and many more. Real-time eligibility verification and claim adjudication
+                        ensure faster processing and fewer rejections.
+                    </div>
+                </div> -->
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of support do you provide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide comprehensive support including 24/7 phone support for critical issues, live chat
+                        during business hours, video training sessions, and on-site visits when needed. Every pharmacy
+                        gets a dedicated account manager and access to our extensive knowledge base.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How secure is patient data in your system?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Patient data security is our top priority. We use bank-level 256-bit encryption, two-factor
+                        authentication, and regular security audits. All data is stored in cloud servers
+                        with automatic backups and disaster recovery protocols.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system handle multiple pharmacy locations?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our Enterprise solution supports unlimited locations with centralized management. You can
+                        track inventory, transfer prescriptions, and manage staff across all locations from a single
+                        dashboard. Each location can also operate independently if needed.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Another Prescription Error Happen</h2>
+                <p>Every day without our system puts your patients at risk and your pharmacy behind. Transform your
+                    operations today.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        14-Day Free Trial
+                    </h3>
+                    <p>Experience our pharmacy management system completely risk-free for 14 days. Not satisfied? No
+                        commitment required. Start your trial today and see the difference!</p>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Free Trial
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-calendar-alt"></i>
+        Get a Trial
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Trial</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Pharmacy Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Pharmacy Size</option>
+                    <option value="independent">Independent Pharmacy</option>
+                    <option value="small-chain">Small Chain (2-5 locations)</option>
+                    <option value="large-chain">Large Chain (5+ locations)</option>
+                    <option value="hospital">Hospital Pharmacy</option>
+                </select>
+                <select name="system_type" required>
+                    <option value="" disabled selected>System Package</option>
+                    <option value="essential-pharmacy">Essential Pharmacy</option>
+                    <option value="professional-pharmacy">Professional Pharmacy</option>
+                    <option value="enterprise-pharmacy">Enterprise Pharmacy</option>
+                    <option value="custom">Custom Solution</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request My Trial
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+    <script src="/root.js"></script>
+
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_frmv157', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! We'll contact you soon.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'demo_scheduled', {
+                'event_category': 'conversion',
+                'event_label': 'pharmacy_management_demo_requested_for_' + formData.get('system_type')
+            });
+        });</script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>

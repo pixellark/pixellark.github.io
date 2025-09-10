@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Smart Distribution Center Management System | Pixellark Solutions - Warehouse & Logistics Software Sri Lanka
+    </title>
+    <meta name="description"
+        content="Revolutionary distribution center management system for Sri Lanka. Reduce logistics costs by 45%, improve delivery accuracy by 98%, and optimize warehouse operations with AI-powered inventory management.">
+    <meta name="keywords"
+        content="distribution center management, warehouse management system Sri Lanka, logistics software, inventory management, supply chain optimization, warehouse automation, distribution software Sri Lanka">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/distribution">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Distribution Center Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Transform your distribution operations with AI-powered warehouse management. Reduce costs by 45% and improve delivery accuracy by 98% in Sri Lankan market conditions.">
+    <meta property="og:image" content="https://pixellark.com/img/distribution.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/distribution">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Smart Distribution Center Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary distribution center management system that reduces costs by 45% and improves delivery accuracy by 98%.">
+    <meta name="twitter:image" content="https://pixellark.com/img/distribution.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Smart Distribution Center Management System",
+        "description": "Advanced warehouse and distribution management system designed for Sri Lankan logistics and supply chain operations",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "299",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "89",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "category": "Warehouse Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Need Expert Distribution Solutions?</h3>
+            <p>Contact us for customized warehouse management consultation</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions distribution center management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-warehouse" style="margin-right: 0.5rem;"></i>
+                    #1 Distribution Management System in Sri Lanka
+                </div>
+                <h1 class="hero-title">Smart Distribution Center Management System</h1>
+                <p class="hero-subtitle">Transform your warehouse operations with AI-powered logistics management.
+                    Reduce operational costs by 45%, improve delivery accuracy by 98%, and optimize your entire supply
+                    chain for Sri Lankan market conditions.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45%</span>
+                        <span class="stat-label">Cost Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Delivery Accuracy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Client Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://system-navigator.com" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch System Demo
+                    </a>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system revolutionized our distribution network across our delivery
+                        sectors. We've reduced delivery times by 60% and eliminated stock discrepancies entirely. Our
+                        customers have never been happier!"</p>
+                    <p class="testimonial-author">- Supitha, Kelani Lanka (PVT) LTD</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Distribution Centers Trust Our System</h2>
+                    <p class="section-subtitle">Every feature engineered to optimize Sri Lankan supply chain challenges
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Route Optimization</h3>
+                        <p class="feature-description">AI-powered delivery routing that considers Sri Lankan traffic
+                            patterns, monsoon conditions, and regional delivery preferences.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time traffic integration</li>
+                            <li>Weather-aware routing</li>
+                            <li>Multi-stop optimization</li>
+                            <li>Fuel cost minimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 class="feature-title">Intelligent Inventory Management</h3>
+                        <p class="feature-description">Predictive analytics that forecast demand patterns based on Sri
+                            Lankan market trends, festivals, and seasonal variations.</p>
+                        <ul class="feature-benefits">
+                            <li>Festival demand prediction</li>
+                            <li>Automated reorder points</li>
+                            <li>Expiry date tracking</li>
+                            <li>Multi-location inventory sync</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="feature-title">Fleet Management</h3>
+                        <p class="feature-description">Complete vehicle tracking and maintenance management optimized
+                            for Sri Lankan road conditions and regulatory requirements.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time GPS tracking</li>
+                            <li>Maintenance scheduling</li>
+                            <li>Fuel consumption analytics</li>
+                            <li>Driver performance monitoring</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-barcode"></i>
+                        </div>
+                        <h3 class="feature-title">Automated Warehouse Operations</h3>
+                        <p class="feature-description">Barcode and QR code integration for seamless picking, packing,
+                            and shipping operations with zero-error accuracy.</p>
+                        <ul class="feature-benefits">
+                            <li>Barcode scanning integration</li>
+                            <li>Pick-path optimization</li>
+                            <li>Automated sorting systems</li>
+                            <li>Quality control checkpoints</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chain"></i>
+                        </div>
+                        <h3 class="feature-title">Supply Chain Analytics</h3>
+                        <p class="feature-description">Comprehensive dashboards providing insights into every aspect of
+                            your distribution network with predictive forecasting.</p>
+                        <ul class="feature-benefits">
+                            <li>Performance KPI tracking</li>
+                            <li>Cost analysis reports</li>
+                            <li>Demand forecasting</li>
+                            <li>Supplier performance metrics</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Mobile Integration</h3>
+                        <p class="feature-description">Complete mobile app suite for drivers, warehouse staff, and
+                            management with offline capability for remote areas.</p>
+                        <ul class="feature-benefits">
+                            <li>Driver mobile app</li>
+                            <li>Warehouse staff interface</li>
+                            <li>Customer tracking portal</li>
+                            <li>Offline mode support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Deployment in Under 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Our specialized team handles
+                        complete system integration, staff training, and data migration. Your distribution center will
+                        be operating at peak efficiency within 2 days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">See Your ROI in 45 Days</h2>
+                    <p class="roi-subtitle">Distribution centers typically recover their investment within 6 weeks
+                        through operational efficiency gains and cost savings.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">45%</span>
+                        <span class="roi-label">Operational Cost Savings</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">2 hrs</span>
+                        <span class="roi-label">Reduced Processing Time</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">99%</span>
+                        <span class="roi-label">Inventory Accuracy</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">System Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Flexible Pricing for Every Distribution Scale</h2>
+                    <p class="section-subtitle">From small warehouses to large distribution networks - we have the right
+                        solution</p>
+                </div>
+
+                <!-- Toggle Buttons -->
+                <div class="pricing-toggle">
+                    <button class="pricing-toggle-btn active" id="btnGridOne">Basic Systems</button>
+                    <button class="pricing-toggle-btn" id="btnGridTwo">Enterprise Solutions</button>
+                </div>
+
+                <!-- Wrapper -->
+                <div class="pricing-wrapper">
+                    <div class="pricing-grid" id="gridOne">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Starter Warehouse</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR 85,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Up to 1 warehouse locations</li>
+                                        <li>Basic inventory management</li>
+                                        <li>Order processing system</li>
+                                        <li>Standard reporting</li>
+                                        <li>Email support</li>
+                                        <li>Basic barcode integration</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Demo</button>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Most Popular</div>
+                                <div>
+                                    <h3 class="pricing-title">Professional Distribution</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR 125,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Starter</li>
+                                        <li>Up to 3 warehouse locations</li>
+                                        <li>Advanced analytics dashboard</li>
+                                        <li>Route optimization</li>
+                                        <li>Vehical management</li>
+                                        <li>Mobile app access</li>
+                                        <li>Customer portal</li>
+                                        <li>SMS Gateway integrations</li>
+                                        <li>API integrations</li>
+                                        <li>24/7 phone support</li>
+                                        <li>Advanced barcode & QR codes</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Demo</button>
+                            </div>
+
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Smart Logistics</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR 185,000</span>
+                                        <span class="price-period">/Life-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Everything in Professional</li>
+                                        <li>Unlimited locations</li>
+                                        <li>AI-powered forecasting</li>
+                                        <li>Advanced vehicle tracking</li>
+                                        <li>Multi-currency support</li>
+                                        <li>Custom integrations</li>
+                                        <li>Dedicated account manager</li>
+                                        <li>Priority support</li>
+                                        <li>Automated warehouse systems</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Demo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-grid" id="gridTwo" style="display:none;">
+                        <div class="pricing-grid">
+                            <div class="pricing-card featured" style="max-width: 600px; margin: 0 auto;">
+                                <div class="pricing-badge">Enterprise Solution</div>
+                                <div>
+                                    <h3 class="pricing-title">Custom Enterprise Distribution</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">Custom Quote</span>
+                                        <span class="price-period">/Based on Requirements</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Fully customized system architecture</li>
+                                        <li>Multi-country distribution support</li>
+                                        <li>Advanced AI and machine learning</li>
+                                        <li>Enterprise-grade security</li>
+                                        <li>Custom API development</li>
+                                        <li>On-site deployment and training</li>
+                                        <li>Integration with existing ERP systems</li>
+                                        <li>Advanced automation workflows</li>
+                                        <li>Custom reporting and analytics</li>
+                                        <li>Disaster recovery and backup</li>
+                                        <li>Compliance management</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Get Custom Quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Leading Distribution Companies</h2>
+                    <p class="section-subtitle">Real results from real distribution centers across Sri Lanka</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Our distribution costs dropped by 40% within three months. The
+                                route optimization feature alone saved us over LKR 200,000 monthly in fuel costs. The
+                                system handles our peak season demands flawlessly."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pixellark distribution client review"></div>
+                            <div class="testimonial-info">
+                                <h4>Sathees Kumar</h4>
+                                <p>Manager, Lakmali Enterprises, Katugasthota</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The inventory management is phenomenal. We used to have stock
+                                discrepancies every month, now we have 99.8% accuracy. The predictive analytics help us
+                                prepare for seasonal demands perfectly."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pixellark distribution client review"></div>
+                            <div class="testimonial-info">
+                                <h4>Supitha</h4>
+                                <p>Managing Director, Kelani Lanka (PVT) LTD</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Customer satisfaction improved dramatically. Real-time
+                                tracking and accurate delivery times made our clients trust us more. We've expanded to 3
+                                new regions thanks to the operational efficiency this system provides."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pixellark distribution client review"></div>
+                            <div class="testimonial-info">
+                                <h4>Lakmal Karunarathne</h4>
+                                <p>Owner, SriTec Scales, Kandy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Revolutionize Your Distribution Operations?</h2>
+                <p class="cta-subtitle">Join 25+ distribution centers that have transformed their operations with our
+                    smart management system. Get started with a comprehensive consultation today.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off Implementation!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">07</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">23</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">12</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Schedule System Demo
+                    </a>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Now: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our distribution management system</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How quickly can we implement the system in our existing warehouse?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most distribution centers are fully operational within 48 hours. Our implementation team handles
+                        hardware setup, system configuration, data migration, and comprehensive staff training. We
+                        provide 24/7 support during the first two weeks to ensure seamless transition.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system handle Sri Lankan specific logistics challenges?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system is specifically designed for Sri Lankan market conditions. It handles
+                        festival season demand spikes, regional delivery preferences, traffic
+                        patterns in major cities, and integrates with local courier services and payment systems.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Does it integrate with existing ERP or accounting software?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system seamlessly integrates with popular ERP systems, accounting software, and
+                        e-commerce platforms. We support QuickBooks, SAP, Oracle, and can develop custom API
+                        integrations for specific business requirements.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What happens if there's internet connectivity issues?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our system includes robust offline capabilities. Critical operations continue even without
+                        internet connectivity, and all data automatically syncs once connection is restored. This is
+                        especially important for distribution centers in areas with intermittent connectivity.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of training and support do you provide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide comprehensive on-site training for all staff levels, from warehouse workers to
+                        management. This includes 24/7 support for the first two weeks, followed by business hours
+                        support. Professional packages include ongoing training updates and dedicated account
+                        management.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system scale as our distribution network grows?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system is built to scale from single warehouse operations to multi-location
+                        distribution networks. You can easily add new locations, expand user capacity, and integrate
+                        additional features as your business grows without any disruption to existing operations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How secure is our data and what about backup procedures?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Security is our top priority. We use enterprise-grade encryption, secure cloud infrastructure,
+                        and regular automated backups. Your data is stored in multiple secure locations with 99.9%
+                        uptime guarantee. We comply with international data protection standards and provide complete
+                        audit trails for all operations.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Inefficient Distribution Hold Your Business Back</h2>
+                <p>Every day with outdated systems costs you money and customer satisfaction. Transform your operations
+                    today.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        7-Day Free Trial
+                    </h3>
+                    <p>Experience our repair shop management system completely risk-free for 7 days. Not fully
+                        satisfied? Just walk away—no questions asked. Start your trial today and see the transformation!
+                    </p>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Transformation
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-calendar-alt"></i>
+        Get Demo
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Schedule Your System Demo</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Company Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="system_type" required>
+                    <option value="" disabled selected>System Type</option>
+                    <option value="starter-warehouse">Starter Warehouse</option>
+                    <option value="professional-distribution">Professional Distribution</option>
+                    <option value="smart-logistics">Smart Logistics</option>
+                    <option value="custom-enterprise-distribution">Custom Enterprise</option>
+                </select>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Company Size</option>
+                    <option value="small">Small (1-50 employees)</option>
+                    <option value="medium">Medium (51-200 employees)</option>
+                    <option value="large">Large (201-1000 employees)</option>
+                    <option value="enterprise">Enterprise (1000+ employees)</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Schedule My Demo
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+
+    <script src="/root.js"></script>
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_frmv157', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Demo scheduled! We'll contact you within 24 hours.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'demo_scheduled', {
+                'event_category': 'conversion',
+                'event_label': 'distribution_center_demo_requested_for_' + formData.get('system_type')
+            });
+        });
+    </script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>

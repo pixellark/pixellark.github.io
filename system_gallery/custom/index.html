@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Smart Custom Management Systems | Pixellark Solutions - Business Management Software Sri Lanka</title>
+    <meta name="description"
+        content="Transform your Sri Lankan business with our custom management systems. Streamline operations, increase efficiency by 75%, and scale your business with our award-winning software solutions.">
+    <meta name="keywords"
+        content="custom management systems Sri Lanka, business management software, inventory management, CRM systems, ERP solutions, business automation Sri Lanka, custom software development">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/custom">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Custom Management Systems | Pixellark Solutions">
+    <meta property="og:description"
+        content="Revolutionary custom management systems that increase business efficiency by 75%. Transform your Sri Lankan business operations today.">
+    <meta property="og:image" content="https://pixellark.com/img/custom.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/custom">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Smart Custom Management Systems | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary custom management systems that increase business efficiency by 75%. Transform your operations today.">
+    <meta name="twitter:image" content="https://pixellark.com/img/custom.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Smart Custom Management System",
+        "description": "Advanced business management system designed for Sri Lankan businesses across all industries",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "125000",
+            "priceCurrency": "LKR",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "128",
+            "bestRating": "5",
+            "worstRating": "4"
+        },
+        "category": "Business Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions business management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-cogs" style="margin-right: 0.5rem;"></i>
+                    #1 Custom Management System in Sri Lanka
+                </div>
+                <h1 class="hero-title">Smart Custom Management Systems</h1>
+                <p class="hero-subtitle">Revolutionize your business with our intelligent management systems.
+                    Increase efficiency by 75%, reduce operational costs by 50%, and scale your business effortlessly.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">75%</span>
+                        <span class="stat-label">Efficiency Boost</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50%</span>
+                        <span class="stat-label">Cost Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Happy Businesses</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://system-navigator.com" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </a>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This management system transformed our entire business operations.
+                        We've reduced manual work by 80% and our productivity has skyrocketed. Best investment for any business!"</p>
+                    <p class="testimonial-author">- Sajitha Mahanama, Assistance Crew Manager, Acme International
+                        Shipping</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why 50+ Businesses Choose Our System</h2>
+                    <p class="section-subtitle">Every feature designed to streamline your operations and maximize
+                        profitability</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="feature-title">Intelligent Data Management</h3>
+                        <p class="feature-description">Centralize all your business data with advanced analytics and
+                            real-time insights tailored for any market conditions.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time dashboard analytics</li>
+                            <li>Multi-currency support (LKR, USD, EUR)</li>
+                            <li>Automated data backups</li>
+                            <li>Advanced reporting tools</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 class="feature-title">Customer Relationship Management</h3>
+                        <p class="feature-description">Build stronger relationships with your customers using AI-powered
+                            insights and automated communication tools.</p>
+                        <ul class="feature-benefits">
+                            <li>Customer journey tracking</li>
+                            <li>SMS & WhatsApp integration</li>
+                            <li>Loyalty program management</li>
+                            <li>Automated follow-up campaigns</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3 class="feature-title">Advanced Inventory Control</h3>
+                        <p class="feature-description">Never face stockouts or overstock again. Our AI predicts demand
+                            patterns specific to market trends.</p>
+                        <ul class="feature-benefits">
+                            <li>Multi-location inventory tracking</li>
+                            <li>Automated reorder points</li>
+                            <li>Supplier management system</li>
+                            <li>Waste reduction analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="feature-title">Financial Intelligence</h3>
+                        <p class="feature-description">Comprehensive financial management with tax
+                            compliance, GST calculations, and profit optimization.</p>
+                        <ul class="feature-benefits">
+                            <li>Automated GST & VAT calculations</li>
+                            <li>Multi-bank integration</li>
+                            <li>Expense tracking & categorization</li>
+                            <li>Profit margin analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="feature-title">Seamless Integrations</h3>
+                        <p class="feature-description">Connect with any payment gateways, banks, and
+                            third-party services for unified operations.</p>
+                        <ul class="feature-benefits">
+                            <li>Banking API integrations</li>
+                            <li>E-commerce platform sync</li>
+                            <li>Accounting software compatibility</li>
+                            <li>Custom API development</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Enterprise Security</h3>
+                        <p class="feature-description">Bank-level security with local data compliance and advanced
+                            encryption to protect your business data.</p>
+                        <ul class="feature-benefits">
+                            <li>End-to-end encryption</li>
+                            <li>Role-based access control</li>
+                            <li>Audit trail logging</li>
+                            <li>Local data residency compliance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Deployed in Under 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Our expert team handles
+                        complete system setup, data migration, and staff training. Your business will be running on the
+                        new system within two days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Solutions -->
+        <section class="features-section" id="industries">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Tailored Solutions for Every Industry</h2>
+                    <p class="section-subtitle">Customized management systems designed for any business needs</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3 class="feature-title">Retail & Trading</h3>
+                        <p class="feature-description">Multi-branch inventory, supplier management, and customer loyalty
+                            programs</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="feature-title">Manufacturing</h3>
+                        <p class="feature-description">Production planning, quality control, and supply chain
+                            optimization</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="feature-title">IT & Services</h3>
+                        <p class="feature-description">Project management, resource allocation, and client billing
+                            systems</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="feature-title">Education</h3>
+                        <p class="feature-description">Student management, fee collection, and academic performance
+                            tracking</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="feature-title">Healthcare</h3>
+                        <p class="feature-description">Patient records, appointment scheduling, and medical inventory
+                            management</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="feature-title">Logistics</h3>
+                        <p class="feature-description">Fleet management, delivery tracking, and route optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">See Your ROI in 60 Days</h2>
+                    <p class="roi-subtitle">Businesses typically recover their investment within two months
+                        through improved efficiency and reduced operational costs.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">75%</span>
+                        <span class="roi-label">Time Savings</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">50%</span>
+                        <span class="roi-label">Cost Reduction</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">99.9%</span>
+                        <span class="roi-label">System Uptime</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">Local Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Flexible Pricing for Every Business</h2>
+                    <p class="section-subtitle">Choose the perfect package for your business. No hidden fees,
+                        complete transparency.</p>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        Get a Custom Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Leading Businesses</h2>
+                    <p class="section-subtitle">Real stories from real business owners who transformed their operations
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"As an Assistance Crew Manager at Acme International Shipping,
+                                efficiency is everything. After switching to this system, our team’s workflow became
+                                seamless, and we cut down repetitive tasks by 80%. The real-time insights give us a
+                                clear edge in decision-making. I strongly recommend it to any company that values
+                                productivity."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pixellark customer review"></div>
+                            <div class="testimonial-info">
+                                <h4>Sajitha Mahanama</h4>
+                                <p>Assistance Crew Manager, Acme International Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"As the Director of LionsDu, I was impressed by Pixellark's
+                                exceptional support. They grasped our specific business requirements and delivered a
+                                system that went beyond expectations. Our ROI was noticeable within the first month,
+                                making this an invaluable investment."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg"
+                                    alt="pixellark customer review"></div>
+                            <div class="testimonial-info">
+                                <h4>Dando Deshika</h4>
+                                <p>Director, LionsDu (PVT) LTD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                <p class="cta-subtitle">Join 50+ successful businesses who've revolutionized their operations with our
+                    smart management systems. Get started with a free consultation today.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off for Businesses!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">12</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">08</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">35</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">47</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Consultation
+                    </a>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our smart management systems</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to implement the management system?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most businesses are fully operational within 48 hours. Our expert team handles
+                        complete system setup, data migration from existing systems, and comprehensive staff training.
+                        We also provide dedicated support during the first two weeks to ensure smooth transition.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is the system compliant with tax regulations?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system is fully compliant with all tax regulations including GST,
+                        VAT, NBT, and SVAT calculations. We stay updated with the latest Inland Revenue Department
+                        requirements and automatically handle tax calculations, generating compliant invoices and
+                        reports for your business.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we integrate with existing Sri Lankan banking systems?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We have pre-built integrations with major Sri Lankan banks including Sampath Bank, HNB, DFCC, Nations Trust Bank and others. Our system can automatically sync transactions,
+                        handle online payments, and generate bank reconciliation reports.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of training and support do you provide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide comprehensive on-site training for your team, complete user manuals, and 24/7 local support. Our support team understands Sri Lankan business practices and
+                        can assist you in your preferred language. Free support is included for the first 3 months.
+                    </div>
+                </div>
+
+                <!-- <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is my business data secure and where is it stored?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Your data security is our top priority. We use enterprise-grade encryption and can store your
+                        data locally in Sri Lanka to comply with data residency requirements. We also provide regular
+                        automated backups and can offer on-premise deployment for sensitive businesses.
+                    </div>
+                </div> -->
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system handle multiple currencies?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our system supports LKR, USD, EUR, and other major currencies with real-time exchange rate updates. The interface is in English and can be translated on request, making it accessible to all staff and ideal for diverse Sri Lankan business environments.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What happens if we need customizations specific to our business?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our system is highly customizable! We can modify workflows, add custom fields, create specific
+                        reports, and integrate with your existing tools. Our local development team understands unique business requirements and can deliver custom solutions quickly.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Inefficient Systems Hold Your Business Back</h2>
+                <p>Every day without proper management systems costs your Sri Lankan business money and opportunities.
+                    Transform your operations today.</p>
+
+                <div class="hero-cta">
+                    <a class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-calendar-alt"></i>
+        Free Demo
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Consultation</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Business Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Business Type</option>
+                    <option value="retail-trading">Retail & Trading</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="it-services">IT & Services</option>
+                    <option value="education">Education</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="logistics">Logistics & Transport</option>
+                    <option value="other">Other</option>
+                </select>
+                <select name="system_type" required>
+                    <option value="custom" selected>Custom Solution</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request Free Consultation
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+
+    <script src="/root.js"></script>
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_management', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! We'll contact you soon for your free consultation.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'consultation_requested', {
+                'event_category': 'conversion',
+                'event_label': 'management_system_consultation_' + formData.get('package_interest')
+            });
+        });
+    </script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>

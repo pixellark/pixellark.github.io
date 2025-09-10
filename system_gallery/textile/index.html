@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1S0S193J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1S0S193J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Smart Textile Management System | Pixellark Solutions - Garment Factory Software</title>
+    <meta name="description"
+        content="Revolutionary textile management software for Sri Lankan garment factories. Streamline production, reduce waste by 45%, and boost efficiency with our smart textile ERP system. Free demo available.">
+    <meta name="keywords"
+        content="textile management system, garment factory software, textile ERP, fabric inventory management, garment production software, Sri Lanka textile software, clothing manufacturing system">
+    <meta name="author" content="Pixellark Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pixellark.com/system_gallery/textile">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Textile Management System | Pixellark Solutions">
+    <meta property="og:description"
+        content="Revolutionary textile management system that reduces waste by 45% and increases production efficiency by 70%. Transform your garment factory operations today.">
+    <meta property="og:image" content="https://pixellark.com/img/textile-pos.webp">
+    <meta property="og:url" content="https://pixellark.com/system_gallery/textile">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Pixellark Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@PixellarkSolutions"> -->
+    <meta name="twitter:title" content="Smart Textile Management System | Pixellark Solutions">
+    <meta name="twitter:description"
+        content="Revolutionary textile management system that reduces waste by 45% and increases production efficiency by 70%.">
+    <meta name="twitter:image" content="https://pixellark.com/img/textile-pos.webp">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Smart Textile Management System",
+        "description": "Comprehensive textile and garment factory management software with inventory tracking, production planning, and quality control",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pixellark Solutions"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "295000",
+            "priceCurrency": "LKR",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Pixellark Solutions"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "89",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "category": "Textile Management Software"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/system_gallery/subPageCss.css">
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo.png" alt="pixellark solutions textile management system">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fas fa-industry" style="margin-right: 0.5rem;"></i>
+                    #1 Textile Management System in Sri Lanka
+                </div>
+                <h1 class="hero-title">Smart Textile Management System</h1>
+                <p class="hero-subtitle">Transform your textile operations with our intelligent textile management software. Reduce waste by 45%, increase production efficiency by 70%, and streamline your entire supply chain.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45%</span>
+                        <span class="stat-label">Waste Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">70%</span>
+                        <span class="stat-label">Efficiency Boost</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button href="#" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-play"></i>
+                        Watch Live Demo
+                    </button>
+                    <a href="#pricing" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-calculator"></i>
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="testimonial-highlight">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This system revolutionized our Textile Shop. We can track customer data like never before and customer satisfaction plus staff performance have skyrocketed since this system. Our order fulfillment is now 100% accurate!"</p>
+                    <p class="testimonial-author">- Dando Deshika, Dandu (pVT) LTD</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Factories and Textile Shops Choose Our System</h2>
+                    <p class="section-subtitle">Every feature designed to optimize your textile operations and maximize profits</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Inventory Control</h3>
+                        <p class="feature-description">Advanced fabric and material tracking with real-time stock levels, automated reordering, and waste minimization algorithms.</p>
+                        <ul class="feature-benefits">
+                            <li>Real-time fabric tracking</li>
+                            <li>Automated low-stock alerts</li>
+                            <li>Color & pattern matching</li>
+                            <li>Supplier performance metrics</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="feature-title">Production Planning</h3>
+                        <p class="feature-description">Intelligent production scheduling that optimizes machine utilization, reduces bottlenecks, and ensures on-time delivery.</p>
+                        <ul class="feature-benefits">
+                            <li>Machine capacity planning</li>
+                            <li>Production timeline optimization</li>
+                            <li>Resource allocation tracking</li>
+                            <li>Bottleneck identification</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="feature-title">Quality Assurance</h3>
+                        <p class="feature-description">Comprehensive quality control system with defect tracking, inspection checklists, and automated quality reports.</p>
+                        <ul class="feature-benefits">
+                            <li>Digital inspection forms</li>
+                            <li>Defect pattern analysis</li>
+                            <li>Quality score tracking</li>
+                            <li>Corrective action management</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="feature-title">Order Management</h3>
+                        <p class="feature-description">End-to-end order tracking from buyer requirements to final delivery with automated status updates and documentation.</p>
+                        <ul class="feature-benefits">
+                            <li>Buyer order integration</li>
+                            <li>Progress tracking dashboard</li>
+                            <li>Automated status updates</li>
+                            <li>Shipping coordination</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 class="feature-title">Workforce Management</h3>
+                        <p class="feature-description">Complete workforce tracking with attendance, productivity metrics, skill management, and performance analytics.</p>
+                        <ul class="feature-benefits">
+                            <li>Digital attendance system</li>
+                            <li>Productivity tracking</li>
+                            <li>Skill-based assignment</li>
+                            <li>Performance dashboards</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="feature-title">Business Intelligence</h3>
+                        <p class="feature-description">Advanced analytics and reporting with profit analysis, trend identification, and predictive insights for better decision making.</p>
+                        <ul class="feature-benefits">
+                            <li>Profit margin analysis</li>
+                            <li>Trend forecasting</li>
+                            <li>Cost optimization insights</li>
+                            <li>Custom report generation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-highlight">
+                    <h3 style="color: var(--color-success); font-weight: 700; margin-bottom: 1rem;">
+                        <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>
+                        Complete Setup in 48 Hours
+                    </h3>
+                    <p style="color: var(--color-white); position: relative; z-index: 2;">Our textile experts handle everything - from system installation to staff training. Your shop will be running optimally within 2 days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section class="roi-section" id="roi">
+            <div class="roi-container">
+                <div class="roi-highlight">
+                    <h2 class="roi-title">See Results Within 60 Days</h2>
+                    <p class="roi-subtitle">Textile manufacturers typically see significant cost savings and efficiency improvements within the first two months of implementation.</p>
+                </div>
+
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <span class="roi-number">40%</span>
+                        <span class="roi-label">Cost Reduction</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">2 hrs</span>
+                        <span class="roi-label">Faster Order Processing</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">98%</span>
+                        <span class="roi-label">Production Accuracy</span>
+                    </div>
+                    <div class="roi-stat">
+                        <span class="roi-number">24/7</span>
+                        <span class="roi-label">System Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-container">
+                <div class="section-header">
+                    <h2 class="section-title">Flexible Pricing for Every Business Size</h2>
+                    <p class="section-subtitle">From small textile workshops to large garment factories. No hidden fees, complete transparency.</p>
+                </div>
+
+                <!-- Toggle Buttons -->
+                <!-- <div class="pricing-toggle">
+                    <button class="pricing-toggle-btn active" id="btnGridOne">Textile Shops</button>
+                    <button class="pricing-toggle-btn" id="btnGridTwo">Factories</button>
+                </div> -->
+
+                <!-- Wrapper -->
+                <div class="pricing-wrapper">
+                    <div class="pricing-grid" id="gridOne">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Textile Starter</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR67,500</span>
+                                        <span class="price-period">/One-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>1 Counter</li>
+                                        <li>Basic inventory management</li>
+                                        <li>Order tracking system</li>
+                                        <li>Quality control module</li>
+                                        <li>Employee attendance</li>
+                                        <li>Basic reporting</li>
+                                        <li>Free 2500 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Demo</button>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Most Popular</div>
+                                <div>
+                                    <h3 class="pricing-title">Textile Professional</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR85,000</span>
+                                        <span class="price-period">/One-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Multiple Counters</li>
+                                        <li>Advanced inventory with forecasting</li>
+                                        <li>Production planning module</li>
+                                        <li>Complete quality management</li>
+                                        <li>Workforce management</li>
+                                        <li>Business intelligence dashboard</li>
+                                        <li>Custom integrations</li>
+                                        <li>Free 4000 Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Free Demo</button>
+                            </div>
+
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Textile Premium</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR125,000</span>
+                                        <span class="price-period">/One-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>AI-powered optimization</li>
+                                        <li>Multi-location support</li>
+                                        <li>Advanced analytics & forecasting</li>
+                                        <li>Custom workflow design</li>
+                                        <li>API integrations</li>
+                                        <li>White-label options</li>
+                                        <li>24/7 priority support</li>
+                                        <li>7500 Free Requests</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Free Demo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="pricing-grid" id="gridTwo" style="display:none;">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div>
+                                    <h3 class="pricing-title">Factory Basic</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR950,000</span>
+                                        <span class="price-period">/One-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Up to 25 workstations</li>
+                                        <li>Multi-department management</li>
+                                        <li>Advanced production planning</li>
+                                        <li>Supply chain integration</li>
+                                        <li>Compliance management</li>
+                                        <li>Custom reporting suite</li>
+                                        <li>18 months support</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-secondary">Request Consultation</button>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Best Value</div>
+                                <div>
+                                    <h3 class="pricing-title">Enterprise Pro</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-amount">LKR1,350,000</span>
+                                        <span class="price-period">/One-time</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        <li>Unlimited workstations</li>
+                                        <li>Complete ERP integration</li>
+                                        <li>AI-driven predictive analytics</li>
+                                        <li>Multi-factory management</li>
+                                        <li>Advanced compliance tools</li>
+                                        <li>Custom development included</li>
+                                        <li>Dedicated success manager</li>
+                                        <li>24/7 enterprise support</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing btn-pricing-primary">Request Consultation</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="social-proof-container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Leading Textile Industries</h2>
+                    <p class="section-subtitle">Real success stories from Sri Lankan textile and garment factories</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Since adopting this system, our stock mismanagement dropped by 45% and daily sales tracking became 70% faster. The ROI was visible within the first month. A game-changing solution for textile shops!"</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg" alt="pixellark textile customer review"></div>
+                            <div class="testimonial-info">
+                                <h4>Dando Deshika</h4>
+                                <p>Owner, Dandu (PVT) LTD</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The inventory and sales module has transformed our shop. We can now track every item, spot fast-moving trends, and stockouts have dropped to under 2%. Our customers are extremely satisfied with the consistency."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg" alt="pixellark textile customer review"></div>
+                            <div class="testimonial-info">
+                                <h4></h4>
+                                <p>Owner, 00 Clothing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"The stock planning feature is incredible. We can now optimize our shelf space and reduced customer wait times by 35%. The system practically runs our entire store seamlessly."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar"><img src="/img/default-avatar.jpg" alt="pixellark textile customer review"></div>
+                            <div class="testimonial-info">
+                                <h4>Nimesha</h4>
+                                <p>Managers, Dando Fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="demo">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Transform Your Textile Operations?</h2>
+                <p class="cta-subtitle">Join 25+ successful textile manufacturers who've revolutionized their operations with our smart management system. Get started with a free consultation today.</p>
+
+                <div class="urgency-timer" id="countDownSec">
+                    <div class="timer-title">Limited Time Offer - 15% Off!</div>
+                    <div class="timer-display">
+                        <div class="timer-unit">
+                            <span class="timer-number" id="days">14</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="hours">08</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="minutes">32</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-unit">
+                            <span class="timer-number" id="seconds">45</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Request Free Consultation
+                    </button>
+                    <a href="tel:+94789790988" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Sales: +94 78 979 7988
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our textile management system</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to implement the system in our business?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Most textile factories are fully operational within 48 hours. Our implementation team handles hardware setup, data migration, and comprehensive staff training. We also provide dedicated support during your first month to ensure smooth operations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the system handle multiple production lines simultaneously?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our system is designed to manage multiple production lines, different fabric types, and various garment categories simultaneously. You can track each line's performance, manage resources, and optimize production across your entire facility.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Does it integrate with existing accounting and ERP systems?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our textile management system integrates seamlessly with popular accounting software and ERP systems used in Sri Lanka. We also provide custom API integrations for specialized systems used by larger textile manufacturers.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of training do you provide for our staff?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide comprehensive training programs tailored to different roles - from floor operators to management. This includes on-site training sessions, video tutorials in Sinhala and Tamil, and ongoing support to ensure your team maximizes the system's potential.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can we track fabric usage and minimize waste?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our smart inventory module provides detailed fabric usage tracking, identifies waste patterns, and suggests optimization strategies. Many of our clients have reduced fabric waste by 40-50% within the first few months of implementation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is the system suitable for both garment manufacturing and textile production?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Our system is designed to handle both textile production (fabric manufacturing, dyeing, finishing) and garment manufacturing (cutting, sewing, finishing). We customize the modules based on your specific business requirements.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="cta-container">
+                <h2>Don't Let Inefficient Operations Cost You More</h2>
+                <p>Every day without our textile management system is lost productivity and wasted resources. Transform your business operations today.</p>
+
+                <div class="risk-free-guarantee">
+                    <h3>
+                        <i class="fas fa-shield-alt"></i>
+                        7-Day Free Trial
+                    </h3>
+                    <p>Experience our supermarket management system completely risk-free for 7 days. Not fully satisfied? Just walk away—no questions asked. Start your trial today and see the transformation!</p>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-hero btn-primary-hero" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start My Free Consultation
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating CTA -->
+    <button class="floating-cta" onclick="openDemo()">
+        <i class="fas fa-calendar-alt"></i>
+        Free Demo
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demoModel" id="demoModal">
+        <div class="demoModalContainer">
+            <button class="demoModelClose" onclick="closeDemo()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book Your Free Consultation</h3>
+            <form id="demoForm" name="demoForm">
+                <input type="text" name="business_name" placeholder="Business Name" required>
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+                <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                <select name="business_size" required>
+                    <option value="" disabled selected>Business Type</option>
+                    <option value="garment-manufacturing">Garment Manufacturing</option>
+                    <option value="textile-production">Textile Production</option>
+                    <option value="fabric-dyeing">Fabric Dyeing & Finishing</option>
+                    <option value="mixed-operations">Mixed Operations</option>
+                    <option value="other">Other</option>
+                </select>
+                <select name="system_type" required>
+                    <option value="" disabled selected>Package Interest</option>
+                    <option value="textile-starter">Textile Starter</option>
+                    <option value="textile-professional">Textile Professional</option>
+                    <option value="textile-premium">Textile Premium</option>
+                    <option value="custom-solution">Custom Solution</option>
+                </select>
+                <button type="submit">
+                    <i class="fas fa-calendar-check"></i>
+                    Request My Consultation
+                </button>
+            </form>
+            <div id="demoStatus"></div>
+        </div>
+    </div>
+    <script src="/root.js"></script>
+
+    <script src="/assets/js/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init('I28JrTOYr1FeVEz0N'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('demoForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_cpnnvze', 'template_textile', this)
+                .then(function () {
+                    document.getElementById('demoStatus').innerText = "Request sent! We'll contact you soon.";
+                    document.getElementById('demoForm').reset();
+                }, function (error) {
+                    document.getElementById('demoStatus').innerText = "Oops! Something went wrong.";
+                    console.error(error);
+                });
+            // Get form data
+            const formData = new FormData(this);
+            // Track conversion
+            gtag('event', 'consultation_requested', {
+                'event_category': 'conversion',
+                'event_label': 'textile_management_consultation_' + formData.get('system_type' + 'at' + window.location.pathname)
+            });
+        });
+    </script>
+
+    <script src="/system_gallery/subPageScript.js"></script>
+</body>
+
+</html>
