@@ -419,29 +419,27 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Init EmailJS
-// setTimeout(() => {
-//     (function () {
-//         emailjs.init("I28JrTOYr1FeVEz0N"); // Replace with your EmailJS Public Key
-//     })();
-
-//     window.onerror = function (message, source, lineno, colno, error) {
-//         const errorDetails = `
-// Error: ${message}
-// Source: ${source}
-// Line: ${lineno}, Column: ${colno}
-// Stack: ${error?.stack || "N/A"}
-//   `;
-
-//         emailjs.send("service_cpnnvze", "template_u56u7no", {
-//             error_report: errorDetails,
-//             user_site: window.location.hostname,
-//             report_time: new Date().toLocaleString()
-//         }).then(
-//             () => console.log("Error report sent via EmailJS"),
-//             (err) => console.error("Failed to send error report", err)
-//         );
-//     };
-// }, 10000);
+setTimeout(() => {
+    (function () {
+        emailjs.init("I28JrTOYr1FeVEz0N"); // Replace with your EmailJS Public Key
+    })()
+    window.onerror = function (message, source, lineno, colno, error) {
+        const errorDetails = `
+ Error: ${message}
+ Source: ${source}
+ Line: ${lineno}, Column: ${colno}
+ Stack: ${error?.stack || "N/A"}
+   `
+        emailjs.send("service_cpnnvze", "template_u56u7no", {
+            error_report: errorDetails,
+            user_site: window.location.hostname,
+            report_time: new Date().toLocaleString()
+        }).then(
+            () => console.log("Error report sent via EmailJS"),
+            (err) => console.error("Failed to send error report", err)
+        );
+    };
+}, 10000);
 
 setTimeout(() => {
     // Smooth scrolling using Lenis
@@ -459,3 +457,4 @@ setTimeout(() => {
 
     requestAnimationFrame(raf);
 }, 2000);
+
