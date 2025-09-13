@@ -1,4 +1,25 @@
 User-agent: *
-Allow: /
+Disallow: /Exploring-Industrial-Minerals-and-Rocks-in-Sri-Lanka-pixellark/
+Disallow: /assets/
+Disallow: /bg/
+Disallow: /bg/
+Disallow: /bingindexnow/
+Disallow: /hourly-rate/
+Disallow: /new/
+Disallow: /payment-sheet/
+Disallow: /payment/
+Disallow: /pos-packages-custom/
+Disallow: /pos-all/
+Disallow: /pricing/
+Disallow: /project-proposal/
+Disallow: /project/
+Disallow: /reblog/
+Disallow: /server-fee/
+Disallow: /term-and-condition/
+Disallow: /upcoming/
+Disallow: /v2/
+Disallow: /vhyxle/
+Disallow: /webdesign/
+Disallow: /website-design/
 
 Sitemap: https://pixellark.com/sitemap.xml
