@@ -4,8 +4,8 @@ function isMobile() {
 }
 
 document.querySelector('.backxx').addEventListener('click', () => {
-  consultus();
-  hideMenuItems();
+    consultus();
+    hideMenuItems();
 });
 
 // Global toggle for canvas animations
@@ -458,3 +458,6 @@ setTimeout(() => {
     requestAnimationFrame(raf);
 }, 2000);
 
+document.querySelectorAll('.clickable').forEach(el => {
+  el.addEventListener('click', consultus);
+});
