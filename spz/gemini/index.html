@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIONSDU Pvt Ltd | Cloud ERP & E-Commerce Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="LIONSDU Pvt Ltd offers advanced cloud-based ERP solutions, e-commerce platforms, and AI business tools in Sri Lanka to streamline operations and drive growth.">
+    <meta name="keywords" content="Cloud-based ERP solutions Sri Lanka, Business process automation, E-commerce platform Sri Lanka, AI business tools, ERP for small business, Online sales platform, Automated bookkeeping system, Inventory management software, Procurement management ERP, Human resource management system">
+    <meta name="author" content="LIONSDU Pvt Ltd">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Configuration -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #334155; /* slate-700 */
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.6, 0.2, 0.4, 1), transform 0.8s cubic-bezier(0.6, 0.2, 0.4, 1);
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-slate-800 mb-4 text-center;
+        }
+        .section-subtitle {
+            @apply text-lg text-slate-600 mb-12 text-center max-w-3xl mx-auto;
+        }
+        .gradient-text {
+            @apply bg-gradient-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-800">
+                LIONSDU<span class="text-sky-500">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-slate-600 hover:text-sky-500 transition-colors duration-300">About</a>
+                <a href="#services" class="text-slate-600 hover:text-sky-500 transition-colors duration-300">Services</a>
+                <a href="#why-us" class="text-slate-600 hover:text-sky-500 transition-colors duration-300">Why Us</a>
+                <a href="#contact" class="bg-sky-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-sky-600 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5">Contact Us</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-slate-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-sky-500">About</a>
+            <a href="#services" class="block py-2 text-slate-600 hover:text-sky-500">Services</a>
+            <a href="#why-us" class="block py-2 text-slate-600 hover:text-sky-500">Why Us</a>
+            <a href="#contact" class="block mt-2 bg-sky-500 text-white text-center px-4 py-2 rounded-lg font-semibold hover:bg-sky-600">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-white">
+             <div class="absolute inset-0 bg-grid-slate-200/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom_1px_center" style="mask-image: linear-gradient(to bottom, transparent, black, transparent)"></div>
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight mb-6 scroll-reveal">
+                        Welcome to <span class="gradient-text">LIONSDU</span> Pvt Ltd
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-3xl mx-auto scroll-reveal" style="transition-delay: 200ms;">
+                        Your Trusted Partner for Cloud-Based ERP & E-Commerce Solutions in Sri Lanka
+                    </p>
+                    <div class="scroll-reveal" style="transition-delay: 400ms;">
+                        <a href="#contact" class="bg-sky-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-sky-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Get a Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="scroll-reveal">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">About Us</h2>
+                        <p class="text-slate-600 mb-6">
+                            We are a Sri Lankan technology company committed to transforming business operations through innovative solutions. Our expertise lies in implementing automated ERP systems for comprehensive data management and bookkeeping, alongside modern internet-based sales platforms like e-commerce stores. By leveraging the latest technologies, we enable businesses to manage their resources efficiently and reach new markets online.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span><strong class="text-slate-700">Enhance</strong> business process automation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span><strong class="text-slate-700">Simplify</strong> data and resource management</span>
+                            </li>
+                             <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span><strong class="text-slate-700">Expand</strong> sales channels via e-commerce</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span><strong class="text-slate-700">Integrate</strong> AI tools for smart decision-making</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scroll-reveal" style="transition-delay: 200ms;">
+                        <img src="https://placehold.co/600x400/e2e8f0/334155?text=Innovative+Solutions" alt="Team working on innovative solutions" class="rounded-xl shadow-2xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title scroll-reveal">Our Services</h2>
+                <p class="section-subtitle scroll-reveal">
+                    At LIONSDU, we specialize in delivering advanced, cloud-based ERP solutions integrated with powerful e-commerce platforms and AI-driven business tools.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 scroll-reveal">
+                        <div class="bg-sky-100 text-sky-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Cloud-Based ERP</h3>
+                        <p class="text-slate-600">Revolutionize operations with our scalable ERP, covering Procurement, Sales, Inventory, Manufacturing, Finance, Asset, and HR Management.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 scroll-reveal" style="transition-delay: 150ms;">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Process Automation</h3>
+                        <p class="text-slate-600">Reduce manual tasks and errors by automating core workflows. From bookkeeping to inventory control, we streamline your operations.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 scroll-reveal" style="transition-delay: 300ms;">
+                        <div class="bg-emerald-100 text-emerald-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">E-Commerce Solutions</h3>
+                        <p class="text-slate-600">Launch and grow online sales with our fully integrated e-commerce platforms, expanding your reach both locally and globally.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 scroll-reveal" style="transition-delay: 450ms;">
+                        <div class="bg-rose-100 text-rose-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">AI-Powered Tools</h3>
+                        <p class="text-slate-600">Leverage AI to gain insights, predict trends, and optimize inventory, boosting your business intelligence and profitability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title scroll-reveal">Why Choose LIONSDU?</h2>
+                <p class="section-subtitle scroll-reveal">
+                    Our goal is to empower businesses of all sizes with cutting-edge technology designed to streamline operations, boost sales, and drive sustainable growth.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center p-6 scroll-reveal">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Innovative Technology</h3>
+                        <p class="text-slate-600">We stay ahead with the latest cloud, AI, and ERP technologies tailored for your business needs.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-reveal" style="transition-delay: 100ms;">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Customer-Centric Approach</h3>
+                        <p class="text-slate-600">Our solutions are designed around your unique challenges and goals.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-reveal" style="transition-delay: 200ms;">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Industry Expertise</h3>
+                        <p class="text-slate-600">Proven experience supporting small, medium, and large enterprises across multiple sectors.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-reveal" style="transition-delay: 300ms;">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Reliable Support</h3>
+                        <p class="text-slate-600">Dedicated customer service and training to ensure smooth implementation and ongoing success.</p>
+                    </div>
+                    <div class="text-center p-6 scroll-reveal" style="transition-delay: 400ms;">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Scalable Solutions</h3>
+                        <p class="text-slate-600">Grow your business confidently with systems designed to expand with you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section id="vision-mission" class="py-20 bg-slate-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 text-center md:text-left">
+                    <div class="scroll-reveal">
+                        <h3 class="text-3xl font-bold mb-4"><span class="gradient-text">Our Vision</span></h3>
+                        <p class="text-slate-300 text-lg">To be the preferred enterprise solution provider, empowering businesses locally and globally through innovative, customer-centric, and intelligent ERP solutions.</p>
+                    </div>
+                    <div class="scroll-reveal" style="transition-delay: 200ms;">
+                        <h3 class="text-3xl font-bold mb-4"><span class="gradient-text">Our Mission</span></h3>
+                        <p class="text-slate-300 text-lg">Delivering intelligent, customer-focused, and technology-driven enterprise and e-commerce solutions that enhance operational efficiency, enable global connectivity, empower users, and create lasting value for all stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporate Values -->
+        <section id="values" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title scroll-reveal">Our Corporate Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mt-12">
+                    <div class="text-center scroll-reveal">
+                        <h4 class="font-bold text-lg text-slate-700">Customer Centricity</h4>
+                        <p class="text-slate-500 mt-1">Prioritizing user needs to deliver impactful business value.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 100ms;">
+                        <h4 class="font-bold text-lg text-slate-700">Respect for Diversity</h4>
+                        <p class="text-slate-500 mt-1">Embracing diverse industries and perspectives for inclusive innovation.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 200ms;">
+                        <h4 class="font-bold text-lg text-slate-700">Ethics & Professionalism</h4>
+                        <p class="text-slate-500 mt-1">Upholding the highest standards in governance and conduct.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 300ms;">
+                        <h4 class="font-bold text-lg text-slate-700">Agility & Innovation</h4>
+                        <p class="text-slate-500 mt-1">Continuously evolving to meet business challenges with creativity.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 400ms;">
+                        <h4 class="font-bold text-lg text-slate-700">Accountability</h4>
+                        <p class="text-slate-500 mt-1">Taking responsibility for solution quality and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="bg-slate-50">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4 scroll-reveal">Ready to Transform Your Business?</h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto scroll-reveal" style="transition-delay: 150ms;">
+                    Partner with LIONSDU to leverage the power of cloud ERP, e-commerce, and AI-driven solutions. Contact us today for a free consultation and take the first step toward digital business transformation.
+                </p>
+                <div class="scroll-reveal" style="transition-delay: 300ms;">
+                    <a href="#contact" class="bg-sky-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-sky-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Contact Us Today
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <h3 class="text-xl font-bold text-white mb-4">LIONSDU Pvt Ltd</h3>
+                    <p>Randeepa, Lenavihara Watta,<br>Dodamgaslanda, Sri Lanka</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li>📞 Phone: <a href="tel:+94778000574" class="hover:text-sky-400">+94 77 800 0574</a></li>
+                        <li>📧 Email: <a href="mailto:info@lionsdu.com" class="hover:text-sky-400">info@lionsdu.com</a></li>
+                        <li>🌐 Website: <a href="https://lionsdu.com" target="_blank" class="hover:text-sky-400">lionsdu.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                     <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-sky-400">About Us</a></li>
+                        <li><a href="#services" class="hover:text-sky-400">Our Services</a></li>
+                        <li><a href="#why-us" class="hover:text-sky-400">Why Choose Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-slate-400 text-sm">
+                <p>&copy; 2024 LIONSDU Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for header shadow on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('shadow-sm');
+            }
+        });
+
+        // JavaScript for scroll reveal animations
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LIONSDU Pvt Ltd - Cloud-Based ERP, E-Commerce, and AI Business Solutions in Sri Lanka">
+<title>LIONSDU Pvt Ltd</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #1d3557;
+    --secondary: #457b9d;
+    --accent: #e63946;
+    --light: #f1faee;
+    --dark: #0b132b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+nav.mobile {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: var(--primary);
+    width: 100%;
+    flex-direction: column;
+    display: none;
+}
+
+nav.mobile a {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1500&q=80') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    padding: 5% 10%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+}
+
+/* Contact */
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav.desktop {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10% 5%;
+    }
+    .hero {
+        padding: 0 5%;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>LIONSDU Pvt Ltd</h1>
+    <nav class="desktop">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#vision">Vision & Mission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="mobile" id="mobile-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#vision">Vision & Mission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" data-aos="fade-up">
+    <div>
+        <h2>Welcome to LIONSDU Pvt Ltd</h2>
+        <p>Your Trusted Partner for Cloud-Based ERP & E-Commerce Solutions in Sri Lanka</p>
+    </div>
+</section>
+
+<section id="about" data-aos="fade-right">
+    <h2>About Us</h2>
+    <p>We are a Sri Lankan technology company committed to transforming business operations through innovative solutions. Our expertise lies in implementing automated ERP systems for comprehensive data management and bookkeeping, alongside modern internet-based sales platforms like e-commerce stores. By leveraging the latest technologies, we enable businesses to manage their resources efficiently and reach new markets online.</p>
+    <ul>
+        <li>Enhance business process automation</li>
+        <li>Simplify data and resource management</li>
+        <li>Expand sales channels via e-commerce</li>
+        <li>Integrate AI tools for smart decision-making</li>
+    </ul>
+</section>
+
+<section id="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Cloud-Based ERP Systems</h3>
+            <p>Revolutionize your business operations with our scalable, secure ERP solutions covering Procurement, Sales, Inventory, Manufacturing, Finance, Asset, and Human Resource Management.</p>
+        </div>
+        <div class="card">
+            <h3>Business Process Automation</h3>
+            <p>Reduce manual tasks and errors by automating your core business workflows. Save time and reduce costs.</p>
+        </div>
+        <div class="card">
+            <h3>E-Commerce Solutions</h3>
+            <p>Launch and grow your online sales with our integrated e-commerce platforms that connect seamlessly with your ERP system.</p>
+        </div>
+        <div class="card">
+            <h3>AI-Powered Business Tools</h3>
+            <p>Gain insights, predict trends, optimize inventory, and improve customer engagement using AI-driven tools.</p>
+        </div>
+    </div>
+</section>
+
+<section id="why" data-aos="fade-left">
+    <h2>Why Choose LIONSDU?</h2>
+    <ul>
+        <li>Innovative Technology</li>
+        <li>Customer-Centric Approach</li>
+        <li>Industry Expertise</li>
+        <li>Reliable Support</li>
+        <li>Scalable Solutions</li>
+    </ul>
+</section>
+
+<section id="vision" data-aos="fade-up">
+    <h2>Vision</h2>
+    <p>To be the preferred enterprise solution provider, empowering businesses locally and globally through innovative, customer-centric, and intelligent ERP solutions.</p>
+    <h2>Mission</h2>
+    <p>Delivering intelligent, customer-focused, and technology-driven enterprise and e-commerce solutions that enhance operational efficiency, enable global connectivity, empower users, and create lasting value for all stakeholders.</p>
+</section>
+
+<section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p>LIONSDU Pvt Ltd<br>Randeepa, Lenavihara Watta, Dodamgaslanda, Sri Lanka</p>
+        <p>📞 Phone: +94 77 800 0574</p>
+        <p>📧 Email: info@lionsdu.com</p>
+        <p>🌐 Website: lionsdu.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 LIONSDU Pvt Ltd | All Rights Reserved</p>
+</footer>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1200,
+    once: true
+});
+</script>
+
+<script>
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileNav = document.getElementById('mobile-nav');
+mobileMenu.addEventListener('click', () => {
+    mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+});
+</script>
+</body>
+</html>
