@@ -3,88 +3,88 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://www.pixellark.com/</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         </url>
 
         <!-- System Gallery URLs -->
         <url>
-        <loc>https://pixellark.com/system_gallery/computer-shops</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/computer-shops/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/custom</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/custom/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/distribution</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/distribution/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/medical-centers</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/medical-centers/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/mobile-phones</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/mobile-phones/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/pharmacy</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/pharmacy/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/restaurants</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/restaurants/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/retail-shops</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/retail-shops/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/studios</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/studios/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/supermarkets</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/supermarkets/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/textile</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/textile/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery/wholesale</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/wholesale/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         </url>
         <url>
-        <loc>https://pixellark.com/system_gallery</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://pixellark.com/system_gallery/</loc>
+        <lastmod>2025-10-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
