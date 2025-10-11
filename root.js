@@ -9,7 +9,8 @@ document.querySelector('.backxx').addEventListener('click', () => {
 });
 
 // Global toggle for canvas animations
-let enableCanvasAnimations = true; // set to true if you want them
+// Initialize the enableCanvasAnimations variable from localStorage or default to true
+let enableCanvasAnimations = true;
 
 function startCanvas() {
     if (!enableCanvasAnimations) return;
@@ -441,23 +442,6 @@ setTimeout(() => {
     };
 }, 10000);
 
-setTimeout(() => {
-    // Smooth scrolling using Lenis
-    var lenis = new Lenis({
-        duration: 0.4,     // scroll duration (seconds)
-        easing: t => t,    // easing function
-        smooth: true,      // enable smooth scrolling
-        direction: 'vertical' // 'horizontal' also possible
-    });
-
-    function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf);
-}, 2000);
-
 document.querySelectorAll('.clickable').forEach(el => {
-  el.addEventListener('click', consultus);
+    el.addEventListener('click', consultus);
 });
