@@ -121,6 +121,10 @@ var i = 0;
 
 // Initialize 3D Scene
 function init3D() {
+    if (typeof THREE === 'undefined') {
+        console.warn('Three.js not loaded – skipping 3D initialization.');
+        return; // 🚀 Stop here safely
+    }
     // Create scene
     scene = new THREE.Scene();
 
@@ -155,6 +159,11 @@ function init3D() {
 
 // Create particle system
 function createParticleSystem() {
+    if (typeof THREE === 'undefined') {
+        console.warn('Three.js not loaded – skipping 3D initialization.');
+        return; // 🚀 Stop here safely
+    }
+
     const particleCount = 800;
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
@@ -190,6 +199,11 @@ function createParticleSystem() {
 
 // Create floating cubes
 function createFloatingCubes() {
+    if (typeof THREE === 'undefined') {
+        console.warn('Three.js not loaded – skipping 3D initialization.');
+        return; // 🚀 Stop here safely
+    }
+
     const cubeGeometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
 
     for (var i = 0; i < 15; i++) {
@@ -228,6 +242,11 @@ function createFloatingCubes() {
 }
 
 function animate() {
+    if (typeof THREE === 'undefined') {
+        console.warn('Three.js not loaded – skipping 3D initialization.');
+        return; // 🚀 Stop here safely
+    }
+
     requestAnimationFrame(animate);
 
     const time = Date.now() * 0.0005;

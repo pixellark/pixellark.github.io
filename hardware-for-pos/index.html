@@ -248,6 +248,15 @@
             color: white;
         }
 
+        .priceTag {
+            width: max-content;
+            padding: 3px 8px;
+            border-radius: 20px;
+            background: #ffffff33;
+            border: 1px solid #00000060;
+            box-shadow: 0px 0px 5px 1px #00000060;
+        }
+
         .hiddenxx {
             display: none !important
         }
@@ -328,33 +337,22 @@
     <header class="hw-hero">
         <div class="hw-wrap">
             <h1>POS Hardware that just works.</h1>
-            <p>Curated devices for <strong>Retail</strong>, <strong>Restaurants</strong>, and
-                <strong>Pharmacies</strong> — tested with <strong>Pixellark ERP</strong>, <strong>POS</strong>, and
+            <p>Curated devices for <strong>Retail</strong>, <strong>Restaurants</strong>,
+                <strong>Pharmacies and more</strong> — tested with <strong>Pixellark ERP</strong>, <strong>POS</strong>, and
                 <strong>KOT</strong>. Mix & match or pick a ready bundle.
             </p>
             <div class="hw-pillbar" aria-hidden="true">
+                <span class="hw-pill">Computers</span>
                 <span class="hw-pill">Thermal Printers</span>
                 <span class="hw-pill">Barcode Scanners</span>
                 <span class="hw-pill">Cash Drawers</span>
                 <span class="hw-pill">Customer Displays</span>
-                <span class="hw-pill">Scales</span>
-                <span class="hw-pill">Networking & UPS</span>
+                <span class="hw-pill">UPS</span>
             </div>
         </div>
     </header>
 
     <main class="hw-wrap">
-        <!-- Filter -->
-        <section aria-labelledby="filter-title">
-            <h2 id="filter-title" class="sr-only">Filter by industry</h2>
-            <div class="filterbar" id="filterbar">
-                <span class="chip active" data-filter="all">All</span>
-                <span class="chip" data-filter="retail">Retail</span>
-                <span class="chip" data-filter="restaurant">Restaurant</span>
-                <span class="chip" data-filter="pharmacy">Pharmacy</span>
-            </div>
-        </section>
-
         <!-- Categories -->
         <section aria-labelledby="cat-title">
             <h2 id="cat-title">Essential Hardware</h2>
@@ -362,22 +360,42 @@
                 Bluetooth supported where applicable.</p>
 
             <div class="hw-grid" id="hw-grid">
+                <article class="hw-card tag-retail tag-pharmacy">
+                    <h3><i class="fa-solid fa-computer"></i> Computers</h3>
+                    <p>Intel i5 2nd Generation Processor. 8GB ram plus 500GB HDD. (Machine only)</p>
+                    <div class="hw-tagrow">
+                        <span class="hw-tag">i5</span><span class="hw-tag">8GB/500BG</span>
+                    </div>
+                    <div class="priceTag">LKR 18,500.00</div>
+                </article>
+
+                <article class="hw-card tag-pharmacy">
+                    <h3><i class="fa-solid fa-display"></i> Monitor</h3>
+                    <p>22 inch LED monitor. Perfect for any business. Low electricity cost.</p>
+                    <div class="hw-tagrow">
+                        <span class="hw-tag">LED</span><span class="hw-tag">VGA/HDMI</span>
+                    </div>
+                    <div class="priceTag">LKR 12,500.00</div>
+                </article>
+
                 <article class="hw-card tag-retail tag-restaurant">
                     <h3><i class="fa-solid fa-receipt"></i> Thermal Receipt Printers</h3>
-                    <p>80mm receipt printers with auto-cutter and ESC/POS support. Works with Pixellark POS & KOT.</p>
+                    <p>80mm receipt printers with auto-cutter and ESC/POS support.</p>
                     <div class="hw-tagrow">
                         <span class="hw-tag">80mm</span><span class="hw-tag">ESC/POS</span><span
                             class="hw-tag">USB/LAN/BT</span>
                     </div>
+                    <div class="priceTag">LKR 22,000.00</div>
                 </article>
 
                 <article class="hw-card tag-retail tag-pharmacy">
                     <h3><i class="fa-solid fa-barcode"></i> Barcode Scanners</h3>
-                    <p>1D/2D scanners for barcodes & QR. Handheld, hands‑free, and wireless options.</p>
+                    <p>3D desktop scanners for barcodes & QR. Handheld, hands‑free, and wireless options.</p>
                     <div class="hw-tagrow">
-                        <span class="hw-tag">1D/2D</span><span class="hw-tag">USB</span><span
-                            class="hw-tag">Wireless</span>
+                        <span class="hw-tag">2D/3D</span><span class="hw-tag">USB</span><span
+                            class="hw-tag">Hands-Free</span>
                     </div>
+                    <div class="priceTag">LKR 18,500.00</div>
                 </article>
 
                 <article class="hw-card tag-retail tag-restaurant">
@@ -386,47 +404,26 @@
                     <div class="hw-tagrow">
                         <span class="hw-tag">RJ11</span><span class="hw-tag">Heavy‑Duty</span>
                     </div>
+                    <div class="priceTag">LKR 14,500.00</div>
                 </article>
 
                 <article class="hw-card tag-restaurant">
-                    <h3><i class="fa-solid fa-print"></i> Kitchen/Order Printers</h3>
-                    <p>Impact (dot‑matrix) or thermal KOT printers for heat and grease‑heavy kitchens.</p>
+                    <h3><i class="fa-solid fa-print"></i> X-Printer 2-in-1 Barcode Label Printers</h3>
+                    <p>Compact 2-in-1 thermal printer — prints labels and receipts. LAN/USB connectivity.</p>
                     <div class="hw-tagrow">
-                        <span class="hw-tag">KOT</span><span class="hw-tag">LAN</span><span class="hw-tag">Loud
-                            Buzzer</span>
+                        <span class="hw-tag">Stickers</span><span class="hw-tag">LAN/USB</span><span
+                            class="hw-tag">2-in-1</span>
                     </div>
-                </article>
-
-                <article class="hw-card tag-retail tag-pharmacy">
-                    <h3><i class="fa-solid fa-tv"></i> Customer Displays</h3>
-                    <p>Line or pole displays and small screens to show items, totals, and QR codes.</p>
-                    <div class="hw-tagrow">
-                        <span class="hw-tag">USB</span><span class="hw-tag">HDMI</span>
-                    </div>
-                </article>
-
-                <article class="hw-card tag-pharmacy">
-                    <h3><i class="fa-solid fa-scale-balanced"></i> Weighing Scales</h3>
-                    <p>POS‑linkable scales for per‑weight billing in groceries and pharmacies.</p>
-                    <div class="hw-tagrow">
-                        <span class="hw-tag">RS‑232</span><span class="hw-tag">Barcode Label</span>
-                    </div>
+                    <div class="priceTag">LKR 24,500.00</div>
                 </article>
 
                 <article class="hw-card tag-retail tag-restaurant tag-pharmacy">
-                    <h3><i class="fa-solid fa-desktop"></i> POS Terminals & Tablets</h3>
-                    <p>All‑in‑one touch PCs, mini PCs, and Android handhelds tested with Pixellark.</p>
+                    <h3><i class="fa-solid fa-network-wired"></i> UPS</h3>
+                    <p>UPS units to keep POS and printers online 24/7.</p>
                     <div class="hw-tagrow">
-                        <span class="hw-tag">Touch</span><span class="hw-tag">Windows/Android</span>
+                        <span class="hw-tag">Power Backup</span>
                     </div>
-                </article>
-
-                <article class="hw-card tag-retail tag-restaurant tag-pharmacy">
-                    <h3><i class="fa-solid fa-network-wired"></i> Networking & UPS</h3>
-                    <p>Routers, switches, and UPS units to keep POS and printers online 24/7.</p>
-                    <div class="hw-tagrow">
-                        <span class="hw-tag">LAN</span><span class="hw-tag">Power Backup</span>
-                    </div>
+                    <div class="priceTag">LKR 9,500.00</div>
                 </article>
             </div>
         </section>
@@ -444,7 +441,7 @@
                 </div>
                 <div class="kv">
                     <h4>Operating Systems</h4>
-                    <p>Windows for terminals, Android for handhelds; browser‑based clients supported.</p>
+                    <p>Windows/MacOS/Linux/ChromeOS or any OS that supports a browser, Android or iOS for handhelds; browser‑based clients supported.</p>
                 </div>
                 <div class="kv">
                     <h4>Connections</h4>
@@ -459,52 +456,6 @@
 
         <div class="divider" role="presentation"></div>
 
-        <!-- Bundles -->
-        <section aria-labelledby="bundle-title">
-            <h2 id="bundle-title">Recommended Bundles</h2>
-            <div class="hw-bundles">
-                <div class="hw-bundle tag-retail">
-                    <h4>Retail Starter Bundle</h4>
-                    <ul>
-                        <li>Touch POS or Mini PC</li>
-                        <li>80mm Thermal Receipt Printer</li>
-                        <li>1D/2D Barcode Scanner</li>
-                        <li>Cash Drawer + Paper Rolls</li>
-                    </ul>
-                    <div class="hw-cta">
-                        <a class="btn btn-primary" href="/contact-us/">Get a Quote</a>
-                        <a class="btn btn-outline" href="/pos-packages/">See POS Packages</a>
-                    </div>
-                </div>
-                <div class="hw-bundle tag-restaurant">
-                    <h4>Restaurant / KOT Bundle</h4>
-                    <ul>
-                        <li>Touch POS Terminal</li>
-                        <li>Receipt Printer + Kitchen Printer</li>
-                        <li>Cash Drawer</li>
-                        <li>Router + UPS (optional)</li>
-                    </ul>
-                    <div class="hw-cta">
-                        <a class="btn btn-primary" href="/contact-us/">Get a Quote</a>
-                        <a class="btn btn-outline" href="/system_gallery/">See Demos</a>
-                    </div>
-                </div>
-                <div class="hw-bundle tag-pharmacy">
-                    <h4>Pharmacy Smart Bundle</h4>
-                    <ul>
-                        <li>Touch POS + Mini PC</li>
-                        <li>2D Scanner for GS1/QR</li>
-                        <li>80mm Receipt + Label Printer</li>
-                        <li>Customer Display</li>
-                    </ul>
-                    <div class="hw-cta">
-                        <a class="btn btn-primary" href="/contact-us/">Get a Quote</a>
-                        <a class="btn btn-outline" href="/pos-packages/">Compare Plans</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <div class="divider" role="presentation"></div>
 
         <!-- FAQ -->
@@ -517,11 +468,11 @@
                 <dt>Do you install and calibrate?</dt>
                 <dd>Yes. We install, configure, and test printing, cash drawer kicks, scanners, and displays.</dd>
                 <dt>Can I start small and upgrade?</dt>
-                <dd>Absolutely. Begin with essentials and add KOT printers, displays, or handhelds later.</dd>
+                <dd>Absolutely. Begin with essentials and add printers, displays, or handhelds later.</dd>
                 <dt>Do you provide warranty?</dt>
-                <dd>Yes. Standard manufacturer warranty plus Pixellark setup support.</dd>
+                <dd>Yes. Standard manufacturer warranty plus Pixellark setup support*.</dd>
             </dl>
-            <p class="muted">Last updated: 2025-09-05</p>
+            <p class="muted">Last updated: 2025-10-27</p>
         </section>
     </main>
 
@@ -574,25 +525,6 @@
     <script src="/js/lenis.min.js"></script>
     <script src="/assets/js/email.min.js"></script>
     <script src="/root.js"></script>
-
-    <!-- Minimal page JS (filter only) -->
-    <script>
-        (function () {
-            const chips = document.querySelectorAll('.chip');
-            const cards = document.querySelectorAll('.hw-card, .hw-bundle');
-            function apply(filter) {
-                cards.forEach(c => {
-                    if (filter === 'all') return c.classList.remove('hiddenxx');
-                    const ok = c.classList.contains('tag-' + filter);
-                    c.classList.toggle('hiddenxx', !ok);
-                });
-                chips.forEach(ch => ch.classList.toggle('active', ch.dataset.filter === filter));
-            }
-            chips.forEach(ch => ch.addEventListener('click', () => apply(ch.dataset.filter)));
-            // init
-            apply('all');
-        })();
-    </script>
 </body>
 
 </html>
