@@ -326,6 +326,11 @@ function onWindowResize() {
     windowHalfX = window.innerWidth / 2;
     windowHalfY = window.innerHeight / 2;
 
+    if (typeof THREE === 'undefined') {
+        console.warn('Three.js not loaded – skipping 3D initialization.');
+        return; // 🚀 Stop here safely
+    }
+
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
@@ -463,4 +468,5 @@ setTimeout(() => {
 
 document.querySelectorAll('.clickable').forEach(el => {
     el.addEventListener('click', consultus);
+
 });
