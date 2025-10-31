@@ -464,9 +464,10 @@ setTimeout(() => {
             (err) => console.error("Failed to send error report", err)
         );
     };
-}, 10000);
+}, 60000);
 
 document.querySelectorAll('.clickable').forEach(el => {
     el.addEventListener('click', consultus);
 
 });
+
