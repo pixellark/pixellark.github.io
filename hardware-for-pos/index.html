@@ -48,7 +48,7 @@
             margin: 3rem 0 0 0;
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
             color: white;
-            padding: 5rem 1rem;
+            padding: 6rem 0.5rem 0.5rem;
             text-align: center;
         }
 
@@ -71,6 +71,12 @@
             color: var(--color-white);
             border-radius: 30px;
             box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+        }
+
+        @media (max-width: 900px) {
+            .hw-wrap {
+                margin: 0 0.3rem 3rem 0.3rem;
+            }
         }
 
         .hw-pillbar {
@@ -114,6 +120,13 @@
         .hw-card p {
             margin: 0 0 .6rem;
             color: var(--color-text-secondary);
+        }
+
+        .hw-card-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: .6rem;
+            border-radius: 10px 10px 0 0;
         }
 
         .hw-tagrow {
@@ -361,8 +374,9 @@
 
             <div class="hw-grid" id="hw-grid">
                 <article class="hw-card tag-retail tag-pharmacy">
+                    <img src="../img/pc.png" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-computer"></i> Computers</h3>
-                    <p>Intel i5 2nd Generation Processor. 8GB ram plus 500GB HDD. (Machine only)</p>
+                    <p>Intel i5 3rd Generation Processor. 8GB ram plus 500GB HDD. (Machine only)</p>
                     <div class="hw-tagrow">
                         <span class="hw-tag">i5</span><span class="hw-tag">8GB/500BG</span>
                     </div>
@@ -370,6 +384,7 @@
                 </article>
 
                 <article class="hw-card tag-pharmacy">
+                    <img src="../img/monitor-2.jpg" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-display"></i> Monitor</h3>
                     <p>22 inch LED monitor. Perfect for any business. Low electricity cost.</p>
                     <div class="hw-tagrow">
@@ -379,6 +394,7 @@
                 </article>
 
                 <article class="hw-card tag-retail tag-restaurant">
+                    <img src="../img/x-printer.png" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-receipt"></i> Thermal Receipt Printers</h3>
                     <p>80mm receipt printers with auto-cutter and ESC/POS support.</p>
                     <div class="hw-tagrow">
@@ -389,6 +405,7 @@
                 </article>
 
                 <article class="hw-card tag-retail tag-pharmacy">
+                    <img src="../img/barcode-scanner.png" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-barcode"></i> Barcode Scanners</h3>
                     <p>3D desktop scanners for barcodes & QR. Handheld, hands‑free, and wireless options.</p>
                     <div class="hw-tagrow">
@@ -399,6 +416,7 @@
                 </article>
 
                 <article class="hw-card tag-retail tag-restaurant">
+                    <img src="../img/cash-drawer.jpg" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-cash-register"></i> Cash Drawers</h3>
                     <p>Durable metal drawers with RJ11 kick. Auto‑open with receipts; manual key override.</p>
                     <div class="hw-tagrow">
@@ -408,6 +426,7 @@
                 </article>
 
                 <article class="hw-card tag-restaurant">
+                    <img src="../img/XP-t361u.png" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-print"></i> X-Printer 2-in-1 Barcode Label Printers</h3>
                     <p>Compact 2-in-1 thermal printer — prints labels and receipts. LAN/USB connectivity.</p>
                     <div class="hw-tagrow">
@@ -418,6 +437,7 @@
                 </article>
 
                 <article class="hw-card tag-retail tag-restaurant tag-pharmacy">
+                    <img src="../img/dcp 650.png" alt="Computer with Intel i5 processor" class="hw-card-img">
                     <h3><i class="fa-solid fa-network-wired"></i> UPS</h3>
                     <p>UPS units to keep POS and printers online 24/7.</p>
                     <div class="hw-tagrow">
