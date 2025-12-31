@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Pixellark Solutions</title>
+    <link href="/css/googleFonts.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/root.css">
+    <link rel="stylesheet" href="/css/v2css.css">
+    <style>
+        .review-panel-container {
+            min-height: 100vh;
+            padding: 80px 2rem 40px;
+            background: var(--color-navy);
+            position: relative;
+            z-index: 2;
+        }
+
+        .review-panel-header {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+
+        .review-panel-header h1 {
+            color: var(--color-white);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .review-panel-header p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .customer-card {
+            transition: opacity 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .review-panel-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .review-panel-container {
+                padding: 60px 1rem 40px;
+            }
+        }
+
+        .filter-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(0, 174, 239, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(0, 174, 239, 0.2);
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            border: 2px solid rgba(0, 174, 239, 0.3);
+            background: transparent;
+            color: var(--color-white);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover {
+            background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+            border-color: var(--color-primary);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+            border-color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-3d"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div class="canvas-container" id="canvasContainer"></div>
+
+    <!-- Consult us popup -->
+    <div class="consult" id="consult-us">
+        <i class="fas fa-close" onclick="consultus()"></i>
+        <div class="consultcontainer">
+            <h3>Have a Question or Need Help?</h3>
+            <p>Contact us for personalized assistance</p>
+
+            <div class="consult-item">
+                <label for="mobile1">Call or WhatsApp:</label>
+                <button id="mobile1" class="tooltip">
+                    +94 78 979 7988
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <button id="mobile2" class="tooltip">
+                    +94 77 894 1889
+                    <span class="tooltiptext">Click to Call (Mobile) or WhatsApp (Desktop)</span>
+                </button>
+            </div>
+
+            <div class="consult-item">
+                <label for="email">E-Mail:</label>
+                <button id="email" class="tooltip">
+                    team@pixellark.com
+                    <span class="tooltiptext">Click to send us an Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/logo75px.png" alt="pixellark solutions logo">
+                Pixellark <span>Solutions</span>
+            </a>
+            <div class="nav-links">
+                <div class="nav-link"><a href="/index.html">Home</a></div>
+                <div class="nav-link"><a href="/system_gallery/index.html">System Gallery</a></div>
+                <div class="nav-link"><span class="backxx">Consult Us</span></div>
+            </div>
+            <i class="fas fa-arrow-down nav-toggle" onclick="showMenuItems()"></i>
+        </div>
+    </nav>
+
+    <!-- Review Panel Section -->
+    <section class="review-panel-container">
+        <div class="review-panel-header">
+            <h1>Trusted by Businesses Nationwide and Beyond</h1>
+            <p>Discover how businesses across diverse industries have transformed their operations with our tailored management solutions. From cozy cafes to medical centers, our systems empower enterprises of all sizes to thrive.</p>
+        </div>
+
+        <div class="reviews-container">
+            <!-- Filter Buttons -->
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All Industries</button>
+                <button class="filter-btn" data-filter="restaurant"><i class="fas fa-utensils"></i> Restaurant</button>
+                <button class="filter-btn" data-filter="logistics"><i class="fas fa-ship"></i> Logistics</button>
+                <button class="filter-btn" data-filter="distribution"><i class="fas fa-warehouse"></i>
+                    Distribution</button>
+                <button class="filter-btn" data-filter="medical"><i class="fas fa-clinic-medical"></i> Medical</button>
+                <button class="filter-btn" data-filter="retail"><i class="fas fa-store"></i> Retail</button>
+                <button class="filter-btn" data-filter="engineering"><i class="fas fa-cogs"></i> Engineering</button>
+                <button class="filter-btn" data-filter="services"><i class="fas fa-camera"></i> Services</button>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="reviews-grid">
+
+                <div class="customer-card" data-industry="restaurant">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Luminar Restaurant">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Luminar Restaurant</h3>
+                            <p class="position">Restaurant</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-utensils"></i> Restaurant POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Rua Vila Verde, Vera Cruz, Dili, Timor-Leste</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a class="contact-text"
+                                href="mailto:luminarrestaurant@gmail.com">luminarrestaurant@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+67075757530" class="contact-text">+670 7575 7530</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+67076621246" class="contact-text">+670 7662 1246</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="restaurant">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Kandy Food">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Kandy Food</h3>
+                            <p class="position">Hotel & Catering</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-utensils"></i> Restaurant POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">No 980, Kandy Road, Hinnarandeniya, Gampola</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94771309399" class="contact-text">+94 77 130 9399</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94812311399" class="contact-text">+94 81 231 1399</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="restaurant">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="101pizza">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>101pizza</h3>
+                            <p class="position">Pizza Restaurant</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-utensils"></i> Restaurant POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">139 1/1, Galle Road, Bentota</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94740352960" class="contact-text">+94 74 035 2960</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="restaurant">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="foodkingdom">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Food Kingdom</h3>
+                            <p class="position">Restaurant</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-utensils"></i> Restaurant POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">No 103, Nawalapitiya Road, Mariyawattha, Gampola</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94812075288" class="contact-text">+94 81 2075288</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="medical">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="NEW MEDICAL">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>NEW MEDICALS POLGOLLA</h3>
+                            <p class="position">Pharmacy</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-clinic-medical"></i> Medical Management
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Polgolla</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94776906676" class="contact-text">+94 77 690 6676</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="restaurant">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="double zero">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Double Zero</h3>
+                            <p class="position">Restaurant</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-utensils"></i> Restaurant POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Near the Bus Stand, Dambulla RD, Malsiripura</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94710576868" class="contact-text">+94 71 057 6868</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="medical">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Channeling Center">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Malsiripura Channeling Center</h3>
+                            <p class="position">Channeling Center & Pharmacy</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-clinic-medical"></i> Medical Management
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Malsiripura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="engineering">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="RATHNA ENGINEERING">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>RATHNA ENGINEERING</h3>
+                            <p class="position">Engineering Services</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-cogs"></i> Business Management
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Puthtalam Rd, Pallandaniya</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94372265269" class="contact-text">+94 37 226 5269</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="retail">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="LAKMALI ENTERPRISES">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>LAKMALI ENTERPRISES</h3>
+                            <p class="position">School & Office Stationeries</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-store"></i> Retail POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">225/1, THIBBUTTA, MEDAWALA, HARISPATHTHUWA</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94771907110" class="contact-text">+94 77 190 7110</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="retail">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Harsha Book shop">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Harsha Book Shop</h3>
+                            <p class="position">Book Store</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-store"></i> Retail POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">401/2 Dambulla Road, Malsiripura</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94775368414" class="contact-text">+94 77 5368 414</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="retail">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="janatha stores">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Janatha Stores</h3>
+                            <p class="position">General Store</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-store"></i> Retail POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Mathalee Road, Ridigama</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94776081484" class="contact-text">+94 77 608 1484</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="distribution">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="kelani lanka Holdings">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Kelani Lanka Holdings</h3>
+                            <p class="position">Holdings Company</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-warehouse"></i> Distribution Management
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Kopiwatta, Welipenna, Sri Lanka</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:kelanilankaholdings@gmail.com"
+                                class="contact-text">kelanilankaholdings@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="retail">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Sarithmi Mobile">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Sarithmi Mobile</h3>
+                            <p class="position">Mobile Phone Store</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-store"></i> Retail POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Near the People's Bank, Dambulla Road Malsiripura</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94761010383" class="contact-text">+94 76 101 0383</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="retail">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Rohitha Book Shop">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Rohitha Book Shop</h3>
+                            <p class="position">Book Store</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-store"></i> Retail POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">Kalaulla, Maduragoda</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="restaurant">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="salt and pepper">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Salt and Pepper</h3>
+                            <p class="position">Restaurant</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-utensils"></i> Restaurant POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">No 205, Galle Road, Mount Lavinia</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94779730009" class="contact-text">+94 77 973 0009</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="medical">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="Sathkaara">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Sathkaara</h3>
+                            <p class="position">Specialist Medical Service</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-clinic-medical"></i> Medical Management
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">134, Francis Molamure Mawatha, Kegalle</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94352222000" class="contact-text">+94 35 2222 000</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="mailto:sathkaraahospitals@gmail.com"
+                                class="contact-text">sathkaraahospitals@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="services">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="sitas studio">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>Sitas Studio</h3>
+                            <p class="position">Photography Studio</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-camera"></i> Business Management
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">47D Kings Street Matale</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94662223060" class="contact-text">+94 66 222 3060</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-card" data-industry="retail">
+                    <div class="customer-header">
+                        <div class="customer-avatar">
+                            <img src="/img/default-avatar.jpg" alt="UBN SuperMart">
+                        </div>
+                        <div class="customer-basic-info">
+                            <h3>UBN SuperMart</h3>
+                            <p class="position">Supermarket</p>
+                        </div>
+                    </div>
+
+                    <div class="system-badge">
+                        <i class="fas fa-store"></i> Retail POS System
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="contact-text address">No.64/4 Uda Mailapitiya, Mailapitiya</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+94715461756" class="contact-text">+94 71 546 1756</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-contact-info">
+                    <h3>Contact Info</h3>
+                    <p><a href="tel:+94789790988"><i class="fas fa-phone"></i> +94 78 979 7988</a></p>
+                    <p><a href="mailto:team@pixellark.com"><i class="fas fa-envelope"></i> team@pixellark.com</a></p>
+                    <p><a href="https://maps.app.goo.gl/pcWvYmRL81HJSqKX6" target="_blank"><i
+                                class="fas fa-map-marker-alt"></i>
+                            Nilanthattuwa, Ridigama, Kurunegala, LK 60040</a></p>
+                </div>
+                <div class="footer-quick-links">
+                    <h3>Quick Links</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/system_gallery/index.html">System Gallery</a></p>
+                    <p><a href="/term-of-service/index.html">Terms of Service</a></p>
+                    <p><a href="/privacy-policy/index.html">Privacy Policy</a></p>
+                </div>
+                <div class="footer-follow-us">
+                    <h3>
+                        Follow Us</h3>
+                    <div>
+                        <a href="https://www.facebook.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link hiddenx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/pixellark-solutions/" class="social-link"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pixellark_solutions/" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/pixellark" class="social-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>&copy; 2025 Pixellark Solutions. All rights reserved. | <a href="/privacy-policy/index.html">Privacy
+                        Policy</a> |
+                    <a href="/term-of-service/index.html"> Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/root.js"></script>
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.customer-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter cards
+                    cards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-industry') === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 50);
+                        }
+                    });
+                });
+            });
+        });
+
+
+        document.querySelector('.review-panel-container').style.paddingTop = document.getElementById('navbar').offsetHeight + 30 + 'px';
+    </script>
+</body>
+
+</html>
