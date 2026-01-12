@@ -93,16 +93,19 @@ function setupConsultButtons() {
 
 window.onload = setupConsultButtons;
 
-// Loading screen
-window.addEventListener('load', () => {
-    // Hide loading screen quickly
+function hideLoading() {
     setTimeout(() => {
         var loadingScreen = document.getElementById('loadingScreen');
         if (loadingScreen) {
             loadingScreen.classList.add('hidden');
         }
-    }, 500);
+    }, 50);
+}
 
+hideLoading();
+
+// Loading screen
+window.addEventListener('load', () => {
     // Run scripts in smaller chunks
     requestIdleCallback(() => initOtherScripts());
     if (typeof init === "function") {
