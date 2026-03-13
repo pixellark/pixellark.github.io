@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px Helvetica
+    }
+
+    p.p2 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px Helvetica;
+      min-height: 14.0px
+    }
+  </style>
+</head>
+
+<body>
+  <p class="p1">&lt;!DOCTYPE html&gt;</p>
+  <p class="p1">&lt;html lang="en"&gt;</p>
+  <p class="p1">&lt;head&gt;</p>
+  <p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+  <p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;title&gt;How to Install OpenClaw on macOS (MacBook &amp; Mac Mini) – Step-by-Step
+    Guide&lt;/title&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;meta name="description" content="Learn how to install OpenClaw on macOS using Homebrew and Node.js.
+    Step-by-step guide for MacBook, Mac Mini, and iMac users with easy copy commands."&gt;</p>
+  <p class="p1">&lt;meta name="keywords" content="install OpenClaw macOS, OpenClaw Mac tutorial, OpenClaw MacBook
+    install, OpenClaw Mac Mini setup, ClawDBot macOS, how to install OpenClaw on Mac"&gt;</p>
+  <p class="p1">&lt;meta name="author" content="Your Name"&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;!-- Open Graph --&gt;</p>
+  <p class="p1">&lt;meta property="og:title" content="How to Install OpenClaw on macOS – Step-by-Step Guide"&gt;</p>
+  <p class="p1">&lt;meta property="og:description" content="Step-by-step tutorial to install OpenClaw on macOS using
+    Homebrew and Node.js."&gt;</p>
+  <p class="p1">&lt;meta property="og:type" content="article"&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;style&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">body{</p>
+  <p class="p1">font-family: Arial, Helvetica, sans-serif;</p>
+  <p class="p1">margin:0;</p>
+  <p class="p1">background:#f4f6fb;</p>
+  <p class="p1">color:#222;</p>
+  <p class="p1">line-height:1.6;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">header{</p>
+  <p class="p1">background:linear-gradient(120deg,#4f46e5,#06b6d4);</p>
+  <p class="p1">color:white;</p>
+  <p class="p1">padding:40px 20px;</p>
+  <p class="p1">text-align:center;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">header h1{</p>
+  <p class="p1">margin:0;</p>
+  <p class="p1">font-size:2.2rem;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">.container{</p>
+  <p class="p1">max-width:900px;</p>
+  <p class="p1">margin:auto;</p>
+  <p class="p1">padding:30px 20px;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">h2{</p>
+  <p class="p1">margin-top:40px;</p>
+  <p class="p1">color:#111827;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">.step{</p>
+  <p class="p1">background:white;</p>
+  <p class="p1">padding:20px;</p>
+  <p class="p1">margin-top:20px;</p>
+  <p class="p1">border-radius:10px;</p>
+  <p class="p1">box-shadow:0 3px 10px rgba(0,0,0,0.05);</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">.code-box{</p>
+  <p class="p1">position:relative;</p>
+  <p class="p1">background:#0f172a;</p>
+  <p class="p1">color:#e5e7eb;</p>
+  <p class="p1">padding:15px;</p>
+  <p class="p1">border-radius:8px;</p>
+  <p class="p1">margin-top:10px;</p>
+  <p class="p1">font-family:monospace;</p>
+  <p class="p1">overflow-x:auto;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">.copy-btn{</p>
+  <p class="p1">position:absolute;</p>
+  <p class="p1">right:10px;</p>
+  <p class="p1">top:10px;</p>
+  <p class="p1">background:#2563eb;</p>
+  <p class="p1">border:none;</p>
+  <p class="p1">color:white;</p>
+  <p class="p1">padding:6px 10px;</p>
+  <p class="p1">border-radius:6px;</p>
+  <p class="p1">cursor:pointer;</p>
+  <p class="p1">font-size:14px;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">.copy-btn:hover{</p>
+  <p class="p1">background:#1d4ed8;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">footer{</p>
+  <p class="p1">text-align:center;</p>
+  <p class="p1">padding:30px;</p>
+  <p class="p1">margin-top:40px;</p>
+  <p class="p1">background:#111827;</p>
+  <p class="p1">color:#9ca3af;</p>
+  <p class="p1">font-size:14px;</p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/style&gt;</p>
+  <p class="p1">&lt;/head&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;body&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;header&gt;</p>
+  <p class="p1">&lt;h1&gt;How to Install OpenClaw on macOS&lt;/h1&gt;</p>
+  <p class="p1">&lt;p&gt;Step-by-Step Guide for MacBook, Mac Mini &amp; iMac&lt;/p&gt;</p>
+  <p class="p1">&lt;/header&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="container"&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;p&gt;</p>
+  <p class="p1">This guide explains &lt;strong&gt;how to install OpenClaw on macOS&lt;/strong&gt;.<span
+      class="Apple-converted-space"> </span></p>
+  <p class="p1">Follow the steps below to set up OpenClaw using the terminal.<span
+      class="Apple-converted-space"> </span></p>
+  <p class="p1">This tutorial works on &lt;strong&gt;MacBook, Mac Mini, and other macOS devices&lt;/strong&gt;.</p>
+  <p class="p1">&lt;/p&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="step"&gt;</p>
+  <p class="p1">&lt;h2&gt;Step 1 — Install Homebrew&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;p&gt;Homebrew is required to install dependencies.&lt;/p&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="code-box"&gt;</p>
+  <p class="p1">&lt;button class="copy-btn" onclick="copyCode(this)"&gt;📋&lt;/button&gt;</p>
+  <p class="p1">&lt;code&gt;</p>
+  <p class="p1">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</p>
+  <p class="p1">&lt;/code&gt;</p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="step"&gt;</p>
+  <p class="p1">&lt;h2&gt;Step 2 — Install Node.js&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;p&gt;Install Node.js version 22 using Homebrew.&lt;/p&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="code-box"&gt;</p>
+  <p class="p1">&lt;button class="copy-btn" onclick="copyCode(this)"&gt;📋&lt;/button&gt;</p>
+  <p class="p1">&lt;code&gt;</p>
+  <p class="p1">brew install node@22</p>
+  <p class="p1">&lt;/code&gt;</p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="step"&gt;</p>
+  <p class="p1">&lt;h2&gt;Step 3 — Install OpenClaw&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;p&gt;Run the installation script.&lt;/p&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="code-box"&gt;</p>
+  <p class="p1">&lt;button class="copy-btn" onclick="copyCode(this)"&gt;📋&lt;/button&gt;</p>
+  <p class="p1">&lt;code&gt;</p>
+  <p class="p1">curl -fsSL https://openclaw.ai/install.sh | bash</p>
+  <p class="p1">&lt;/code&gt;</p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="step"&gt;</p>
+  <p class="p1">&lt;h2&gt;Step 4 — Install OpenClaw Daemon&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="code-box"&gt;</p>
+  <p class="p1">&lt;button class="copy-btn" onclick="copyCode(this)"&gt;📋&lt;/button&gt;</p>
+  <p class="p1">&lt;code&gt;</p>
+  <p class="p1">openclaw onboard --install-daemon</p>
+  <p class="p1">&lt;/code&gt;</p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="step"&gt;</p>
+  <p class="p1">&lt;h2&gt;Step 5 — Check Gateway Status&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="code-box"&gt;</p>
+  <p class="p1">&lt;button class="copy-btn" onclick="copyCode(this)"&gt;📋&lt;/button&gt;</p>
+  <p class="p1">&lt;code&gt;</p>
+  <p class="p1">openclaw gateway status</p>
+  <p class="p1">&lt;/code&gt;</p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="step"&gt;</p>
+  <p class="p1">&lt;h2&gt;Step 6 — Open the Dashboard&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;div class="code-box"&gt;</p>
+  <p class="p1">&lt;button class="copy-btn" onclick="copyCode(this)"&gt;📋&lt;/button&gt;</p>
+  <p class="p1">&lt;code&gt;</p>
+  <p class="p1">openclaw dashboard</p>
+  <p class="p1">&lt;/code&gt;</p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;h2&gt;Conclusion&lt;/h2&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;p&gt;</p>
+  <p class="p1">You have successfully installed &lt;strong&gt;OpenClaw on macOS&lt;/strong&gt;.<span
+      class="Apple-converted-space"> </span></p>
+  <p class="p1">You can now access the OpenClaw dashboard and start using the platform.</p>
+  <p class="p1">&lt;/p&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/div&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;footer&gt;</p>
+  <p class="p1">© 2026 OpenClaw macOS Tutorial</p>
+  <p class="p1">&lt;/footer&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;script&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">function copyCode(button){</p>
+  <p class="p2"><br></p>
+  <p class="p1">const code = button.parentElement.innerText.replace("📋","").trim();</p>
+  <p class="p2"><br></p>
+  <p class="p1">navigator.clipboard.writeText(code);</p>
+  <p class="p2"><br></p>
+  <p class="p1">button.innerText = "✓";</p>
+  <p class="p2"><br></p>
+  <p class="p1">setTimeout(()=&gt;{</p>
+  <p class="p1">button.innerText="📋";</p>
+  <p class="p1">},2000);</p>
+  <p class="p2"><br></p>
+  <p class="p1">}</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/script&gt;</p>
+  <p class="p2"><br></p>
+  <p class="p1">&lt;/body&gt;</p>
+  <p class="p1">&lt;/html&gt;</p>
+</body>
+
+</html>
